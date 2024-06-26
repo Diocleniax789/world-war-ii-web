@@ -1,0 +1,29 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#encabezado {
+	background-color: darkred;
+	display: flex;
+	justify-content: space-between;
+	padding: 15px;
+}
+
+#encabezado #navegator {
+	display: flex;
+	justify-content: space-between;
+	margin-right: 15px;
+}
+
+#encabezado #navegator ul {
+	display: flex;
+	list-style: none;
+	justify-content: space-between;
+	gap: 15px;	
+}
+
+#encabezado #navegator a {
+	color: white;
+	text-decoration: none;
+}
