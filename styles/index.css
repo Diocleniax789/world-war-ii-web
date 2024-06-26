@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'European War';
+	src: url('../fonts/European War.ttf') format(TrueType);
+}
+
 body {
 	margin: 0;
 	padding: 0;
@@ -14,6 +19,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	margin-right: 15px;
+	margin-top: 10px;
 }
 
 #encabezado #navegator ul {
@@ -24,6 +30,19 @@ body {
 }
 
 #encabezado #navegator a {
+	font-family: 'European War';
 	color: white;
 	text-decoration: none;
+}
+
+#encabezado #navegator a:hover {
+	background-color: white;
+	border-radius: 5px;
+	padding: 5px;
+	color: darkred;
+	transition: 0.3s ease;
+}
+
+#encabezado img {
+	max-width: 200px;
 }
