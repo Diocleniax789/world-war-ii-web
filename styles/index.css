@@ -31,7 +31,7 @@ body {
 	display: flex;
 	list-style: none;
 	justify-content: space-between;
-	gap: 15px;	
+	gap: 20px;	
 }
 
 #encabezado #navegator a {
@@ -42,8 +42,10 @@ body {
 
 #encabezado #navegator a:hover {
 	background-color: white;
+	background-size: auto;
 	border-radius: 5px;
-	padding: 5px;
+	padding-right: 5px;
+	padding-left: 5px;
 	color: black;
 	transition: 0.3s ease;
 }
@@ -80,7 +82,20 @@ body {
 	font-size: 10vw; /* Usar unidades relativas para el tamaño de la fuente */
 }
 
-@media (max-width: 678px) {
+@media (min-width: 768px) and (max-width: 1200px) {
+		#main-title {
+		padding-left: 10%;
+		padding-right: 10%;
+		top: 35%;
+		left: 25%;
+	}
+	
+	#main-title h1 {
+		font-size: 8vw;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
 	#encabezado {
 		background-color: black;
 		display: flex;
@@ -104,10 +119,10 @@ body {
 
 	#encabezado #navegator a:hover {
 		background-color: white;
-		background-size: 100%;
+		background-size: auto;
 		border-radius: 5px;
-		padding-left: 50px;
-		padding-right: 50px;
+		padding-left: 10%;
+		padding-right: 10%;
 		color: black;
 		transition: 0.3s ease;
 	}
@@ -115,24 +130,19 @@ body {
 	#encabezado img {
 		align-items: center;
 	}
-}
 
-@media (max-width: 1200px) {
-	#main-title {
-		padding-left: 10%;
-		padding-right: 10%;
-		top: 15%;
-	}
-	
-	#main-title h1 {
-		font-size: 8vw;
-	}
-}
-
-@media (min-width: 678px) AND (max-width: 1176px) {
 	#main-title {
 		padding-left: 5%;
 		padding-right: 5%;
+		top: 60%;
+		top: 35%;
+		left: 25%;
+}
+
+@media (min-width: 300px) AND (max-width: 481px) {
+	#main-title {
+		padding-left: 10%;
+		padding-right: 10%;
 		top: 45%;
 		left: 35%;
 	}
@@ -142,12 +152,7 @@ body {
 	}
 }
 
-@media (max-width: 678px) {
+@media (min-height: 1000px){
 	#main-title {
-		padding-left: 10%;
-		padding-right: 10%;
-		top: 425px;
-		left: 150px;
-
 	}
 }
