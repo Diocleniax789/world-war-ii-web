@@ -9,6 +9,7 @@
 }
 
 body {
+	background-color: black;
 	margin: 0;
 	padding: 0;
 }
@@ -67,7 +68,6 @@ body {
 	font-size: 5em;
 	top: 20%;
 	left: 35%;
-	margin: 0;
 }
 
 #container-0 {
@@ -76,10 +76,10 @@ body {
 	flex-direction: row-reverse;
 	justify-content: center;
 	width: 100%;
-	gap: 25px;
+	gap: 15px;
 	padding-top: 20px;
+	padding-bottom: 20px;
 }
-
 
 #banner {
 	display: flex;
@@ -101,12 +101,19 @@ body {
 	font-family: 'War is Over';
 	color: white;
  	font-size: 2em;
+ 	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+    text-align: center;
  }
 
 #container-1 {
 	background-color: darkred;
 	display: flex;
 	flex-direction: column;
+	border-radius: 20px;
 	padding: 15px;
 	width: 80%;
 	height: 50%;
@@ -114,16 +121,24 @@ body {
 }
 
 #container-imagenes {
+	background-image: url('../images/img1.jpg');
+	background-repeat: no-repeat;
 	display: flex;
+	justify-content: center;
+	border: solid 2px grey;
+	border-radius: 10px;
 	padding: 10px;
-    gap: 20px;
+    gap: 30px;
 }
 
 #container-imagenes img {
-	border: solid 1px grey;
-	border-radius: 15px;
-	margin: 5px;
-	width: 100%;
+	border: solid 1px sandybrown;
+	border-radius: 5px;
+}
+
+#container-imagenes img:hover {
+	transform: scale(1.1);
+	transition: 0.3s ease;
 }
 
 .texto {
@@ -132,4 +147,18 @@ body {
 	font-size: 2em;
 	text-align: left;
 	margin: 10px;
+}
+
+#footer {
+	background-color: saddlebrown;
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#footer h3 {
+	font-family: 'European War';
+	color: white;
+	margin: 0;
+	text-align: center;
 }
