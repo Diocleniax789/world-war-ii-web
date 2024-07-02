@@ -62,12 +62,17 @@ body {
 }
 
 #main-background #title {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-left: 5%;
+	padding-right: 5%;
+	border: solid 1px grey;
+	border-radius: 10px;
 	position: absolute;
 	font-family: 'War is Over';
 	color: white;
 	font-size: 5em;
 	top: 20%;
-	left: 35%;
+	left: 30%;
  	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
@@ -160,7 +165,7 @@ body {
 }
 
 #container-imagenes img {
-	border: solid 1px sandybrown;
+	border: solid 1px grey;
 	border-radius: 5px;
 }
 
