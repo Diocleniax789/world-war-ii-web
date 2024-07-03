@@ -56,6 +56,11 @@ body {
 	margin-left: 10px;
 }
 
+#main-background {
+	display: flex;
+	justify-content: center;
+}
+
 #main-background img{
 	width: 100%;
 	position: relative;
@@ -71,8 +76,6 @@ body {
 	font-family: 'War is Over';
 	color: white;
 	font-size: 5em;
-	top: 20%;
-	left: 30%;
  	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
@@ -212,173 +215,384 @@ body {
 
 @media (max-width: 1080px) {
  
-body {
-	background-color: black;
-	margin: 0;
-	padding: 20px;
+	body {
+		background-color: black;
+		margin: 0;
+		padding: 20px;
+	}
+
+	#encabezado {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	#encabezado #navegator {
+		display: flex;
+		justify-content: center;
+		padding: 2px;
+		margin: 0;
+	}
+
+	#encabezado #navegator ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#encabezado #navegator a {
+		font-family: 'European War';
+		color: white;
+		font-size: 2em;
+	}
+
+	#main-background img{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	#main-background #title {
+		background-color: rgba(0, 0, 0, 0.6);
+		padding-left: 2%;
+		padding-right: 2%;
+		position: absolute;
+		border: solid 1px grey;
+		border-radius: 10px;
+		font-family: 'War is Over';
+		color: white;
+		font-size: 4em;
+		top: 21%;
+		eft: 20%;
+ 		text-shadow: 	
+    	-1px -1px 0 #000,  
+    	 1px -1px 0 #000,
+    	-1px  1px 0 #000,
+     	1px  1px 0 #000; 	
+	}
+
+	#container-0 {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.subtitulo h2 {
+		background-color: black;
+		font-family: 'European War';
+		border: solid 1px grey;
+		border-radius: 10px;
+		color: white;
+		font-size: 5em;
+		text-align: center;
+		padding: 5px;
+		margin: 10px;
+		text-shadow: 	
+    	-1px -1px 0 #000,  
+    	 1px -1px 0 #000,
+    	-1px  1px 0 #000,
+    	 1px  1px 0 #000; 
+	}
+
+	#banner {
+		background: linear-gradient(to right,skyblue,white);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		border-radius: 20px;
+		align-items: center;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		gap: 15px;
+	}
+
+	.banner-img  {
+		width: 60%;
+		height: 100%;
+	}
+
+	.banner-img img {
+		border: solid 5px grey;
+		border-radius: 10px;
+	}
+
+	#banner .title-2 {
+		background-color: black;
+		border: solid 5px grey;
+		border-radius: 10px;
+		padding: 15px;
+	}
+
+	#banner h2 {
+		font-family: 'War is Over';
+		color: white;
+ 		font-size: 4em;
+ 		text-shadow: 	
+    	-1px -1px 0 #000,  
+     	1px -1px 0 #000,
+    	-1px  1px 0 #000,
+     	1px  1px 0 #000; 
+	}
+
+	#container-1 {
+		background: linear-gradient(to right,yellowgreen,purple);
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		width: 100%;
+		top: 5%;
+		gap: 5px;
+		padding: 0;
+	}
+
+	#container-imagenes {
+		background: linear-gradient(to right, darkred,darkorange,orange);
+		display: flex;
+		border: solid 3px grey;
+		border-radius: 10px;
+		margin: 10px;
+	}
+
+	#container-imagenes img {
+		border: solid 1px black;
+		border-radius: 10px;
+		margin: 5px;
+	}	
+
+	.texto {
+		background-color: black;
+		border-radius: 20px;
+		border: solid 1px grey;
+		margin: 10px;
+		padding: 5px;
+	}
+
+	.texto p {
+
+		color: white;
+		font-size: 2em;
+		text-align: left;
+	}
+
+	#footer {
+		background: linear-gradient(to right, darkred,red);
+		border-radius: 20px;
+	}
+
+	#footer h3 {
+		font-family: 'European War';
+		font-size: 3em;
+		color: white;
+		text-shadow: 	
+    	-1px -1px 0 #000,  
+     	1px -1px 0 #000,
+    	-1px  1px 0 #000,
+    	 1px  1px 0 #000; 
+		margin: 0;
+	}	
+
 }
 
-#encabezado {
-	background-color: black;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	width: 100%;
+@media (max-width: 720px) {
+ 
+	body {
+		background-color: black;
+		margin: 0;
+		padding: 20px;
+	}
+
+	#encabezado {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+	}
+
+	#encabezado #navegator {
+		display: flex;
+		justify-content: center;
+		padding: 2px;
+		margin: 0;
+	}
+
+	#encabezado #navegator ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	#encabezado #navegator a {
+		font-family: 'European War';
+		color: white;
+		font-size: 2em;
+	}
+
+	#main-background img{
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	#main-background #title {
+		background-color: rgba(0, 0, 0, 0.6);
+		padding-left: 2%;
+		padding-right: 2%;
+		position: absolute;
+		border: solid 1px grey;
+		border-radius: 10px;
+		font-family: 'War is Over';
+		color: white;
+		font-size: 4em;
+		top: 21%;
+		eft: 20%;
+ 		text-shadow: 	
+    	-1px -1px 0 #000,  
+    	 1px -1px 0 #000,
+    	-1px  1px 0 #000,
+     	1px  1px 0 #000; 	
+	}
+
+	#container-0 {
+		background-color: black;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		width: 100%;
+	}
+
+	.subtitulo h2 {
+		background-color: black;
+		font-family: 'European War';
+		border: solid 1px grey;
+		border-radius: 10px;
+		color: white;
+		font-size: 5em;
+		text-align: center;
+		padding: 5px;
+		margin: 10px;
+		text-shadow: 	
+    	-1px -1px 0 #000,  
+    	 1px -1px 0 #000,
+    	-1px  1px 0 #000,
+    	 1px  1px 0 #000; 
+	}
+
+	#banner {
+		background: linear-gradient(to right,skyblue,white);
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		height: 100%;
+		border-radius: 20px;
+		align-items: center;
+		padding-left: 0;
+		padding-right: 0;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		gap: 15px;
+	}
+
+	.banner-img  {
+		width: 60%;
+		height: 100%;
+	}
+
+	.banner-img img {
+		border: solid 5px grey;
+		border-radius: 10px;
+	}
+
+	#banner .title-2 {
+		background-color: black;
+		border: solid 5px grey;
+		border-radius: 10px;
+		padding: 15px;
+	}
+
+	#banner h2 {
+		font-family: 'War is Over';
+		color: white;
+ 		font-size: 4em;
+ 		text-shadow: 	
+    	-1px -1px 0 #000,  
+     	1px -1px 0 #000,
+    	-1px  1px 0 #000,
+     	1px  1px 0 #000; 
+	}
+
+	#container-1 {
+		background: linear-gradient(to right,yellowgreen,purple);
+		display: flex;
+		flex-direction: column;
+		border-radius: 20px;
+		width: 100%;
+		top: 5%;
+		gap: 5px;
+		padding: 0;
+	}
+
+	#container-imagenes {
+		background: linear-gradient(to right, darkred,darkorange,orange);
+		display: flex;
+		border: solid 3px grey;
+		border-radius: 10px;
+		margin: 10px;
+	}
+
+	#container-imagenes img {
+		border: solid 1px black;
+		border-radius: 10px;
+		margin: 5px;
+	}	
+
+	.texto {
+		background-color: black;
+		border-radius: 20px;
+		border: solid 1px grey;
+		margin: 10px;
+		padding: 5px;
+	}
+
+	.texto p {
+
+		color: white;
+		font-size: 2em;
+		text-align: left;
+	}
+
+	#footer {
+		background: linear-gradient(to right, darkred,red);
+		border-radius: 20px;
+	}
+
+	#footer h3 {
+		font-family: 'European War';
+		font-size: 3em;
+		color: white;
+		text-shadow: 	
+    	-1px -1px 0 #000,  
+     	1px -1px 0 #000,
+    	-1px  1px 0 #000,
+    	 1px  1px 0 #000; 
+		margin: 0;
+	}	
+
+
+
+
+
 }
 
-#encabezado #navegator {
-	display: flex;
-	justify-content: center;
-	padding: 2px;
-}
-
-#encabezado #navegator ul {
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-}
-
-#encabezado #navegator a {
-	font-family: 'European War';
-	color: white;
-	font-size: 2em;
-}
-
-#main-background img{
-	width: 100%;
-	height: 100%;
-	position: relative;
-}
-
-#main-background #title {
-	background-color: rgba(0, 0, 0, 0.6);
-	padding-left: 2%;
-	padding-right: 2%;
-	position: absolute;
-	border: solid 1px grey;
-	border-radius: 10px;
-	font-family: 'War is Over';
-	color: white;
-	font-size: 4em;
-	top: 21%;
-	left: 26%;
- 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 	
-}
-
-#container-0 {
-	background-color: black;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	width: 100%;
-}
-
-.subtitulo h2 {
-	background-color: black;
-	font-family: 'European War';
-	border: solid 1px grey;
-	border-radius: 10px;
-	color: white;
-	font-size: 5em;
-	text-align: center;
-	padding: 5px;
-	margin: 10px;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-}
-
-#banner {
-	background: linear-gradient(to right,skyblue,white);
-	display: flex;
-	flex-direction: column;
-	width: 100%;
-	height: 100%;
-	border: 3px solid grey;
-	border-radius: 10px;
-	align-items: center;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	gap: 15px;
-}
-
-.banner-img  {
-	width: 60%;
-	height: 100%;
-}
-.banner-img img {
-	border: solid 5px grey;
-	border-radius: 10px;
-}
-
-#banner .title-2 {
-	background-color: black;
-	border: solid 5px grey;
-	border-radius: 10px;
-	padding: 15px;
-}
-
-#banner h2 {
-	font-family: 'War is Over';
-	color: white;
- 	font-size: 4em;
- 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-}
-
-#container-1 {
-	background-color: darkred;
-	display: flex;
-	flex-direction: column;
-	border-radius: 20px;
-	width: 100%;
-	top: 5%;
-	gap: 5px;
-	padding: 0;
-}
-
-#container-imagenes {
-	background: linear-gradient(to right, darkgrey,lightgrey,grey);
-	display: flex;
-	border: solid 2px grey;
-	border-radius: 10px;
-	margin: 10px;
-
-}
-
-#container-imagenes img {
-	border: solid 1px grey;
-	border-radius: 5px;
-}
-
-
-.texto {
-	background-color: black;
-	border-radius: 20px;
-	border: solid 1px grey;
-}
-
-.texto p {
-	font-family: 'European War';
-	color: white;
-	font-size: 2em;
-	text-align: left;
-}
-
-
-}
 
 
 
