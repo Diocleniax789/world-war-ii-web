@@ -36,7 +36,7 @@ body {
 }
 
 #encabezado #navegator a {
-	font-family: 'European War';
+	font-family: 'War is Over';
 	color: white;
 	text-decoration: none;
 }
@@ -93,21 +93,20 @@ body {
 	padding-bottom: 20px;
 }
 
-.subtitulo h2 {
+ h2 {
+
+ 	font-size: 3em;
+ 	font-family: arial;
 	background-color: black;
-	font-family: 'European War';
-	border: solid 1px grey;
-	border-radius: 10px;
 	color: white;
-	margin-top: 0;
-	margin-bottom: 0;
+	margin: 5px;
 	text-align: center;
-	padding: 5px;
 	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000; 
+     padding: 5px;
 }
 
 #banner {
@@ -117,7 +116,6 @@ body {
 	justify-content: center;
 	width: 15%;
 	padding: 15px;
-	border-radius: 10px;
 	gap: 15px;
 }
 
@@ -148,9 +146,7 @@ body {
 	background-color: darkred;
 	display: flex;
 	flex-direction: column;
-	border-radius: 20px;
 	padding: 15px;
-	width: 80%;
 	height: 50%;
 	top: 5%;
 	gap: 10px;
@@ -163,7 +159,6 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	border: solid 2px grey;
-	border-radius: 10px;
 	padding: 10px;
     gap: 30px;
 }
@@ -181,7 +176,6 @@ body {
 
 .texto {
 	background-color: black;
-	border-radius: 20px;
 	border: solid 1px grey;
 }
 
@@ -212,50 +206,42 @@ body {
 	text-align: center;
 }
 
-@media (max-width: 720px) and (max-height: 1600px) {
+@media (max-width: 495px) and (max-height: 780px) {
  
 	body {
-		background-color: black;
 		margin: 0;
-		padding: 15px;
+		padding: 5px;
 	}
 
 	#encabezado {
-		background-color: darkred;
+		background: linear-gradient(to right, darkgreen,green,lightgreen,white);
 		display: flex;
+		justify-content: center;
 		flex-direction: column;
-		border-radius: 20px;
+		max-width: 100%;
 	}
 
 	#encabezado img {
-		max-width: 50%;
-		margin-left: 10px;
+		width: 50%;
+		margin-left: 30px;
 	}
 
 	#encabezado #navegator {
 		display: flex;
-		justify-content: center;
-		padding: 2px;
-		margin: 0;
+		flex-direction: column;
+		margin-left: 0;
 	}
 
 	#encabezado #navegator ul {
 		display: flex;
 		flex-direction: column;
-		text-align: left;
 	}
 
 	#encabezado #navegator a {
-		font-family: 'European War';
-		color: white;
-		font-size: 2em;
-		border-top: solid 1px white;
-		border-bottom: solid 1px white;
-		text-align: center;
+		text-align: left;
 	}
 
 	#main-background img {
-		border-radius: 20px;
 		position: relative;
 		margin: 10px;
 	}
@@ -269,14 +255,13 @@ body {
 		border-radius: 20px;
 		font-family: 'War is Over';
 		color: white;
-		font-size: 3em;
-		top: 27%;
+		font-size: 1em;
+		top: 40%;
  		text-shadow: 	
     	-1px -1px 0 #000,  
     	 1px -1px 0 #000,
     	-1px  1px 0 #000,
-     	1px  1px 0 #000; 	
-
+       	1px  1px 0 #000; 	
 	}
 
 	#container-0 {
@@ -287,21 +272,19 @@ body {
 		padding: 0;
 	}
 
-	.subtitulo h2 {
-		background-color: black;
-		font-family: 'European War';
-		border: solid 1px grey;
-		border-radius: 10px;
+	 h2 {
+
+	 	font-size: 2em;
+	 	background-color: black;
 		color: white;
-		font-size: 5em;
+		margin: 5px;
 		text-align: center;
-		padding: 5px;
-		margin: 10px;
 		text-shadow: 	
     	-1px -1px 0 #000,  
-    	 1px -1px 0 #000,
+     	1px -1px 0 #000,
     	-1px  1px 0 #000,
-    	 1px  1px 0 #000; 
+     	1px  1px 0 #000; 
+     	padding: 5px;
 	}
 
 	#banner {
@@ -309,7 +292,6 @@ body {
 		display: flex;
 		flex-direction: column;
 		width: 100%;
-		border-radius: 20px;
 		align-items: center;
 		padding-left: 0;
 		padding-right: 0;
@@ -330,8 +312,7 @@ body {
 
 	#banner .title-2 {
 		background-color: black;
-		border: solid 5px grey;
-		border-radius: 20px;
+		border: solid 2px grey;
 		padding: 10px;
 		margin: 5px;
 	}
@@ -348,21 +329,20 @@ body {
 	}
 
 	#container-1 {
-		background: linear-gradient(to right,yellowgreen,purple);
+		background-image: url('../images/fire.jpg');
+		background-repeat: no-repeat;
+		background-size: 100% 100%;
 		display: flex;
 		flex-direction: column;
-		border-radius: 20px;
-		width: 100%;
 		top: 5%;
 		gap: 5px;
-		padding: 0;
+		padding: 5px;
 	}
 
 	#container-imagenes {
-		background: linear-gradient(to right, darkred,darkorange,orange);
+		background: linear-gradient(to right, black,darkorange,orange,wheat);
 		display: flex;
 		border: solid 3px grey;
-		border-radius: 10px;
 		margin: 10px;
 	}
 
@@ -374,7 +354,6 @@ body {
 
 	.texto {
 		background-color: black;
-		border-radius: 20px;
 		border: solid 1px grey;
 		margin: 10px;
 		padding: 5px;
@@ -382,30 +361,27 @@ body {
 
 	.texto p {
 		color: white;
-		font-size: 2em;
+		font-size: 1em;
 		text-align: center;
 	}
 
 	#footer {
 		background: linear-gradient(to right, darkred,red);
-		border-radius: 20px;
 	}
 
 	#footer h3 {
-		font-family: 'European War';
-		font-size: 3em;
+		font-family: arial;
+		font-size: 2em;
 		color: white;
+		margin: 0;
 		text-shadow: 	
     	-1px -1px 0 #000,  
      	1px -1px 0 #000,
     	-1px  1px 0 #000,
     	 1px  1px 0 #000; 
-		margin: 0;
 	}	
 
 }
-
-
 
 
 
