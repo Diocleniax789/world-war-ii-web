@@ -142,7 +142,6 @@ body {
  }
 
 #container-1 {
-	margin: 5px;
 	background-color: darkred;
 	display: flex;
 	flex-direction: column;
@@ -216,13 +215,13 @@ body {
 
 	#container-0 {
 		display: flex;
-		flex-direction: column;
 	}
 
 	#banner {
 		display: flex;
-		background-color: grey;
+		background-color: skyblue;
 		justify-content: left;
+		flex-direction: column;
 		width: 100%;
 	}	
 
