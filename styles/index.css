@@ -113,7 +113,6 @@ body {
 
 #banner {
 	display: flex;
-	background-color: tomato;
 	flex-direction: column;
 	justify-content: center;
 	width: 15%;
@@ -228,7 +227,6 @@ body {
 	border: solid 2px grey;
 	border-radius: 20px;
 	width: 100%;
-
 }
 
 .descripcion-3 h1 {
@@ -311,16 +309,11 @@ body {
 	}
 
 	#banner {
+		background-image: url('../images/bannernuevo.jpg');
+		background-position-x: -670px;
 		display: flex;
-		background-color: skyblue;
-		justify-content: left;
-		flex-direction: column;
 		width: 100%;
 	}	
-
-	#banner img {
-		width: 25%;
-	}
 
 	#banner h2 {
 		margin: 0;
@@ -333,6 +326,10 @@ body {
     	-1px  1px 0 #000,
      	1px  1px 0 #000; 
     	text-align: center;
+ 	}
+
+ 	.banner-img {
+ 		display: none;
  	}
 
 	#container-imagenes {
