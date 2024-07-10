@@ -8,10 +8,15 @@
 	src: url('../fonts/War is Over.ttf') format(TrueType);
 }
 
+* {
+	box-sizing: content-box;
+
+}
+
 body {
-	background-color: black;
+	background-image: url('../images/img13.jpg');
 	margin: 0;
-	padding: 5px;
+	padding: 10px;
 }
 
 #encabezado {
@@ -57,8 +62,10 @@ body {
 }
 
 #main-background {
+	margin-top: 15px;
 	display: flex;
 	justify-content: center;
+	border: solid 2px grey;
 }
 
 #main-background img{
@@ -86,20 +93,18 @@ body {
 
 #container-0 {
 	display: flex;
-	flex-direction: row-reverse;
+	flex-direction: row;
 	justify-content: center;
 	width: 100%;
-	gap: 5px;
+	gap: 10px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
 
  h2 {
- 	background-image: url('../images/fondo2.jpg');
  	border: double 2px grey;
  	font-size: 3em;
  	font-family: arial;
-	background-color: black;
 	color: white;
 	text-align: center;
 	text-shadow: 	
@@ -111,39 +116,30 @@ body {
      margin: 0;
 }
 
-#banner {
+.banner {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	width: 15%;
-	gap: 15px;
-	border: double 2px grey;
+	width: 50%;
+	border: double 2px grey;	
 }
 
-#banner img {
-	width: 100%;
-	left: 50%;
+#banner-1 {
+	background-image: url('../images/banner5.jpg');
+	background-repeat: no-repeat;
+	background-size: 1500px;
+	background-position-x: -650px;
 }
 
-#banner img:hover {
-	filter: brightness(1.8);
-	transition: 0.3s ease;
+#banner-2 {
+	background-image: url('../images/banner7.jpg');
+	background-repeat: no-repeat;
+	background-size: 2520px;
+	background-position-x: -1020px;
 }
-
-#banner h2 {
-	margin: 0;
-	font-family: 'War is Over';
-	color: white;
- 	font-size: 2em;
- 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-    text-align: center;
- }
 
 #container-1 {
+	background: rgba(0, 0, 0, 0.6);
 	display: flex;
 	flex-direction: column;
 	padding: 15px;
@@ -154,72 +150,46 @@ body {
 }
 
 #container-imagenes {
-	/*background-image: url('../images/fondo2.jpg');
-	background-repeat: no-repeat;
-	background-size: 100%;*/
 	display: flex;
-	justify-content: left;
 	flex-direction: column;
 	border: solid 2px grey;
 	padding: 10px;
     gap: 30px;
 }
 
-.card {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-.imagen-1,.imagen-2,.imagen-3,.imagen-4 {
-	border: solid 2px grey;
-	border-radius: 20px;
-}
-
-.descripcion-1 {
-	background-image: url('../images/img5.jpg');
-	background-repeat: no-repeat;
-	background-position-y: -110px;
-	border: solid 2px grey;
-	border-radius: 20px;
-	width: 100%;
-}
-
-.descripcion-1 h1 {
-	font-family: 'Times New Roman';
+.opcion-nombre {
 	color: white;
-	font-size: 5em;
+	font-family: 'Times New Roman';
+	font-size: 3em;
 	text-align: center;
-    text-shadow: 	
+	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000; 
 }
 
-.descripcion-2 {
-	background-image: url('../images/img6.jpg');
+
+#opcion-1 {
+	background-image: url('../images/img12.jpg');
 	background-repeat: no-repeat;
-	background-position-y: -250px;
+	background-position-y: -1550px;
+	border: solid 2px grey;
+	border-radius: 20px;
+	width: 100%;
+}
+
+#opcion-2 {
+	background-image: url('../images/img15.jpg');
+	background-repeat: no-repeat;
+	background-position-y: -80px;
 	background-size: 100%;
 	border: solid 2px grey;
 	border-radius: 20px;
 	width: 100%;
 }
 
-.descripcion-2 h1 {
-	font-family: 'Times New Roman';
-	color: white;
-	font-size: 5em;
-	text-align: center;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-}
-
-.descripcion-3 {
+#opcion-3 {
 	background-image: url('../images/img7.jpg');
 	background-repeat: no-repeat;
 	background-position-y: -250px;
@@ -229,19 +199,7 @@ body {
 	width: 100%;
 }
 
-.descripcion-3 h1 {
-	font-family: 'Times New Roman';
-	color: white;
-	font-size: 5em;
-	text-align: center;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-}
-
-.descripcion-4 {
+#opcion-4 {
 	background-image: url('../images/img8.jpg');
 	background-repeat: no-repeat;
 	background-position-y: -30px;
@@ -249,19 +207,6 @@ body {
 	border: solid 2px grey;
 	border-radius: 20px;
 	width: 100%;
-
-}
-
-.descripcion-4 h1 {
-	font-family: 'Times New Roman';
-	color: white;
-	font-size: 5em;
-	text-align: center;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
 }
 
 
@@ -279,6 +224,7 @@ body {
 }
 
 #footer {
+	background-image: url('../images/body-fondo1.jpg');
 	border: double 2px grey;
 	width: 100%;
 	padding-top: 15px;
@@ -296,6 +242,10 @@ body {
 	margin: 0;
 	text-align: center;
 }
+
+}
+
+
 
 @media (max-width: 1366px) and (max-height: 768px) {
 
@@ -342,6 +292,16 @@ body {
 
 
 }
+
+
+
+
+
+
+
+
+
+
 
 @media (max-width: 495px) and (max-height: 780px) {
  
