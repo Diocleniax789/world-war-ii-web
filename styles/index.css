@@ -10,7 +10,6 @@
 
 * {
 	box-sizing: content-box;
-
 }
 
 body {
@@ -223,16 +222,66 @@ body {
 	margin: 10px;
 }
 
-#footer {
+#container-2 {
+	display: flex;
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 2px grey;
+	padding: 10px;
+	gap: 10%;
+
+}
+
+.banner-mediano {
+	width: 25%;
+	margin-left: 50px;
+	margin-right: 50px;
+	border: solid 2px grey;
+}
+
+.container-2-1 {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin: 5px;
+
+}
+
+.title-banner {
+	color: white;
+	font-family: 'Times New Roman';
+	font-size: 3em;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+     text-align: center;
+}
+
+
+.button {
 	background-image: url('../images/body-fondo1.jpg');
+	text-align: center;
+	width: 90%;
+	padding: 10px;
+	color: white;
+	font-family: 'War is Over';
+	margin-left: 50px;
+	font-size: 2em;
+}
+
+
+
+
+#footer {
+	background-color: black;
 	border: double 2px grey;
 	width: 100%;
-	padding-top: 15px;
-	padding-bottom: 15px;
+	margin-top: 15px;
 }
 
 #footer h3 {
-	font-family: 'European War';
+	font-family: 'Times New Roman';
 	color: white;
 	text-shadow: 	
     -1px -1px 0 #000,  
