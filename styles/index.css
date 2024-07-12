@@ -198,17 +198,6 @@ body {
 	width: 100%;
 }
 
-#opcion-4 {
-	background-image: url('../images/img8.jpg');
-	background-repeat: no-repeat;
-	background-position-y: -30px;
-	background-size: 100%;
-	border: solid 2px grey;
-	border-radius: 20px;
-	width: 100%;
-}
-
-
 .texto {
 	background-color: black;
 	border: solid 1px grey;
@@ -258,7 +247,6 @@ body {
      text-align: center;
 }
 
-
 .button {
 	background-image: url('../images/body-fondo1.jpg');
 	text-align: center;
@@ -270,7 +258,32 @@ body {
 	font-size: 2em;
 }
 
+#container-3 {
+	display: flex;
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 3px grey;
+	margin-top: 10px;
+	padding: 10px;
+	align-items: center;
+	justify-content: space-between;
+}
 
+.banner-3 {
+	background-image: url('../images/banner8.jpg');
+	width: 15%;
+	border: solid 3px grey;
+	height: 1000px;
+
+}
+
+.banner-7 {
+	background-image: url('../images/img9.jpg');
+	background-position-x: 1500px;
+	width: 15%;
+	border: solid 3px grey;
+	height: 1000px;
+
+}
 
 
 #footer {
@@ -288,7 +301,7 @@ body {
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000; 
-	margin: 0;
+	margin: 10px;
 	text-align: center;
 }
 
@@ -314,7 +327,7 @@ body {
 		width: 100%;
 	}	
 
-	#banner h2 {
+	#banner h1 {
 		margin: 0;
 		font-family: 'War is Over';
 		color: white;
