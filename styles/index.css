@@ -281,6 +281,7 @@ body {
 
 .banner-3 {
 	background-image: url('../images/banner8.jpg');
+	background-position-x: -150px;
 	width: 15%;
 	border: solid 3px grey;
 	height: 1000px;
