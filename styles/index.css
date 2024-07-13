@@ -198,6 +198,16 @@ body {
 	width: 100%;
 }
 
+#opcion-4 {
+	background-image: url('../images/img8.jpg');
+	background-repeat: no-repeat;
+	background-position-y: -50px;
+	background-size: 100%;
+	border: solid 2px grey;
+	border-radius: 20px;
+	width: 100%;
+}
+
 .texto {
 	background-color: black;
 	border: solid 1px grey;
@@ -265,7 +275,8 @@ body {
 	margin-top: 10px;
 	padding: 10px;
 	align-items: center;
-	justify-content: space-between;
+	gap: 5px;
+	justify-content: center;
 }
 
 .banner-3 {
@@ -276,13 +287,39 @@ body {
 
 }
 
-.banner-7 {
-	background-image: url('../images/img9.jpg');
+.banner-4 {
+	background-image: url('../images/img23.jpg');
 	background-position-x: 1500px;
 	width: 15%;
 	border: solid 3px grey;
 	height: 1000px;
+}
 
+.banner-5 {
+	background-image: url('../images/img25.jpg');
+	background-position-x: 1300px;
+	width: 15%;
+	border: solid 3px grey;
+	height: 1000px;
+
+}
+
+.banner-6 {
+	background-image: url('../images/img21.jpg');
+	background-position-x: 1110px;
+	width: 15%;
+	border: solid 3px grey;
+	height: 1000px;
+
+}
+
+.banner-7 {
+	background-image: url('../images/img31.jpg');
+	background-position-x: 1850px;
+	background-position-y: 1750px;
+	width: 15%;
+	border: solid 3px grey;
+	height: 1000px;
 }
 
 
