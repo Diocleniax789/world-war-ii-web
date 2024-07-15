@@ -1,0 +1,163 @@
+@font-face {	
+	font-family: 'Wargate-Normal';
+	src: url('../fonts/Wargate-Normal.otf') format(OpenType);
+}
+
+@font-face {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
+}
+
+@font-face {
+	font-family: 'European War';
+	src: url('../fonts/European War.otf') format(OpenType);
+}
+
+body {
+	background-image: url('../images/fondo3.jpg');
+	margin: 0;
+	padding: 10px;
+}
+
+#encabezado {
+	background-image: url('../images/header1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-y: 50%;
+	display: flex;
+	justify-content: center;
+}
+
+#main-title {
+	color: white;
+	font-family: 'Wargate-Normal';
+	font-size: 2rem;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+}
+
+#main-section {
+	display: grid;
+	grid-template-columns: 150px 1fr;
+	margin-top: 10px;
+}
+
+#navegador {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+}
+
+#navegador ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	justify-content: center;
+	font-family: 'Wargate-Normal';
+	font-size: 1rem;
+	color: white;
+	gap: 20px;
+}
+
+
+#section-information {
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 5px;
+}
+
+#encabezado-2 {
+	background-color: black;
+ 	display: flex;
+ 	justify-content: center;
+}
+
+.titulo-2 {
+	color: white;
+	font-family: 'Wargate-Normal';
+	font-size: 2rem;
+	text-align: center;
+    text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+
+}
+
+#container-1 {
+	background: rgba(255, 0, 0, 0.5);
+	width: 100%;
+}
+
+.encabezado-informacion {
+	border-bottom: solid 1px white;
+}
+
+
+#section-1 {
+	margin-top: 10px;
+	display: flex;
+	gap: 15px;
+}
+
+.img-1 {
+	width: 25%;
+	margin-left: 10px;
+	margin-bottom: 10px;
+	border: solid 5px grey;
+}
+
+.img-2 {
+	width: 15%;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	border: solid 5px grey;
+}
+
+.texto {
+	color: white;
+	font-family: 'European War';
+	margin: 0;
+	margin-bottom: 5px;
+}
+
+#container-2 {
+	background: rgba(128, 128, 128, 0.5);
+	display: flex;
+	flex-direction: column;
+}
+
+#section-2 {
+	display: flex;
+	gap: 15px;
+	margin-top: 10px;
+}
+
+#section-1-1 {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.img-3 {
+	width: 25%;
+	border: solid 5px black;
+}
+
+.img-4 {
+	width: 25%;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	border: solid 5px black;
+}
+
+
+@media screen and (max-width: 480px) {
+
+}
