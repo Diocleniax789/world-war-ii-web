@@ -14,7 +14,7 @@
 }
 
 body {
-	background-image: url('../images/fondo3.jpg');
+	background-color: black;
 	margin: 0;
 	padding: 10px;
 }
@@ -43,12 +43,14 @@ body {
 	display: grid;
 	grid-template-columns: 150px 1fr;
 	margin-top: 10px;
+    grid-gap: 5px;
 }
 
 #navegador {
 	background-color: black;
 	display: flex;
 	flex-direction: column;
+	border: solid 1px white;
 }
 
 #navegador ul {
@@ -64,17 +66,16 @@ body {
 
 
 #section-information {
-	background: rgba(0, 0, 0, 0.6);
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
-	gap: 5px;
+	gap: 15px;
 }
 
 #encabezado-2 {
 	background-color: black;
  	display: flex;
  	justify-content: center;
+ 	border: solid 1px white;
 }
 
 .titulo-2 {
@@ -91,7 +92,8 @@ body {
 }
 
 #container-1 {
-	background: rgba(255, 0, 0, 0.5);
+	background-image: url('../images/fondo6papel.jpg');
+	background-size: cover;
 	width: 100%;
 }
 
@@ -110,14 +112,16 @@ body {
 	width: 25%;
 	margin-left: 10px;
 	margin-bottom: 10px;
-	border: solid 5px grey;
+	border: solid 5px black;
+	border-radius: 5px;
 }
 
 .img-2 {
 	width: 15%;
 	margin-right: 15px;
 	margin-bottom: 10px;
-	border: solid 5px grey;
+	border: solid 5px black;
+	border-radius: 5px;
 }
 
 .texto {
@@ -125,10 +129,17 @@ body {
 	font-family: 'European War';
 	margin: 0;
 	margin-bottom: 5px;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+     padding-right: 3px; 
 }
 
 #container-2 {
-	background: rgba(128, 128, 128, 0.5);
+	background-image: url('../images/fondo6papel.jpg');
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 }
@@ -148,6 +159,7 @@ body {
 .img-3 {
 	width: 25%;
 	border: solid 5px black;
+	border-radius: 5px;
 }
 
 .img-4 {
@@ -155,9 +167,64 @@ body {
 	margin-left: 10px;
 	margin-bottom: 15px;
 	border: solid 5px black;
+	border-radius: 5px;
+}
+
+#container-3{
+	background-image: url('../images/fondo6papel.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: ;
+}
+
+#section-3 {
+	display: flex;
+	gap: 15px;
+	margin-top: 10px;
+}
+
+#section-1-2 {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10px;
+}
+
+.container-galeria {
+	display: flex;
+	gap: 10px;
+}
+
+.img-5 {
+	width: 25%;
+	border: solid 5px black;
+	margin-left: 10px;
+	margin-bottom: 15px;
+	border-radius: 5px;
+}
+
+.img-6 {
+	width: 25%;
+	margin-bottom: 15px;
+	border: solid 5px black;
+	border-radius: 5px;
+}
+
+.img-7 {
+	width: 25%;
+	border: solid 5px black;
+	border-radius: 5px;
+}
+
+.img-8 {
+	width: 25%;
+	border: solid 5px black;
+	border-radius: 5px;
 }
 
 
-@media screen and (max-width: 480px) {
+
+
+@media screen and (max-width: 1366px) {
 
 }
