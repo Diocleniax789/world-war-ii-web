@@ -13,218 +13,133 @@
 	src: url('../fonts/European War.otf') format(OpenType);
 }
 
+* {
+	margin: 0;
+	padding: 0;
+}
+
 body {
-	background-color: black;
-	margin: 0;
-	padding: 10px;
-}
-
-#encabezado {
-	background-image: url('../images/header1.jpg');
-	background-repeat: no-repeat;
+	background-image: url('../images/fondo3.jpg');
 	background-size: cover;
-	background-position-y: 50%;
-	display: flex;
-	justify-content: center;
+
 }
 
-#main-title {
-	color: white;
-	font-family: 'Wargate-Normal';
-	font-size: 2rem;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-}
-
-#main-section {
+.main-container {
+	width: 90%;
+	max-width: 2000px;
+	margin: 20px auto;
 	display: grid;
-	grid-template-columns: 150px 1fr;
-	margin-top: 10px;
-    grid-gap: 5px;
+	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(2, auto);
 }
 
-#navegador {
-	background-color: black;
-	display: flex;
-	flex-direction: column;
-	border: solid 1px white;
+.main-container .header,
+.main-container .header-2, 
+.main-container .nav,
+.main-container .main,
+.main-container .aside,
+.main-container .footer {
+	background-color: yellow;
+	padding: 20px;
+	border-radius: 10px;
 }
 
-#navegador ul {
-	display: flex;
-	flex-direction: column;
+.main-container .header {
+	background-image: url('../images/header1.jpg');
+	background-size: cover;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.main-container .header .title-header {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	font-size: 1em;
+	color: #ffff;
+}
+
+.main-container .nav {
+	background: rgba(0, 0, 0, 0.6);
+	grid-column: 1 / 1;
+	width: 25%;
+}
+
+.main-container .nav ul {
 	list-style: none;
-	justify-content: center;
-	font-family: 'Wargate-Normal';
-	font-size: 1rem;
-	color: white;
-	gap: 20px;
-}
-
-
-#section-information {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
-}
-
-#encabezado-2 {
-	background-color: black;
- 	display: flex;
- 	justify-content: center;
- 	border: solid 1px white;
-}
-
-.titulo-2 {
-	color: white;
-	font-family: 'Wargate-Normal';
-	font-size: 2rem;
-	text-align: center;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-
-}
-
-#container-1 {
-	background-image: url('../images/fondo6papel.jpg');
-	background-size: cover;
-	width: 100%;
-}
-
-.encabezado-informacion {
-	border-bottom: solid 1px white;
-}
-
-
-#section-1 {
-	margin-top: 10px;
-	display: flex;
-	gap: 15px;
-}
-
-.img-1 {
-	width: 25%;
-	margin-left: 10px;
-	margin-bottom: 10px;
-	border: solid 5px black;
-	border-radius: 5px;
-}
-
-.img-2 {
-	width: 15%;
-	margin-right: 15px;
-	margin-bottom: 10px;
-	border: solid 5px black;
-	border-radius: 5px;
-}
-
-.texto {
-	color: white;
-	font-family: 'European War';
-	margin: 0;
-	margin-bottom: 5px;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-     padding-right: 3px; 
-}
-
-#container-2 {
-	background-image: url('../images/fondo6papel.jpg');
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-}
-
-#section-2 {
-	display: flex;
-	gap: 15px;
-	margin-top: 10px;
-}
-
-#section-1-1 {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10px;
-}
-
-.img-3 {
-	width: 25%;
-	border: solid 5px black;
-	border-radius: 5px;
-}
-
-.img-4 {
-	width: 25%;
-	margin-left: 10px;
-	margin-bottom: 15px;
-	border: solid 5px black;
-	border-radius: 5px;
-}
-
-#container-3{
-	background-image: url('../images/fondo6papel.jpg');
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	margin-bottom: ;
-}
-
-#section-3 {
-	display: flex;
-	gap: 15px;
-	margin-top: 10px;
-}
-
-#section-1-2 {
-	display: flex;
-	flex-direction: column;
-	margin-bottom: 10px;
-}
-
-.container-galeria {
-	display: flex;
 	gap: 10px;
 }
 
-.img-5 {
-	width: 25%;
-	border: solid 5px black;
-	margin-left: 10px;
-	margin-bottom: 15px;
-	border-radius: 5px;
+.main-container .nav li {
+	color: #ffff;
+	font-family: 'Wargate-Normal';
 }
 
-.img-6 {
-	width: 25%;
-	margin-bottom: 15px;
-	border: solid 5px black;
-	border-radius: 5px;
-}
-
-.img-7 {
-	width: 25%;
-	border: solid 5px black;
-	border-radius: 5px;
-}
-
-.img-8 {
-	width: 25%;
-	border: solid 5px black;
-	border-radius: 5px;
+.main-container .main {
+	background-color: purple;
+	grid-column-start: 2;
+	grid-column-end: 4;
+	display: flex;
+	flex-direction: column;
 }
 
 
+.main-container .header-2 {
+	background-color: black;
+	border-radius: 10px;
+	text-align: center;
+}
+
+.main-container .header-2 .title-header-1 {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	font-size: 1em;
+	color: #ffff;
+}
 
 
-@media screen and (max-width: 1366px) {
+.main-container .section {
+	display: flex;
+	margin-top: 10px;
+	gap: 10px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	background-color: black;
+	width: 100%;
+	border: solid 1px grey;
+	border-radius: 10px;
+	height: 200px;
+	padding: 15px;
+}
+
+#card-1 .img-1,
+#card-2 .img-1 {
+	width: 100%;
+}
+
+.description {
+	color: white;
+	font-family: 'Wargate-Normal';
+	text-align: center;
+}
+
+.main-container .aside {
+	grid-column: 4 / 4;
 
 }
+
+.main-container .footer {
+	background: rgba(0, 0, 0, 0.6);
+	grid-row: 3 / 3;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	color: #ffff;
+	font-family: 'CFWorldatWarPERSO-Regular';
+	text-align: center;
+}
+
+
