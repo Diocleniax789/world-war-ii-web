@@ -40,7 +40,6 @@ body {
 .main-container .main,
 .main-container .aside,
 .main-container .footer {
-	background-color: yellow;
 	padding: 20px;
 	border-radius: 10px;
 }
@@ -60,34 +59,46 @@ body {
 
 .main-container .nav {
 	background: rgba(0, 0, 0, 0.6);
-	grid-column: 1 / 1;
-	width: 25%;
+	grid-column-start: 1;
+	grid-column-end: 1;
 }
 
 .main-container .nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
-	gap: 10px;
+	gap: 25px;
 }
 
-.main-container .nav li {
+.main-container .nav a {
 	color: #ffff;
-	font-family: 'Wargate-Normal';
+	font-family: 'Times New Roman';
+	text-decoration: none;
+	text-align: center;
+	padding: 10px;
+	border-bottom: solid 1px darkred;
+}
+
+.main-container .nav a:hover {
+	background-color: #ffff;
+	color: black;
+	transition: 0.5s ease-out;
 }
 
 .main-container .main {
-	background-color: purple;
+	background: rgba(0, 0, 0, 0.6);
 	grid-column-start: 2;
 	grid-column-end: 4;
 	display: flex;
 	flex-direction: column;
+
 }
 
 
 .main-container .header-2 {
 	background-color: black;
 	border-radius: 10px;
+	border: solid 1px grey;
 	text-align: center;
 }
 
@@ -128,6 +139,7 @@ body {
 }
 
 .main-container .aside {
+	background: rgba(0, 0, 0, 0.6);
 	grid-column: 4 / 4;
 
 }
