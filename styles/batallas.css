@@ -91,6 +91,13 @@ body {
 	transition: 0.5s ease-out;
 }
 
+.main-container .nav .img-2 {
+	margin-top: 25px;
+	width: 100%;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
 .main-container .main {
 	background: rgba(0, 0, 0, 0.6);
 	grid-column-start: 2;
@@ -158,9 +165,42 @@ body {
 
 .main-container .aside {
 	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
 	grid-column: 4 / 4;
-
 }
+
+.banner {
+	width: 100%;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+
+
+
+.container-button {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	margin-top: 5px;
+	gap: 5px;
+}
+
+.container-button .button {
+	background-color: #ffff;
+	padding: 5px;
+	border: solid 1px black;
+	border-radius: 5px;
+	font-family: 'Times New Roman';
+	color: #ffff;
+}
+
+.container-button .button a {
+	text-decoration: none;
+}
+
+
 
 .main-container .footer {
 	background: rgba(0, 0, 0, 0.6);
