@@ -55,6 +55,11 @@ body {
 	font-family: 'CFWorldatWarPERSO-Regular';
 	font-size: 1em;
 	color: #ffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 
 .main-container .nav {
@@ -77,6 +82,7 @@ body {
 	text-align: center;
 	padding: 10px;
 	border-bottom: solid 1px darkred;
+
 }
 
 .main-container .nav a:hover {
@@ -116,10 +122,11 @@ body {
 }
 
 .card {
+	background-image: url('../images/fondo6papel.jpg');
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
-	background-color: black;
+	gap: 20px;
 	width: 100%;
 	border: solid 1px grey;
 	border-radius: 10px;
@@ -128,14 +135,25 @@ body {
 }
 
 #card-1 .img-1,
-#card-2 .img-1 {
+#card-2 .img-1,
+#card-3 .img-1 {
 	width: 100%;
+	border: solid 2px black;
+	border-radius: 5px;
 }
 
 .description {
 	color: white;
-	font-family: 'Wargate-Normal';
+	font-family: 'Times New Roman';
 	text-align: center;
+	font-family: 2rem;
+	padding-bottom: 5px;
+	border-bottom: solid 1px darkred;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 
 .main-container .aside {
