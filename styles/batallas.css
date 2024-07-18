@@ -20,9 +20,9 @@
 
 body {
 	background-color: yellowgreen;
-/*	background-image: url('../images/fondo3.jpg');*/
+/*	background-image: url('../images/fondo3.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 .main-container {
@@ -66,6 +66,8 @@ body {
 	background: rgba(0, 0, 0, 0.6);
 	grid-column-start: 1;
 	grid-column-end: 1;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 .main-container .nav ul {
@@ -263,11 +265,71 @@ body {
 	text-align: center;
 }
 
-@media (min-width: 1440px) and (max-width: 1920px) {
+@media (max-width: 720px) {
 	body {
+		background-color: darkred;
+	}
 
+	.main-container .nav {
+		grid-row-start: 2;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	.main-container .nav ul {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+	.img-2 {
+		display: none;
+	}
+
+	.main-container .main {
+		grid-row-start: 3;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	.main-container .aside {
+		grid-row-start: 4;
+		grid-column-start: 1;
+		grid-column-end: -1;
+		grid-row: 4 / span 2;
+		grid-row-end: 4;
+	}
+
+	.main-container .footer {
+		grid-row: 5;
+		grid-column-start: 1;
+		grid-column-end: -1;
 	}
 
 }
 
+@media (min-width: 400px) {
+	.main-container .nav ul {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.main-container .main .section {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.card {
+		width: 90%;
+	}
+
+	#card-1 .img-1, 
+	#card-2 .img-1,
+	#card-3 .img-1{
+		width: 75%;
+
+
+	}
+
+}
 
