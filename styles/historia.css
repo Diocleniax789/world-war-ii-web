@@ -1,0 +1,128 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: tomato;
+}
+
+.main-container {
+	width: 90%;
+	max-width: 2000px;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-gap: 10px;
+	margin: 50px auto;
+}
+
+.main-container .header,
+.main-container .nav,
+.main-container .article,
+.main-container .banner-vertical,
+.main-container .banner-horizontal,
+.main-container .footer {
+	padding: 10px;
+	border-radius: 10px;
+}
+
+.main-container .header {
+	background: rgba(0, 0, 0, 0.6);
+	grid-row: 1;
+	grid-column-start: 1;
+	grid-column-end: -1;	
+}
+
+.main-container .nav {
+	background-color: rgba(0, 0, 0, 0.6);
+	grid-row: 2;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.main-container .nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	gap: 25px;
+}
+
+.main-container .nav a {
+	color: #ffffff;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.main-container .article {
+	background: rgba(0, 0, 0, 0.6);
+	grid-row: 3;
+	grid-column-start: 1;
+	grid-column-end: 4;
+	height: 600px;	
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+}
+
+.second-header { 
+	display: flex;
+	background-color: black;
+	border-radius: 10px;
+	border: solid 1px grey;
+	justify-content: center;
+}
+
+.second-header, .second-title {
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.container-text {
+	background-image: url('../images/fondo6papel.jpg');
+	background-size: cover;
+	display: flex;
+	width: 100%;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	gap: 10px;
+}
+
+.container-img {
+	width: 200%;
+	padding: 10px;
+}
+
+.container-img .img-1 {
+	width: 100%;
+}
+
+.container-text .text {
+	color: #ffffff;
+	font-size: 1rem;
+	padding: 10px;
+}
+
+
+.main-container .banner-vertical {
+	background: rgba(0, 0, 0, 0.6);
+	grid-column: 4;
+	grid-row: 3;
+}
+
+.main-container .banner-horizontal {
+	background: rgba(0, 0, 0, 0.6);
+	grid-row: 4;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	height: 200px;
+}
+
+.main-container .footer {
+	background: rgba(0, 0, 0, 0.6);
+	grid-row: 5;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+

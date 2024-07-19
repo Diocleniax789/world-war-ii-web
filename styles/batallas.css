@@ -63,8 +63,7 @@ body {
 
 .main-container .nav {
 	background: rgba(0, 0, 0, 0.6);
-	grid-column-start: 1;
-	grid-column-end: 1;
+	grid-column: 1;
 }
 
 .main-container .nav ul {
@@ -72,6 +71,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 25px;
+	width: 100%;
 }
 
 .main-container .nav a {
@@ -251,11 +251,10 @@ body {
 	text-align: center;
 }
 
-@media (min-width: 1536px) and (max-width: 1600px) {
+@media (min-width: 1536px) and (max-width: 1920px) {
 	.main-container .nav {
 		display: flex;
 		justify-content: center;
-		align-items: center;
 	}
 
 	.img-2 {
@@ -313,7 +312,7 @@ body {
 		}
 }
 
-@media (max-width: 768px) {
+@media (min-width: 580px) and(max-width: 768px) {
 	body {
 	    background-image: url('../images/bannernuevo.jpg');
 		background-position-x: 50%;
@@ -364,7 +363,7 @@ body {
 
 }
 
-@media (min-width: 375px) and (max-width: 400px) {
+@media (min-width: 375px) and (max-width: 420px) {
 	body {
 		background-image: url('../images/bannernuevo.jpg');
 		background-size: cover;
@@ -403,6 +402,7 @@ body {
 
 	.card {
 		width: 90%;
+		gap: 5px;
 	}
 
 	#card-1 .img-1,
