@@ -1,10 +1,21 @@
+@font-face {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
+}
+
+@font-face {
+	font-family: 'Maquina de Escribir';
+	src: url('../fonts/Maquina de Escribir.ttf') format(TrueType);
+}
+
 * {
 	margin: 0;
 	padding: 0;
 }
 
 body {
-	background-color: tomato;
+	background-image: url('../images/img13.jpg');
+	background-size: cover;
 }
 
 .main-container {
@@ -31,7 +42,15 @@ body {
 	background: rgba(0, 0, 0, 0.6);
 	grid-row: 1;
 	grid-column-start: 1;
-	grid-column-end: -1;	
+	grid-column-end: -1;
+	border: solid 1px grey;	
+}
+
+.main-container .header .main-title {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 2em;
+	margin: 5px;
 }
 
 .main-container .nav {
@@ -39,6 +58,7 @@ body {
 	grid-row: 2;
 	grid-column-start: 1;
 	grid-column-end: -1;
+	border: solid 1px grey;
 }
 
 .main-container .nav ul {
@@ -49,9 +69,18 @@ body {
 }
 
 .main-container .nav a {
+	font-family: 'CFWorldatWarPERSO-Regular';
 	color: #ffffff;
 	font-size: 1rem;
 	text-decoration: none;
+	padding: 5px;
+	border-bottom: solid 1px darkred;
+}
+
+.main-container .nav a:hover {
+	background-color: #ffffff;
+	color: black;
+	transition: 0.5s ease-out;
 }
 
 .main-container .article {
@@ -64,6 +93,7 @@ body {
 	flex-direction: column;
 	gap: 10px;
 	padding: 10px;
+	border: solid 1px grey;
 }
 
 .second-header { 
@@ -75,48 +105,113 @@ body {
 }
 
 .second-header, .second-title {
+	font-family: 'CFWorldatWarPERSO-Regular';
 	color: #ffffff;
 	font-size: 2rem;
+	margin: 5px;
 }
 
 .container-text {
-	background-image: url('../images/fondo6papel.jpg');
-	background-size: cover;
+	background: rgba(0, 0, 0, 0.6);
 	display: flex;
 	width: 100%;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	gap: 10px;
+	border-radius: 10px;
+	border: solid 1px grey;
 }
 
 .container-img {
-	width: 200%;
-	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	width: 250%;
+	padding: 15px;
+	gap: 5px;
 }
 
 .container-img .img-1 {
 	width: 100%;
+	border: solid 1px black;
+	border-radius: 5px;
+	border: solid 1px grey;
+}
+
+.container-img .description {
+	background-color: black;
+	font-family: 'Maquina de Escribir';
+	color: #ffffff;
+	font-size: 1rem;
+    text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+    text-align: center;	
+    padding: 3px;
+    border: solid 1px grey;
+    border-radius: 3px;
 }
 
 .container-text .text {
+	font-family: 'Maquina de Escribir';
 	color: #ffffff;
 	font-size: 1rem;
-	padding: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
-
 .main-container .banner-vertical {
-	background: rgba(0, 0, 0, 0.6);
+	background-image: url('../images/img31.jpg');
+	background-size: cover;
 	grid-column: 4;
 	grid-row: 3;
+	border: solid 1px grey;
+}
+
+.main-title-2 {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 3rem;
+    text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+     border-bottom: solid 1px darkred;
 }
 
 .main-container .banner-horizontal {
-	background: rgba(0, 0, 0, 0.6);
+	background-image: url('../images/img34.jpg');
+	background-position-y: 50%;
 	grid-row: 4;
 	grid-column-start: 1;
 	grid-column-end: -1;
 	height: 200px;
+	display: flex;
+	justify-content: center;
+	border: solid 1px grey;
+}
+
+.second-title-3 {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 5rem;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+     border-bottom: solid 1px darkred;
 }
 
 .main-container .footer {
@@ -124,5 +219,11 @@ body {
 	grid-row: 5;
 	grid-column-start: 1;
 	grid-column-end: -1;
+	font-size: 1rem;
+	color: #ffffff;
+	font-family: 'CFWorldatWarPERSO-Regular';
+	text-align: center;
+	padding: 15px;
+	border: solid 1px grey;
 }
 
