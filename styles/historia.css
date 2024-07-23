@@ -127,7 +127,7 @@ body {
 	flex-direction: column;
 	width: 250%;
 	padding: 15px;
-	gap: 5px;
+	gap: 7px;
 }
 
 .container-img .img-1 {
@@ -154,7 +154,7 @@ body {
 }
 
 .container-text .text {
-	font-family: 'Maquina de Escribir';
+	font-family: 'Arial';
 	color: #ffffff;
 	font-size: 1rem;
 	padding-top: 15px;
@@ -226,6 +226,7 @@ body {
 	padding: 15px;
 	border: solid 1px grey;
 }
+
 
 @media (min-width: 580px) and (max-width:768px) {
 	.main-container .article {
@@ -337,3 +338,71 @@ body {
 
 }
 
+@media (min-width: 360px) and (max-width: 1366px) {
+	.main-container {
+		grid-row: 5 / span 2;
+	}
+
+	.main-container .nav {
+		display: flex;
+		flex-direction: column;
+		grid-row: 2;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	.main-container .nav ul {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.main-container .article {
+		grid-row: 3;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	.main-container .container-img {
+		display: none;
+	}
+
+	.container-text .text  {
+		font-family: 'ARIAL';
+		margin-top: 0;
+		margin-left: 5px;
+		margin-right: 5px;
+	}	
+
+	.main-container .banner-vertical {
+		grid-row: 4;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+	.main-title-2 {
+		display: flex;
+		align-items: center;
+		margin: 0;
+		font-size: 2rem;
+	}
+
+	.main-container .banner-horizontal {
+		grid-row: 5;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	    background-size: cover;
+		background-position-x: 45%;
+	}
+
+	.second-title-3 {
+		font-size: 3rem;
+	}
+
+	.main-container .footer {
+		grid-row: 6;
+		grid-column-start: 1;
+		grid-column-end: -1;
+	}
+
+}
