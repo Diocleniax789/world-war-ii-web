@@ -16,6 +16,7 @@
 body {
 	background-image: url('../images/img13.jpg');
 	background-size: cover;
+	padding: 25px;
 }
 
 .main-container {
@@ -25,7 +26,7 @@ body {
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, auto);
 	grid-gap: 10px;
-	margin: 50px auto;
+	margin: auto;
 }
 
 .main-container .header,
@@ -164,6 +165,7 @@ body {
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
+     margin-bottom: 5px;
 }
 
 .main-container .banner-vertical {
