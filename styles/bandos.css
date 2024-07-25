@@ -1,0 +1,138 @@
+@font-face {
+	font-family: 'European War';
+	src: url('../fonts/European War.ttf') format(TrueType);
+}
+
+@font-face {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: yellowgreen;
+	margin: 0;
+	padding: 0;	
+}
+
+.main-container {
+	display: grid;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat(5, 1fr);
+	grid-gap: 5px;
+	max-width: 90%;
+	max-width: 2000px;
+	padding: 10px;
+	border: solid 1px grey;	
+	border-radius: 5px;	
+	margin: 10px;
+}
+
+.main-container .header,
+.main-container .nav,
+.main-container .content,
+.main-container .article,
+.main-container .container-banners,
+.main-container .footer {
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.main-container .header {
+	background-color: #000000;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 1 / 1;
+}
+
+.main-container .header .main-title {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	margin: 5px;
+}
+
+.main-container .nav {
+	background-color: #000000;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 2 / 2;
+	padding: 10px;
+
+}
+
+.main-container .nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+.main-container .nav a {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	border: solid 1px darkred;
+	text-decoration: none;
+	padding: 10px;
+}
+
+.main-container .nav a:hover {
+	background-color: #ffffff;
+	color: #000000;
+	transition: 0.3s ease-out;
+}
+
+.main-container .content {
+	background-color: black;
+	padding: 10px;
+	grid-column-start: 1;
+	grid-column-end: -1;
+    grid-row: 3 / 3;
+}
+
+.main-container .article {
+	background-color: lemonchiffon;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+	gap: 10px;
+}
+
+.main-container .article .second-header {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	font-size: 1rem;
+	color: #ffffff;
+}
+
+.container-texto {
+	background: rgb(0, 0, 0, 0.6);
+	border: solid 1px grey;
+	border-radius: 5px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+
+
+#container-texto-1 {
+
+}
+
+.main-container .container-banners {
+	background-color: lightcoral;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 4;
+	display: flex;
+	flex-direction: row;
+}
+
+.main-container .footer {
+	background-color: khaki;
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 5;
+}
