@@ -99,6 +99,8 @@ body {
 	flex-direction: column;
 	padding: 10px;
 	gap: 10px;
+	overflow-x: hidden;
+	overflow-y: scroll;
 }
 
 .main-container .article .second-header {
@@ -107,12 +109,27 @@ body {
 	color: #ffffff;
 }
 
+.card {
+	background-color: #000000;
+	width: 5%;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+
+
+
 .container-texto {
 	background: rgb(0, 0, 0, 0.6);
 	border: solid 1px grey;
 	border-radius: 5px;
-	overflow-x: hidden;
+	height: 200px;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 
