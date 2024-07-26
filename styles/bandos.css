@@ -14,9 +14,8 @@
 }
 
 body {
-	background-color: yellowgreen;
-	margin: 0;
-	padding: 0;	
+	background-image: url('../images/img13.jpg');
+	background-size: cover;
 }
 
 .main-container {
@@ -86,7 +85,7 @@ body {
 }
 
 .main-container .content {
-	background-color: black;
+	background: rgba(0, 0, 0, 0.6);
 	padding: 10px;
 	grid-column-start: 1;
 	grid-column-end: -1;
@@ -94,62 +93,106 @@ body {
 }
 
 .main-container .article {
-	background-color: lemonchiffon;
+	background: rgba(0, 0, 0, 0.6);
 	display: flex;
-	flex-direction: column;
+	justify-content: center;
 	padding: 10px;
-	gap: 10px;
+	gap: 15px;
 	overflow-x: hidden;
 	overflow-y: scroll;
-}
-
-.main-container .article .second-header {
-	font-family: 'CFWorldatWarPERSO-Regular';
-	font-size: 1rem;
-	color: #ffffff;
 }
 
 .card {
-	background-color: #000000;
-	width: 5%;
-	height: 50px;
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	justify-content: center;
+	width: 25%;
+	background-color: #000000;
+	border: solid 1px grey;
+	border-radius: 20px;
+	padding: 10px;
+	gap: 10px;
+}
+
+.third-header {
+	display: flex;
+	justify-content: center;
+	border: solid 1px grey;
+	border-radius: 20px;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.second-title {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.img {
+	width: 90%;
 	border: solid 1px grey;
 	border-radius: 5px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-texto-imagen {
+	display: flex;
+	flex-direction: column-reverse;
+	gap: 10px;
+}
+
+.texto {
+	border-radius: 20px;
+	border: solid 1px grey;
+	padding: 10px;
+	font-family: 'Arial';
+	color: #ffffff;
+	text-align: center;
+}
+
+.container-texto-e-imagenes {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
 }
 
 
 
 
-.container-texto {
-	background: rgb(0, 0, 0, 0.6);
-	border: solid 1px grey;
-	border-radius: 5px;
-	height: 200px;
-	overflow-y: scroll;
-	overflow-x: hidden;
-}
 
 
 
-#container-texto-1 {
 
+
+
+.banner {
+	width: 50%;
 }
 
 .main-container .container-banners {
-	background-color: lightcoral;
+	background: rgba(0, 0, 0, 0.6);
 	grid-column-start: 1;
 	grid-column-end: -1;
 	grid-row: 4;
 	display: flex;
-	flex-direction: row;
+	justify-content: center;
+}
+
+.container-banners a {
+	display: flex;
+	justify-content: center;
 }
 
 .main-container .footer {
-	background-color: khaki;
+	background: rgba(0, 0, 0, 0.6);
 	grid-column-start: 1;
 	grid-column-end: -1;
 	grid-row: 5;
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	text-align: center;
+
 }
