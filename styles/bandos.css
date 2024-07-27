@@ -22,19 +22,16 @@ body {
 	display: grid;
 	grid-template-rows: repeat(5, auto);
 	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 5px;
+	grid-gap: 10px;
 	max-width: 90%;
 	max-width: 2000px;
 	padding: 10px;
-	border: solid 1px grey;	
-	border-radius: 5px;	
 	margin: 10px;
 }
 
 .main-container .header,
 .main-container .nav,
 .main-container .content,
-.main-container .article,
 .main-container .container-banners,
 .main-container .footer {
 	border: solid 1px grey;
@@ -120,7 +117,7 @@ body {
 	width: 25%;
 	background-color: #000000;
 	border: solid 1px grey;
-	border-radius: 20px;
+	border-radius: 5px;
 	padding: 10px;
 	gap: 10px;
 }
@@ -129,7 +126,7 @@ body {
 	display: flex;
 	justify-content: center;
 	border: solid 1px grey;
-	border-radius: 20px;
+	border-radius: 5px;
 	padding: 5px;
 	padding-left: 10px;
 	padding-right: 10px;
@@ -156,6 +153,7 @@ body {
 }
 
 .texto {
+	background-color: #000000;
 	border-radius: 20px;
 	border: solid 1px grey;
 	padding: 10px;
@@ -199,6 +197,32 @@ body {
 	padding: 10px;
 
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+	.main-container .container-texto-e-imagenes {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+	}
+
+	.main-container .container-texto-e-imagenes .card {
+		width: 95%;
+	}
+
+	.main-container .container-banners {
+		display: flex;
+		flex-direction: row;
+		padding: 5px;
+	}
+
+	.main-container .container-banners .banner {
+		width: 45%;
+	}
+
+}
+
 
 @media (min-width: 375px) and (max-width: 420px) {
 	
