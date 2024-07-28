@@ -1,234 +1,104 @@
 @font-face {
-	font-family: 'European War';
-	src: url('../fonts/European War.ttf') format(TrueType);
+	font-family:'CFWorldatWarPERSO-Regular';
+	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
 }
 
-@font-face {
-	font-family: 'War is Over';
-	src: url('../fonts/War is Over.ttf') format(TrueType);
+* {
+	margin: 0;
+	padding: 0;
 }
 
 body {
 	background-image: url('../images/img13.jpg');
-	margin: 0;
-	padding: 10px;
+	background-size: cover;
+	padding: 5px;
 }
 
-#encabezado {
-	background-color: black;
-	display: flex;
-	justify-content: center;
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(5, auto);
+	grid-gap: 10px;
+	width: 100%;
+	margin: auto;
 }
+
+.header {
+	background-color: #000000;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	grid-row: 1;
+	padding: 10px;
+} 
 
 .main-title {
-	font-family: 'War is Over';
-	color: white;
-	font-size: 2em;
+	font-family:'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 2rem;
 }
 
-#main-background {
-	margin-top: 15px;
+
+#contenido {
+	grid-column-start: 2;
+	grid-column-end: 6;
+	grid-row: 3;
 	display: flex;
-	justify-content: center;
-	border: solid 2px grey;
+	gap: 5px;
 }
 
-#main-background img{
+.border {
+	border: solid 1px red;
+	border-radius: 5px;
+}
+
+.img {
+	width: 35%;
+}
+
+.img-1 {
+	width: 45%;
+}
+
+.img-2 {
 	width: 100%;
 }
 
- h2 {
- 	border: double 2px grey;
- 	font-size: 3em;
- 	font-family: arial;
-	color: white;
-	text-align: center;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-     padding: 5px;
-     margin: 0;
+img:hover{
+	transform: scale(1.1);
+	transition: 0.3s ease-out;
 }
 
-.banner {
+#contenedor-0 {
 	display: flex;
-	flex-direction: column;
+	gap: 5px;
 	justify-content: center;
-	width: 50%;
-	border: double 2px grey;	
-}
-
-#container-1 {
-	background: rgba(0, 0, 0, 0.6);
-	display: flex;
-	flex-direction: column;
-	padding: 15px;
-	height: 50%;
-	top: 5%;
-	gap: 10px;
-	border: double 2px grey;
-	margin-top: 15px;
-}
-
-#container-imagenes {
-	display: flex;
-	flex-direction: column;
-	border: solid 2px grey;
 	padding: 10px;
-    gap: 30px;
 }
 
-.opcion-nombre {
-	color: white;
-	font-family: 'Times New Roman';
-	font-size: 2em;
-	text-align: center;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
+.contenedor-1-1 {
+	display: flex;
+	gap: 10px;
+	align-items: center;
 }
 
-
-#opcion-1 {
-	background-image: url('../images/img12.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-x: auto;
-	background-position-y: 58%;
-	border: solid 2px grey;
-	border-radius: 20px;
-	width: 100%;
-}
-
-#opcion-2 {
-	background-image: url('../images/img15.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: 20%;
-	border: solid 2px grey;
-	border-radius: 20px;
-	width: 100%;
-}
-
-#opcion-3 {
-	background-image: url('../images/img7.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: 60%;
-	border: solid 2px grey;
-	border-radius: 20px;
-	width: 100%;
-}
-
-#opcion-4 {
-	background-image: url('../images/img8.jpg');
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position-y: 25%;
-	background-position-x: 100%;
-	border: solid 2px grey;
-	border-radius: 20px;
-	width: 100%;
-}
-
-.title-banner {
-	color: white;
-	font-family: 'Times New Roman';
-	font-size: 3em;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-     text-align: center;
-}
-
-
-#footer {
-	background-color: black;
-	border: double 2px grey;
-	width: 100%;
-	margin-top: 15px;
-}
-
-#footer h3 {
-	font-family: 'Times New Roman';
-	color: white;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-	margin: 10px;
-	text-align: center;
-}
-
-}
-
-@media (max-width: 480px) {
-
-#container-0 {
+.contenedor-2 {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	margin: 0;
+	padding: 0;
 }
 
-
-.opcion-nombre {
-	font-size: 2em;
+.footer {
+	background-color: #000000;
+	grid-row: 5;
+	grid-column-start: 2;
+	grid-column-end: 6;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
-
-.banner-3 {
-	background-image: url('../images/banner8.jpg');
-	background-position-x: -150px;
-	width: 100%;
-	border: solid 3px grey;
-
-}
-
-.banner-4 {
-	background-image: url('../images/img23.jpg');
-	background-position-x: 1500px;
-	width: 15%;
-	border: solid 3px grey;
-}
-
-.banner-5 {
-	background-image: url('../images/img25.jpg');
-	background-position-x: 1300px;
-	width: 15%;
-	border: solid 3px grey;
-
-}
-
-.banner-6 {
-	background-image: url('../images/img21.jpg');
-	background-position-x: 1110px;
-	width: 15%;
-	border: solid 3px grey;
-
-}
-
-.banner-7 {
-	background-image: url('../images/img31.jpg');
-	background-position-x: 1850px;
-	background-position-y: 1750px;
-	width: 15%;
-	border: solid 3px grey;
-}
-
-.banner-3, .banner-4, .banner-5, .banner-6, .banner-7 {
-	display: none;
-}
-
-	
-}
-
-
 
 
 
