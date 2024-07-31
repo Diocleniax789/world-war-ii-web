@@ -1,0 +1,140 @@
+@font-face {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('../images/img13.jpg');
+	background-size: cover;
+	
+}
+
+.main-content {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-template-rows: repeat(4, auto);
+	grid-gap: 5px;
+	width: 90%;
+	max-width: 2000px;
+	margin: 50px auto;
+}
+
+.header {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 1;
+	background-color: #000000;
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.header .main-title {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 2rem;
+}
+
+.nav {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 2;
+	background-color: #000000;
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.nav ul {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	list-style: none;
+}
+
+.nav a {
+	text-decoration: none;
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	padding: 10px;
+}
+
+.nav a:hover {
+	background-color: #ffffff;
+	color: #000000;
+	transition: 0.5s ease-out;
+}
+
+.content {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 3;
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 1px grey;
+	border-radius: 5px;
+	display: flex;
+	gap: 20px;
+}
+
+.container {	
+	background-color: #000000;
+	border: solid 1px grey;
+	border-radius: 5px;
+	width: 50%;
+	height: 500px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding:10px;
+}
+
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	width: 100%;
+}
+
+.main-title-card {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 2rem;
+	margin: 5px;
+	border-bottom: solid 1px grey;
+}
+
+.img {
+	width: 25%;
+	border: solid 1px grey;
+	border-radius: 5px;
+	margin: 5px;
+}
+
+.texto {
+	font-family: 'arial';
+	color: #ffffff;	
+	margin: 5px;
+}
+
+#card-1,#card-2,#card-3,#card-4 {
+	background-color: #darkred;
+	border: solid 1px grey;
+}
+
+.footer {
+	grid-column-start: 1;
+	grid-column-end: -1;
+	grid-row: 4;
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+
