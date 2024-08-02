@@ -11,6 +11,7 @@
 body {
 	background-image: url('../images/img13.jpg');
 	background-size: cover;
+	background-repeat: no-repeat;
 }
 
 .main-content {
@@ -108,7 +109,7 @@ body {
 
 .gallery {
 	display: flex;
-	gap: 5px;
+	gap: 10px;
 	justify-content: center;
 }
 
@@ -116,20 +117,20 @@ body {
 	width: 25%;
 	border: solid 1px grey;
 	border-radius: 5px;
-	margin: 5px;
+	margin: 10px;
 }
 
 .imgflag {
 	width: 50%;
 	border: solid 1px grey;
 	border-radius: 5px;
-	margin: 5px;
+	margin: 10px;
 }
 
 .texto {
 	font-family: 'arial';
 	color: #ffffff;	
-	margin: 5px;
+	margin: 10px;
 }
 
 #card-1,#card-2,#card-3,#card-4,#card-5,#card-6,#card-7{
@@ -152,6 +153,11 @@ body {
 }
 
 @media (max-width: 420px) {
+
+	body {
+		background-size: cover;
+	}
+
 	.nav ul {
 		display: flex;
 		flex-direction: column;
