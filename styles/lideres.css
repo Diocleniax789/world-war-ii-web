@@ -73,9 +73,6 @@ body {
 	grid-column-start: 1;
 	grid-column-end: -1;
 	grid-row: 3;
-	background: rgba(0, 0, 0, 0.6);
-	border: solid 1px grey;
-	border-radius: 5px;
 	display: flex;
 	gap: 20px;
 }
