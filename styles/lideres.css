@@ -62,12 +62,12 @@ body {
 	font-family: 'CFWorldatWarPERSO-Regular';
 	color: #ffffff;
 	padding: 10px;
+	transition: background 1s linear;
 }
 
 .nav a:hover {
 	background-color: #ffffff;
 	color: #000000;
-	transition: 0.5s ease-out;
 }
 
 .content {
@@ -150,6 +150,17 @@ body {
 	font-size: 2em;
 	text-align: center;
 	padding: 5px;
+}
+
+@media (min-width: 768) and (max-width: 1024) {
+
+	.main-title-card {
+		text-align: center;
+	}
+
+	.texto {
+		text-align: center;
+	}
 }
 
 @media (max-width: 420px) {
