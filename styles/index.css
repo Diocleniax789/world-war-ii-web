@@ -1,3 +1,86 @@
+@font-face {
+	font-family:'CFWorldatWarPERSO-Regular' ;
+	src:url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: yellowgreen;
+}
+
+.main {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(3, auto);
+	max-width: 2000px;
+	width: 90%;
+	border: solid 1px grey;
+	border-radius: 5px;
+	background: rgba(0, 0, 0, 0.6);
+	margin: 100px auto;
+}
+
+.header {
+	display: flex;
+	justify-content: center;
+	grid-column: 1;
+	grid-row: 1;
+	background-color: #000000;
+	border: solid 1px grey;	
+	padding: 5px;
+}
+
+.header h1 {
+	font-family: 'CFWorldatWarPERSO-Regular';
+	color: #ffffff;
+	font-size: 3em;
+}
+
+.boton {
+	width: 80%;
+	height: 50px;
+	background-color: pink;
+	border: solid 1px grey;
+	display: flex;
+	justify-content: center;
+}
+
+.contenedor {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+
+
+.footer {
+	padding: 5px;
+	grid-column: 1;
+	grid-row: 3;
+	border: solid 1px grey;
+	background-color: #000000;
+	color: #ffffff;
+	font-family: 'CFWorldatWarPERSO-Regular';
+	font-size: 20px;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 
