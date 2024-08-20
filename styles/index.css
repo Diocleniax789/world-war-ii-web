@@ -105,6 +105,11 @@ a {
 	font-size: 2em;
 }
 
+.boton:hover {
+	filter: brightness(1.1);
+	transition: 0.3s ease;
+}
+
 
 .footer {
 	padding: 5px;
