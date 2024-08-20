@@ -9,7 +9,8 @@
 }
 
 body {
-	background-color: yellowgreen;
+	background-image: url('../images/img13.jpg');
+	background-size: cover;
 }
 
 .main {
@@ -23,7 +24,7 @@ body {
 	background: rgba(0, 0, 0, 0.6);
 	grid-gap: 5px;
 	padding: 10px;
-	margin: 10% auto;
+	margin: 100px auto;
 
 }
 
@@ -34,7 +35,7 @@ body {
 	grid-row: 1;
 	background-color: #000000;
 	border: solid 1px grey;	
-	padding: 5px;
+	padding: 10px;
 }
 
 .header h1 {
@@ -45,7 +46,7 @@ body {
 
 .boton {
 	width: 80%;
-	height: 70px;
+	height: 100px;
 	background-color: pink;
 	border: solid 1px grey;
 	display: flex;
@@ -62,6 +63,37 @@ body {
     align-items: center;
     gap: 10px;
     padding: 15px;
+}
+
+
+#boton-1{
+	background-image: url('../images/img22.jpg');
+	background-size: cover;
+	background-position-y: 30%;
+}
+
+#boton-2 {
+	background-image: url('../images/img12.jpg');
+	background-size: cover;
+	background-position-y: 40%;
+}
+
+#boton-3 {
+	background-image: url('../images/img21.jpg');
+	background-size: cover;
+	background-position-y: 20%;
+}
+
+#boton-4 {
+	background-image: url('../images/img8.jpg');
+	background-size: cover;
+	background-position-y: 20%;
+}
+
+#boton-5 {
+	background-image: url('../images/img7.jpg');
+	background-size: cover;
+	background-position-y: 60%;
 }
 
 a {
