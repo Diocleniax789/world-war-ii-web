@@ -21,7 +21,10 @@ body {
 	border: solid 1px grey;
 	border-radius: 5px;
 	background: rgba(0, 0, 0, 0.6);
-	margin: 100px auto;
+	grid-gap: 5px;
+	padding: 10px;
+	margin: 10% auto;
+
 }
 
 .header {
@@ -47,6 +50,7 @@ body {
 	border: solid 1px grey;
 	display: flex;
 	justify-content: center;
+	border-radius: 5px;
 
 }
 
