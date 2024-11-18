@@ -107,11 +107,11 @@ body {
 }
 
 .main-title-card {
-	background-color: #000000;
-	color: #ffffff;
+	font-family: 'GoudyBookletter1911';
+	color: #000000;
 	font-size: 2rem;
 	margin: 5px;
-	border-bottom: solid 1px grey;
+	border-bottom: solid 1px black;
 }
 
 .gallery {
@@ -122,14 +122,14 @@ body {
 
 .img {
 	width: 25%;
-	border: solid 5px darkgrey;
+	border: solid 5px #000000;
 	border-radius: 5px;
 	margin: 10px;
 }
 
 .imgflag {
 	width: 50%;
-	border: solid 5px floralwhite;
+	border: solid 5px #000000;
 	border-radius: 5px;
 	margin: 10px;
 }
