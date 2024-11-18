@@ -28,7 +28,7 @@ body {
 	display: grid;
 	grid-template-rows: repeat(5, auto);
 	grid-template-columns: repeat(5, 1fr);
-	grid-gap: 10px;
+	grid-gap: 25px;
 	max-width: 90%;
 	max-width: 2000px;
 	padding: 10px;
