@@ -35,6 +35,8 @@ body {
 	grid-column-start: 1;
 	grid-column-end: -1;
 	grid-row: 1;
+	display:  flex;
+	justify-content: center;
 	background-color: #000000;
 	border: solid 1px grey;
 	border-radius: 5px;

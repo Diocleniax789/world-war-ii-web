@@ -8,6 +8,12 @@
 	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
 }
 
+@font-face {
+	font-family: 'GoudyBookletter1911';
+	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -157,8 +163,8 @@ body {
 	border-radius: 20px;
 	border: solid 1px grey;
 	padding: 10px;
-	font-family: 'Arial';
-	color: yellow;
+	font-family: 'GoudyBookletter1911';
+	color: #ffffff;
 	text-align: center;
 }
 
