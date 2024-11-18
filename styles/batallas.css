@@ -13,6 +13,12 @@
 	src: url('../fonts/European War.otf') format(OpenType);
 }
 
+@font-face {
+	font-family: 'GoudyBookletter1911';
+	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
+
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -232,7 +238,7 @@ body {
 }
 
 .text {
-	font-family: 'Times New Roman';
+	font-family: 'GoudyBookletter1911';
 	font-size: 1rem;
 	color: white;
     text-shadow: 	
