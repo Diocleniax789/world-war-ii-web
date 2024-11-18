@@ -107,7 +107,7 @@ body {
 }
 
 .main-title-card {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	background-color: #000000;
 	color: #ffffff;
 	font-size: 2rem;
 	margin: 5px;
@@ -136,12 +136,12 @@ body {
 
 .texto {
 	font-family: 'GoudyBookletter1911';
-	color: #ffffff;	
+	color: #000000;	
 	margin: 10px;
 }
 
 #card-1,#card-2,#card-3,#card-4,#card-5,#card-6,#card-7{
-	background-color: #darkred;
+	background-image: url('../images/old-paper.jpg');
 	border: solid 1px grey;
 }
 
