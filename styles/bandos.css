@@ -168,6 +168,9 @@ body {
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	text-align: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	height: 300px;
 }
 
 .container-texto-e-imagenes {
