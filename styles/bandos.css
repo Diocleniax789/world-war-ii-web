@@ -77,10 +77,10 @@ body {
 }
 
 .main-container .nav a {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	text-decoration: none;
-	padding: 10px;
+	padding: 5px;
 	transition: background 1s linear;
 }
 
@@ -110,7 +110,7 @@ body {
 }
 
 .article .title-article {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2rem;
 	border-top: solid 1px grey;
@@ -141,7 +141,7 @@ body {
 }
 
 .second-title {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2rem;
 }
