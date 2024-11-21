@@ -53,9 +53,11 @@ body {
 }
 
 .main-container .header .main-title {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	display: flex;
+	justify-content: center;
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
-	margin: 5px;
+	margin: 10px;
 }
 
 .main-container .nav {
