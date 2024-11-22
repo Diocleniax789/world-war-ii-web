@@ -58,6 +58,8 @@ body {
 }
 
 .main-container .header .title-header {
+	display: flex;
+	justify-content:  center;
 	font-family: 'GoudyBookletter1911';
 	font-size: 1em;
 	color: #ffff;
