@@ -183,7 +183,7 @@ body {
 	border: solid 1px grey;
 	border-radius: 5px;
 	padding: 5px;
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	font-size: 15px;
 	color: #ffff;
 }
@@ -256,7 +256,7 @@ body {
 	grid-column-start: 1;
 	grid-column-end: -1;
 	color: #ffff;
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	text-align: center;
 }
 
