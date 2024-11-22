@@ -49,6 +49,7 @@ body {
 .main-container .footer {
 	padding: 20px;
 	border-radius: 10px;
+	border: solid 1px grey;
 }
 
 .main-container .header {
