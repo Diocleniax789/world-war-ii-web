@@ -1,9 +1,4 @@
 @font-face {
-	font-family: 'CFWorldatWarPERSO-Regular';
-	src: url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
-}
-
-@font-face {
 	font-family: 'GoudyBookletter1911';
 	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
 
@@ -44,7 +39,7 @@ body {
 }
 
 .header .main-title {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2rem;
 }
