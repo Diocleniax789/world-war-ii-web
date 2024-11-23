@@ -87,11 +87,12 @@ body {
 }
 
 .main-container .nav a {
+	text-decoration: none;
 	color: #ffff;
+	border-radius: 3px;
 	display: flex;
 	justify-content: center;
 	font-family: 'GoudyBookletter1911';
-	text-decoration: none;
 	padding: 5px;
 	transition: background 1s linear;
 }
@@ -99,6 +100,7 @@ body {
 .main-container .nav a:hover {
 	background-color: #ffff;
 	color: black;
+	border-radius: 3px;
 }
 
 .main-container .nav .img-2 {
