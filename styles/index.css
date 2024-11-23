@@ -1,8 +1,8 @@
 @font-face {
-	font-family:'CFWorldatWarPERSO-Regular' ;
-	src:url('../fonts/CFWorldatWarPERSO-Regular.ttf') format(TrueType);
-}
+	font-family: 'GoudyBookletter1911';
+	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
 
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -38,7 +38,7 @@ body {
 }
 
 .header h1 {
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 3em;
 }
@@ -51,7 +51,6 @@ body {
 	display: flex;
 	justify-content: center;
 	border-radius: 5px;
-
 }
 
 .contenedor {
@@ -99,14 +98,13 @@ a {
 	display: flex;
 	align-items: center;
 	text-decoration: none;
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2em;
 }
 
 .boton:hover {
-	filter: brightness(1.1);
-	transition: 0.3s ease;
+	filter: brightness(1.1);	
 }
 
 
@@ -117,7 +115,7 @@ a {
 	border: solid 1px grey;
 	background-color: #000000;
 	color: #ffffff;
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'GoudyBookletter1911';
 	font-size: 20px;
 	text-align: center;
 }
