@@ -31,6 +31,12 @@ body {
 	background-repeat: no-repeat;
 }
 
+a {
+	text-decoration: none;
+    color: inherit;
+}
+
+
 .main-container {
 	width: 90%;
 	max-width: 2000px;
@@ -150,8 +156,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	width: 100%;
-	border: solid 1px grey;
+	width: 90%;
+	border: solid 3px grey;
 	border-radius: 10px;
 	height: 300px;
 	padding: 15px;
@@ -161,7 +167,7 @@ body {
 #card-2 .img-1,
 #card-3 .img-1 {
 	width: 100%;
-	border: solid 2px black;
+	border: solid 3px black;
 	border-radius: 5px;
 }
 
@@ -216,7 +222,7 @@ body {
 	flex-direction: column;
 	gap: 10px;
 	overflow-y: scroll;
-	height: 200px;
+	height: 300px;
 	padding: 10px;
 	overflow-x: hidden;
 }
