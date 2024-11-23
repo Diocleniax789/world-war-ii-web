@@ -47,7 +47,7 @@ body {
 .main-container .main,
 .main-container .aside,
 .main-container .footer {
-	padding: 20px;
+	padding: 10px;
 	border-radius: 10px;
 	border: solid 1px grey;
 }
@@ -93,12 +93,12 @@ body {
 	font-family: 'GoudyBookletter1911';
 	text-decoration: none;
 	padding: 5px;
+	transition: background 1s linear;
 }
 
 .main-container .nav a:hover {
 	background-color: #ffff;
 	color: black;
-	transition: background 1s linear;
 }
 
 .main-container .nav .img-2 {
