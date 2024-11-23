@@ -12,17 +12,16 @@
 body {
 	background-image: url('../images/img13.jpg');
 	background-size: cover;
-	padding: 25px;
 }
 
 .main-container {
 	width: 90%;
 	max-width: 2000px;
+	margin: 50px auto;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, auto);
 	grid-gap: 10px;
-	margin: auto;
 }
 
 .main-container .header,
