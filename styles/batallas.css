@@ -24,12 +24,14 @@
 	padding: 0;
 }
 
+
 body {
 	
 	background-image: url('../images/fondo3.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+
 
 a {
 	text-decoration: none;
@@ -157,7 +159,7 @@ a {
 	flex-direction: column;
 	gap: 10px;
 	width: 90%;
-	border: solid 3px grey;
+	border: solid 1px grey;
 	border-radius: 10px;
 	height: 300px;
 	padding: 15px;
