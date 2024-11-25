@@ -3,3 +3,8 @@
 	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
 
 }
+
+*{
+	padding: 0;
+	margin: 0;
+}
