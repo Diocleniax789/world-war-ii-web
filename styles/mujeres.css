@@ -13,3 +13,9 @@ body{
 
 	background-color: yellowgreen;
 }
+
+.main-container{
+	display: grid;
+	grid-column-start: 1;
+	
+}
