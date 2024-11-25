@@ -21,6 +21,8 @@ a{
 
 .main-container{
 	display: grid;
-	grid-column-start: 1;
+	width: 90%;
+	max-width: 2000px;
+	margin: 50px auto;
 	
 }
