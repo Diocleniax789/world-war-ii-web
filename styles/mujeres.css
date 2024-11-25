@@ -21,8 +21,10 @@ a{
 
 .main-container{
 	display: grid;
+	grid-gap: 10px;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat(2, 1fr);
 	width: 90%;
 	max-width: 2000px;
 	margin: 50px auto;
-	
 }
