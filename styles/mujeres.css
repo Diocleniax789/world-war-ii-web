@@ -161,6 +161,19 @@ p{
 	background-position-y: -60px;
 }
 
+h2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+	font-size: 4rem;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+}
+
 .container-cards{
 	background: rgba(0, 0, 0, 0.6);
 	display: grid;
@@ -187,6 +200,7 @@ p{
 }*/
 
 .container{
+	background: rgba(0, 0, 0, 0.6);
 	display: flex;
 	overflow-y: hidden;
 	overflow-x: scroll;
