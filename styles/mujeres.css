@@ -17,6 +17,7 @@ body{
 a{
 	text-decoration: none;
 	color: inherit;
+	font-family: 'GoudyBookletter1911';
 }
 
 
@@ -31,3 +32,49 @@ a{
 	max-width: 2000px;
 	margin: 50px auto;
 }
+
+.main-container .header,
+.main-container .main-content,
+.main-container .navegator,
+.main-container .article,
+.main-container .banners,
+.main-container .banner,
+.main-container .container-cards,
+.main-container .footer{
+	border: solid 1px grey;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+/* aca se encuentra el encabezado */
+
+.header{
+	display: grid;
+	grid-row: 1 / 1;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.header #title{
+	display: flex;
+	justify-content: center;
+	font-family: 'GoudyBookletter1911';
+}
+
+
+/* aca se encuentra el navegaodr */
+
+.navegator {
+	display: grid;
+	grid-row: 2 / 2;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
+
+.navegator ul{
+	display: flex;
+	gap: 15px;
+	justify-content: center;
+	list-style: none;
+}
+
