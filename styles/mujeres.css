@@ -193,6 +193,15 @@ p{
 	gap: 5px;
 }
 
+.container::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+.container::-webkit-scrollbar-thumb {
+    background: #000000;
+}
+
+
 /* aca se encuentra el pie de pagina */
 
 .footer{
