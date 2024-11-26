@@ -32,7 +32,7 @@ body {
 	justify-content: center;
 	grid-column: 1;
 	grid-row: 1;
-	background-color: #000000;
+	background: url('../images/fireChispa.jpg');
 	border: solid 1px grey;	
 	padding: 10px;
 }
@@ -68,30 +68,35 @@ body {
 	background-image: url('../images/img22.jpg');
 	background-size: cover;
 	background-position-y: 30%;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 #boton-2 {
 	background-image: url('../images/img12.jpg');
 	background-size: cover;
 	background-position-y: 40%;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 #boton-3 {
 	background-image: url('../images/img21.jpg');
 	background-size: cover;
 	background-position-y: 20%;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 #boton-4 {
 	background-image: url('../images/img8.jpg');
 	background-size: cover;
 	background-position-y: 20%;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 #boton-5 {
 	background-image: url('../images/img7.jpg');
 	background-size: cover;
 	background-position-y: 60%;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 a {
@@ -101,10 +106,15 @@ a {
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2em;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 
 .boton:hover {
-	filter: brightness(1.1);	
+	filter: brightness(1.2);	
 }
 
 
