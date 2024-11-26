@@ -16,9 +16,18 @@ body{
 }
 
 a{
+	padding: 5px;
 	text-decoration: none;
-	color: inherit;
+	color: white;
 	font-family: 'GoudyBookletter1911';
+	transition: background 1s linear;
+	border-radius: 5px;
+}
+
+a:hover{
+	background-color: white;
+	color: black;
+	border-radius: 5px;
 }
 
 
@@ -27,8 +36,8 @@ a{
 .main-container{
 	display: grid;
 	grid-gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
 	grid-template-rows: repeat(5, auto);
-	grid-template-columns: repeat(2, 1fr);
 	width: 90%;
 	max-width: 2000px;
 	margin: 50px auto;
@@ -39,8 +48,10 @@ a{
 .main-container .navegator,
 .main-container .article,
 .main-container .banners,
+.main-container .main-content-1,
 .main-container .banner,
 .main-container .container-cards,
+.main-container .container,
 .main-container .footer{
 	border: solid 1px grey;
 	border-radius: 5px;
@@ -54,6 +65,9 @@ a{
 	grid-row: 1 / 1;
 	grid-column-start: 1;
 	grid-column-end: -1;
+	background: url('../images/fireChispa.jpg');
+	background-size: cover;
+	background-position-y: -10px;
 }
 
 .header #title{
@@ -61,13 +75,14 @@ a{
 	justify-content: center;
 	font-family: 'GoudyBookletter1911';
 	font-size: 2rem;
+	color: white;
 }
 
 
 /* aca se encuentra el navegaodr */
 
 .navegator {
-	display: grid;
+	background-color: #000000;
 	grid-row: 2 / 2;
 	grid-column-start: 1;
 	grid-column-end: -1;
@@ -80,3 +95,66 @@ a{
 	list-style: none;
 }
 
+
+/* aca se encuentra el contenido principal */
+
+.main-content{
+	display: grid;
+	grid-row: 3 / 10;
+	grid-gap: 10px;
+	grid-column: 1 / -1;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(5, auto);
+}
+
+.banner{
+	height: 150px;
+}
+
+.banners{
+	display: grid;
+	grid-gap: 10px;
+	grid-row: 1 / 4;
+}
+
+.container{
+	display: grid;
+	grid-row: 4;
+	grid-column: 1;
+}
+
+
+.main-content-1{
+	display: grid;
+	grid-gap: 10px;
+	grid-column-start: 2;
+	grid-column-end: -1;
+	grid-row: 1 / -1;
+	grid-template-rows: repeat(5, auto);
+	grid-template-columns: repeat(2, 1fr);
+}
+
+
+.article{
+	display: grid;
+	grid-column: 1 / -1;
+}
+
+.container-cards{
+	display: grid;
+	grid-row: 2 / -1;
+	grid-column: 1 / -1;
+}
+
+/* aca se encuentra el pie de pagina */
+
+.footer{
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-family: 'GoudyBookletter1911';
+	font-size: 1rem;
+	display: grid;
+	grid-column-start: 1;
+	grid-column-end: -1;
+}
