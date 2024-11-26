@@ -11,7 +11,10 @@
 
 body{
 
-	background-color: yellowgreen;
+	background: url('../images/background45.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(10px);
 	font-size: 16px;
 }
 
@@ -49,6 +52,7 @@ a:hover{
 .main-container .article,
 .main-container .banners,
 .main-container .main-content-1,
+.main-container .header-1,
 .main-container .banner,
 .main-container .container-cards,
 .main-container .container,
@@ -140,10 +144,21 @@ a:hover{
 	grid-column: 1 / -1;
 }
 
+.header-1{
+	display: flex;
+	justify-content: right;
+	height: 20px;
+	font-family: 'GoudyBookletter1911';
+	color: #ffffff;
+	background-color: #000000;
+
+}
+
 .container-cards{
 	display: grid;
 	grid-row: 2 / -1;
 	grid-column: 1 / -1;
+
 }
 
 /* aca se encuentra el pie de pagina */
@@ -157,4 +172,5 @@ a:hover{
 	display: grid;
 	grid-column-start: 1;
 	grid-column-end: -1;
+	background-color: #000000;
 }
