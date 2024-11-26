@@ -25,6 +25,7 @@ body {
 	grid-gap: 5px;
 	padding: 10px;
 	margin: 100px auto;
+	border-radius: 5px;
 }
 
 .header {
