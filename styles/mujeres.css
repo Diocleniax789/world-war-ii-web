@@ -18,21 +18,9 @@ body{
 	font-size: 16px;
 }
 
-a{
-	padding: 5px;
-	text-decoration: none;
-	color: white;
+p{
 	font-family: 'GoudyBookletter1911';
-	transition: background 1s linear;
-	border-radius: 5px;
 }
-
-a:hover{
-	background-color: white;
-	color: black;
-	border-radius: 5px;
-}
-
 
 /* esto conforma todo el contenido de la pagina */
 
@@ -53,9 +41,10 @@ a:hover{
 .main-container .banners,
 .main-container .main-content-1,
 .main-container .header-1,
-.main-container .banner,
+.main-container .text,
 .main-container .container-cards,
 .main-container .container,
+.main-container .tarjetas,
 .main-container .footer{
 	border: solid 1px grey;
 	border-radius: 5px;
@@ -100,6 +89,21 @@ a:hover{
 }
 
 
+.navegator ul a{
+	padding: 5px;
+	text-decoration: none;
+	color: white;
+	font-family: 'GoudyBookletter1911';
+	transition: background 1s linear;
+	border-radius: 5px;
+}
+
+.navegator ul a:hover{
+	background-color: white;
+	color: black;
+	border-radius: 5px;
+}
+
 /* aca se encuentra el contenido principal */
 
 .main-content{
@@ -113,18 +117,26 @@ a:hover{
 
 .banner{
 	height: 150px;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.banner:hover {
+	filter: brightness(1.5);
+}
+
 
 .banners{
 	display: grid;
 	grid-gap: 10px;
 	grid-row: 1 / 4;
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .container{
 	display: grid;
 	grid-row: 4;
 	grid-column: 1;
+	overflow-y: hidden;
 }
 
 
@@ -136,29 +148,49 @@ a:hover{
 	grid-row: 1 / -1;
 	grid-template-rows: repeat(5, auto);
 	grid-template-columns: repeat(2, 1fr);
+	background: rgba(0, 0, 0, 0.6);
 }
 
 
 .article{
 	display: grid;
 	grid-column: 1 / -1;
-}
-
-.header-1{
-	display: flex;
-	justify-content: right;
-	height: 20px;
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	background-color: #000000;
-
+	background: url('../images/womens.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position-y: -60px;
 }
 
 .container-cards{
+	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-row: 2 / -1;
 	grid-column: 1 / -1;
+	grid-gap: 10px;
+}
 
+/*.header-1{
+	display: flex;
+	height: 35px;
+	background-color: #000000;
+	font-family: 'GoudyBookletter1911';
+	color: #ffffff;
+	justify-content: center;
+}
+
+.tarjetas{
+	display: grid;
+	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(3, 1fr);
+	grid-column: 1 / -1;
+	grid-row: 1 / -1;
+}*/
+
+.container{
+	display: flex;
+	overflow-y: hidden;
+	overflow-x: scroll;
+	gap: 5px;
 }
 
 /* aca se encuentra el pie de pagina */
@@ -172,5 +204,5 @@ a:hover{
 	display: grid;
 	grid-column-start: 1;
 	grid-column-end: -1;
-	background-color: #000000;
+	background: rgba(0, 0, 0, 0.6);
 }
