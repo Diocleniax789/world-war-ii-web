@@ -239,6 +239,24 @@ h2{
 	width: 500px;
 }
 
+#img-5{
+	float: right;
+	margin-right: 10px;
+	width: 500px;	
+}
+
+#img-6{
+	float: left;
+	margin-right: 10px;
+	width: 500px;	
+}
+
+#img-7{
+	float: right;
+	margin-right: 10px;
+	width: 450px;	
+}
+
 /* aca se encuentra el pie de pagina */
 
 .footer{
