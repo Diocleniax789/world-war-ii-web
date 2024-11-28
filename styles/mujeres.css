@@ -74,11 +74,12 @@ p{
 .header #title{
 	display: flex;
 	justify-content: center;
-	font-family: 'GoudyBookletter1911';
-	font-size: 2rem;
-	color: white;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
+#title:hover{
+	filter: brightness(1.5);
+}
 
 /* aca se encuentra el navegaodr */
 
@@ -175,10 +176,8 @@ p{
 	justify-content: center;
 }
 
-h2{
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 3rem;
+.header-img{
+	width: 800px;
 }
 
 .texto{
