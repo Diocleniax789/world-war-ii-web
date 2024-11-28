@@ -178,8 +178,7 @@ h2{
 }
 
 .texto{
-	background: url('../images/background48.jpg');
-	background-size: cover;
+	background-color: rgba(139, 0, 0, 0.5);
 	height: 800px;
 	overflow-y: scroll;
 }
@@ -218,7 +217,7 @@ h2{
 #img-1{
 	float: left;
 	margin-right: 10px;
-	width: 200px;
+	width: 250px;
 }
 
 #img-2{
@@ -230,7 +229,7 @@ h2{
 #img-3{
 	float: left;
 	margin-right: 10px;
-	width: 400px;
+	width: 450px;
 }
 
 #img-4{
@@ -255,6 +254,36 @@ h2{
 	float: right;
 	margin-right: 10px;
 	width: 450px;	
+}
+
+#img-8{
+	float: left;
+	margin-right: 10px;
+	width: 450px;
+}
+
+#img-9{
+	float: right;
+	margin-right: 10px;
+	width: 450px;
+}
+
+#img-10{
+	float: left;
+	margin-right: 10px;
+	width: 400px;
+}
+
+#img-11{
+	float: left;
+	margin-right: 10px;
+	width: 400px;
+}
+
+#img-12{
+	float: right;
+	margin-right: 10px;
+	width: 400px;
 }
 
 /* aca se encuentra el pie de pagina */
