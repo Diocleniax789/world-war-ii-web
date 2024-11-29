@@ -11,10 +11,9 @@
 
 body{
 
-	background: url('../images/background45.jpg');
+	background: url('../images/img13.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	backdrop-filter: blur(10px);
 	font-size: 16px;
 }
 
@@ -225,7 +224,6 @@ p{
 
 #img-2{
 	float: right;
-	margin-left: 10px;
 	width: 500px;
 }
 
@@ -237,7 +235,6 @@ p{
 
 #img-4{
 	float: right;
-	margin-right: 10px;
 	width: 500px;
 }
 
