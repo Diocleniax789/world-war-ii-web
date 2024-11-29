@@ -24,7 +24,7 @@ body {
 	background: rgba(0, 0, 0, 0.6);
 	grid-gap: 5px;
 	padding: 10px;
-	margin: 100px auto;
+	margin: 90px;
 	border-radius: 5px;
 }
 
@@ -38,10 +38,15 @@ body {
 	padding: 10px;
 }
 
-.header h1 {
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 3em;
+
+.img{
+	width: 100%;
+	max-width: 800px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img:hover{
+	filter: brightness(1.5);
 }
 
 .boton {
