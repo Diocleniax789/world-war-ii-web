@@ -35,6 +35,8 @@ body {
 }
 
 .main-container .header {
+	display: flex;
+	justify-content: center;
 	background: rgba(0, 0, 0, 0.6);
 	grid-row: 1;
 	grid-column-start: 1;
@@ -42,13 +44,14 @@ body {
 	border: solid 1px grey;	
 }
 
-.main-container .header .main-title {
-	display: flex;
-	justify-content: center;
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 2em;
-	margin: 5px;
+.img{
+	width: 100%;
+	max-width: 800px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img:hover{
+	filter: brightness(1.5);
 }
 
 .main-container .nav {
@@ -103,11 +106,10 @@ body {
 	justify-content: center;
 }
 
-.second-header, .second-title {
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 2rem;
-	margin: 5px;
+
+.img2{
+	width: 100%;
+	max-width: 800px;
 }
 
 .container-text {
@@ -120,6 +122,28 @@ body {
 	border-radius: 10px;
 	border: solid 1px grey;
 }
+
+
+.container-text::-webkit-scrollbar {
+    width: 12px; /* Ancho del scroll vertical */
+    height: 12px; /* Altura del scroll horizontal */
+}
+
+.container-text::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+}
+
+.container-text::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la manija */
+    border-radius: 10px;
+}
+
+.container-text::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al pasar el cursor */
+}
+
+
 
 .container-img {
 	display: flex;
