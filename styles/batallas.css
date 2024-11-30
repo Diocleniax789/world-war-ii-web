@@ -129,7 +129,7 @@ a {
 
 .main-container .container-cars {
 	width: 100%;
-	height: 750px;
+	height: 800px;
 	overflow-x: hidden;
 	overflow-y: scroll;
 }
@@ -236,7 +236,7 @@ a {
 	flex-direction: column;
 	gap: 10px;
 	overflow-y: scroll;
-	height: 300px;
+	height: 550px;
 	padding: 10px;
 	overflow-x: hidden;
 }
