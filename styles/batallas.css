@@ -12,7 +12,7 @@
 
 body {
 	
-	background-image: url('../images/fondo3.jpg');
+	background-image: url('../images/img13.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -70,7 +70,7 @@ a {
 
 /* navegador horizontal */
 .main-container .nav {
-	background: rgba(0, 0, 0, 0.6);
+	background-color: #000000;
 	grid-row: 2;
 	grid-column-start: 1;
 	grid-column-end: -1;
