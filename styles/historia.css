@@ -37,7 +37,7 @@ body {
 .main-container .header {
 	display: flex;
 	justify-content: center;
-	background: rgba(0, 0, 0, 0.6);
+	background: url('../images/fireChispa.jpg');
 	grid-row: 1;
 	grid-column-start: 1;
 	grid-column-end: -1;
@@ -55,7 +55,7 @@ body {
 }
 
 .main-container .nav {
-	background-color: rgba(0, 0, 0, 0.6);
+	background-color: #000000;
 	grid-row: 2;
 	grid-column-start: 1;
 	grid-column-end: -1;
@@ -100,7 +100,9 @@ body {
 
 .second-header { 
 	display: flex;
-	background-color: black;
+	background: url('../images/header1.jpg');
+	background-size: cover;
+	background-position-y: 50%;
 	border-radius: 10px;
 	border: solid 1px grey;
 	justify-content: center;
