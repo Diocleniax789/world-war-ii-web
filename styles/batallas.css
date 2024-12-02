@@ -205,6 +205,7 @@ a {
 	width: 100%;
 	transition: background 1s linear;
 	padding: 5px;
+	border: solid 1px grey;
 }
 
 
