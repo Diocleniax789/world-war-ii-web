@@ -205,13 +205,6 @@ a {
 	width: 100%;
 	transition: background 1s linear;
 	padding: 5px;
-
-	/*border: solid 1px grey;
-	border-radius: 5px;
-	padding: 5px;
-	font-family: 'GoudyBookletter1911';
-	font-size: 15px;
-	color: #ffff;*/
 }
 
 
@@ -241,7 +234,7 @@ a {
 }
 
 .aside .article {
-	background: rgba(0, 0, 0, 0.6);
+	background-image: url('../images/background48.jpg');
 	border: solid 1px grey;
 	border-radius: 5px;
 	display: flex;
@@ -251,6 +244,25 @@ a {
 	height: 550px;
 	padding: 10px;
 	overflow-x: hidden;
+}
+
+.article::-webkit-scrollbar {
+    width: 12px; /* Ancho del scroll vertical */
+    height: 12px; /* Altura del scroll horizontal */
+}
+
+.article::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+}
+
+.article::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la manija */
+    border-radius: 10px;
+}
+
+.article::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al pasar el cursor */
 }
 
 .header-3 {
