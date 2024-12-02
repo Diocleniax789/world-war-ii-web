@@ -19,6 +19,7 @@ body {
 
 
 a {
+	font-family: 'GoudyBookletter1911';
 	text-decoration: none;
     color: inherit;
 }
@@ -64,10 +65,6 @@ a {
 	width: 100%;
 	max-width: 800px;
 	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.img:hover{
-	filter: brightness(1.5);
 }
 
 .img-5{
@@ -167,7 +164,7 @@ a {
 }
 
 .card {
-	background-image: url('../images/fondo6papel.jpg');
+	background-image: url('../images/background47.jpg');
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -175,28 +172,24 @@ a {
 	width: 90%;
 	border: solid 1px grey;
 	border-radius: 10px;
-	height: 300px;
-	padding: 15px;
+	height: 325px;
+	padding: 10px;
 }
 
 #card-1 .img-1,
 #card-2 .img-1,
 #card-3 .img-1 {
 	width: 100%;
-	border: solid 3px black;
+	border: solid 1px grey;
 	border-radius: 5px;
-	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-.img-1:hover{
-	filter: brightness(1.5);
-}
 
 .description {
 	color: white;
-	font-family: 'Times New Roman';
+	font-family: 'GoudyBookletter1911';
 	text-align: center;
-	font-size: 1rem;
+	font-size: 2rem;
 	padding-bottom: 2px;
 	border-bottom: solid 1px darkred;
 	text-shadow: 	
@@ -208,13 +201,25 @@ a {
 
 .button-1 {
 	background-color: black;
-	border: solid 1px grey;
+	color:#ffffff;
+	width: 100%;
+	transition: background 1s linear;
+	padding: 5px;
+
+	/*border: solid 1px grey;
 	border-radius: 5px;
 	padding: 5px;
 	font-family: 'GoudyBookletter1911';
 	font-size: 15px;
-	color: #ffff;
+	color: #ffff;*/
 }
+
+
+.button-1:hover{
+	background-color: #ffffff;
+	color: #000000;
+}
+
 
 .main-container .aside {
 	background: rgba(0, 0, 0, 0.6);
