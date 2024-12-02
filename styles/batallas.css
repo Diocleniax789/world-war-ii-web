@@ -53,6 +53,13 @@ a {
 	grid-column-end: -1;
 }
 
+.header-2{
+	background: url('../images/batallas4.jpg');
+	background-size: cover;
+	background-position-y: 55%;
+}
+
+
 .img{
 	width: 100%;
 	max-width: 800px;
