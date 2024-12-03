@@ -66,10 +66,12 @@ body {
 	font-family: 'CFWorldatWarPERSO-Regular';
 	color: #ffffff;
 	padding: 10px;
+	border-radius: 5px;
 	transition: background 1s linear;
 }
 
 .nav a:hover {
+	border-radius: 5px;
 	background-color: #ffffff;
 	color: #000000;
 }
