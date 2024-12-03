@@ -154,7 +154,7 @@ p{
 /* aca se encuentra el contendor de informacion */
 
 .contenedor{
-	background: rgba(0, 0, 0, 0.6);
+	background: #000000;
 	display: grid;
 	grid-row: 1 / -1;
 	grid-column: 2 / -1;
@@ -170,7 +170,9 @@ p{
 }
 
 .header-1 {
-	background-color: #000000;
+	background: url('../images/women6.jpg');
+	background-size: cover;
+	background-position-y: 60%;
 	display: flex;
 	justify-content: center;
 }
@@ -207,7 +209,7 @@ p{
 
 
 .imagen-1{
-	border: solid 5px black;
+	border: solid 1px grey;
 	border-radius: 5px;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -219,12 +221,14 @@ p{
 #img-1{
 	float: left;
 	margin-right: 10px;
-	width: 250px;
+	width: 20%;
+	max-width: 250px;
 }
 
 #img-2{
 	float: right;
-	width: 500px;
+	width: 50;
+	max-width: 500px;
 }
 
 #img-3{
