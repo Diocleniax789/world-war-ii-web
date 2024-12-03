@@ -27,6 +27,7 @@ body {
 }
 
 .header {
+	background: url('../images/fireChispa.jpg');
 	grid-column-start: 1;
 	grid-column-end: -1;
 	grid-row: 1;
@@ -65,7 +66,7 @@ body {
 	text-decoration: none;
 	font-family: 'CFWorldatWarPERSO-Regular';
 	color: #ffffff;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 5px;
 	transition: background 1s linear;
 }
