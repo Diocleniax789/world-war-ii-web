@@ -197,8 +197,7 @@ body {
 }
 
 .texto {
-	background-image: url('../images/10.jpg');
-	background-size: cover;
+	background: rgba(0, 0, 0, 0.6);
 	border-radius: 5px;
 	border: solid 1px grey;
 	padding: 10px;
