@@ -28,7 +28,6 @@ body {
 .main-container .header,
 .main-container .nav,
 .main-container .content,
-.main-container .container-banners,
 .main-container .footer {
 	border: solid 1px grey;
 	border-radius: 5px;
@@ -198,7 +197,8 @@ body {
 }
 
 .texto {
-	background-color: #000000;
+	background-image: url('../images/10.jpg');
+	background-size: cover;
 	border-radius: 5px;
 	border: solid 1px grey;
 	padding: 10px;
@@ -208,6 +208,12 @@ body {
 	overflow-x: hidden;
 	overflow-y: scroll;
 	height: 300px;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+     font-size: 2rem;
 }
 
 
@@ -237,24 +243,6 @@ body {
 	gap: 10px;
 }
 
-.banner {
-	width: 25%;
-	border: solid 1px grey;
-	border-radius: 20px;
-}
-
-.main-container .container-banners {
-	background: rgba(0, 0, 0, 0.6);
-	grid-column-start: 1;
-	grid-column-end: -1;
-	grid-row: 4;
-	display: flex;
-	flex-direction: row;
-	gap: 20px;
-	justify-content: center;
-}
-
-
 .main-container .footer {
 	background: rgba(0, 0, 0, 0.6);
 	grid-column-start: 1;
@@ -280,16 +268,6 @@ body {
 		width: 95%;
 	}
 
-	.main-container .container-banners {
-		display: flex;
-		flex-direction: row;
-		padding: 5px;
-	}
-
-	.main-container .container-banners .banner {
-		width: 45%;
-	}
-
 }
 
 
@@ -311,16 +289,6 @@ body {
 
 	.main-container .nav a {
 		text-align: center;
-	}
-
-	.main-container .container-banners {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	.main-container .container-banners .banner {
-		width: 100%;
 	}
 
 	.container-texto-e-imagenes {
