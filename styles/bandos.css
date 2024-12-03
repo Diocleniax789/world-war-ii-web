@@ -138,7 +138,7 @@ body {
 }
 
 .title-article-2 {
-	background-image: url('../images/header3.jpg');;
+	background-image: url('../images/header3.jpg');
 	background-size: cover;
 	background-position-y: 65%;
 	font-family: 'GoudyBookletter1911';
@@ -176,10 +176,51 @@ body {
 	padding-right: 10px;
 }
 
+#third-header-1{
+	background-image: url('../images/batallas1.jpg');
+	background-size: cover;
+	background-position-y: 45%;
+}
+
+#third-header-2{
+	background-image: url('../images/11.jpg');
+	background-size: cover;
+	background-position-y: 45%;
+}
+
+#third-header-3{
+	background-image: url('../images/bannernuevo.jpg');
+	background-size: cover;
+	background-position-y: 48%;
+}
+
+#third-header-4{
+	background-image: url('../images/12.jpg');
+	background-size: cover;
+	background-position-y: 30%;
+}
+
+#third-header-5{
+	background-image: url('../images/14.jpg');
+	background-size: cover;
+	background-position-y: 30%;
+}
+
+#third-header-6{
+	background-image: url('../images/img10.jpg');
+	background-size: cover;
+	background-position-y: 65%;
+}
+
 .second-title {
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2rem;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
 }
 
 .img {
