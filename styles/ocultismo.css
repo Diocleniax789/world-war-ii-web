@@ -124,6 +124,7 @@ body{
 .img-texto-1-1{
 	width: 100%;
 	max-width: 200px;
+	padding: 10px;
 }
 
 .informacion .texto{
@@ -243,6 +244,7 @@ body{
 	max-width: 100px;
 	margin-right: 5px;
 	margin-top: 5px;
+	margin-left: 5px;
 }
 
 #img-texto-2{
@@ -298,6 +300,67 @@ body{
 .img-1-1{
 	width: 100%;
 	max-width: 100px;
+}
+
+
+.libros{
+	background: url('../images/background51.jpg');
+	background-size: cover;
+	display: flex;
+	gap: 10px;
+	padding: 10px;
+	border-top: solid 1px grey;
+	overflow-x: scroll;
+}
+
+
+.libros::-webkit-scrollbar {
+    width: 5px; /* Ancho del scroll vertical */
+    height: 5px; /* Altura del scroll horizontal */
+}
+
+.libros::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.libros::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la manija */
+}
+
+.libros::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al pasar el cursor */
+}
+
+
+.img-texto{
+	width: 100%;
+	max-width: 100px;
+	border: solid 1px grey;
+}
+
+
+.informacion-corta{
+	display: flex;
+	gap: 5px;
+	width: 100%;
+	max-width: 500px;
+}
+
+.img-1-1-2{
+	width: 100%;
+	max-width: 200px;
+}
+
+.section-article{
+	display: flex;
+	gap: 5px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.img-1-1-1{
+	width: 100%;
+	max-width: 200px;
 }
 
 /* Pie de pagina */
