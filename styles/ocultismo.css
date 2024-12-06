@@ -121,6 +121,11 @@ body{
 	max-width: 200px;
 }
 
+.img-texto-1-1{
+	width: 100%;
+	max-width: 200px;
+}
+
 .informacion .texto{
 	background-color: #000000;
 	color: #ffffff;
@@ -262,16 +267,28 @@ body{
 
 
 .contenido-adicional{
-	background: url('../images/logo5.jpg');
-	background-size: cover;
-	background-position-y: 50%;
+	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-row: 4;
 	grid-column: 1 / -1;
+}
 
+.encabezado-contenido-adicional{
+	background-color: #000000;
+	display: flex;
+	justify-content: center;
+	border-bottom: solid 1px grey;
+}
+
+.img-encabezado-articulo{
+	width: 100%;
+	max-width: 400px;
 }
 
 .contenido-adicional-info{
+	background: url('../images/interior2.jpg');
+	background-size: cover;
+	background-position-y: 60%;
 	display: flex;
 	gap: 10px;
 	align-items: center;
