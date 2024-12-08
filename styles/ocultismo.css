@@ -29,8 +29,11 @@ body{
 .main-container .articulo-izquierdo,
 .main-container .encabezado-articulo,
 .main-container .contenedor-principal,
-.main-container .contenido-adicional,
 .main-container .texto,
+.main-container .libros,
+.main-container .contenido-adicional-info,
+.main-container .contenido-multimedia,
+.main-container .encabezado-contenido-adicional,
 .main-container .pie-pagina{
 	border: solid 1px grey;
 	border-radius: 5px;
@@ -279,7 +282,6 @@ body{
 	background-color: #000000;
 	display: flex;
 	justify-content: center;
-	border-bottom: solid 1px grey;
 }
 
 .img-encabezado-articulo{
@@ -354,6 +356,13 @@ body{
 	gap: 5px;
 }
 
+
+.video{
+	width: 100%;
+	max-width: 800px;
+}
+
+
 .articulo-derecho{
 	background-color: #000000;
 	display: flex;
@@ -361,6 +370,8 @@ body{
 	gap: 5px;
 	border: solid 1px grey;
 	border-radius: 5px;
+	width: 100%;
+	max-width: 400px;
 }
 
 .encabezado-articulo-derecho{
@@ -371,6 +382,9 @@ body{
 }
 
 .img-encabezado-articulo-2{
+	background: url('../images/logo5.jpg');
+	background-size: cover;
+	background-position-y: 50%;
 	width: 100%;
 	max-width: 500px;
 	border-bottom: solid 1px grey;
