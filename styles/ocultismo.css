@@ -320,15 +320,15 @@ body{
 }
 
 .libros::-webkit-scrollbar-track {
-    background: darkorange;
+    background: #000000;
 }
 
 .libros::-webkit-scrollbar-thumb {
-    background: darkorange; /* Color de la manija */
+    background: darkred; /* Color de la manija */
 }
 
 .libros::-webkit-scrollbar-thumb:hover {
-    background: darkorange; /* Color al pasar el cursor */
+    background: red; /* Color al pasar el cursor */
 }
 
 
