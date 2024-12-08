@@ -269,10 +269,10 @@ body{
 
 
 .contenido-adicional{
-	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-row: 4;
 	grid-column: 1 / -1;
+	grid-gap: 5px;
 }
 
 .encabezado-contenido-adicional{
@@ -320,15 +320,15 @@ body{
 }
 
 .libros::-webkit-scrollbar-track {
-    background: #000000;
+    background: darkorange;
 }
 
 .libros::-webkit-scrollbar-thumb {
-    background: #888; /* Color de la manija */
+    background: darkorange; /* Color de la manija */
 }
 
 .libros::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color al pasar el cursor */
+    background: darkorange; /* Color al pasar el cursor */
 }
 
 
@@ -338,12 +338,63 @@ body{
 	border: solid 1px grey;
 }
 
+.contenido-multimedia{
+	background: rgba(0, 0, 0, 0.6);
+	display: grid;
+	grid-row: 4;
+	grid-column: 1 / -1;
+	grid-gap: 10px;
+	padding: 5px;
+}
 
-.informacion-corta{
+.contenido-multimedia-videos{
 	display: flex;
+	width: 100%;
+	max-width: 1000px;
 	gap: 5px;
+}
+
+.articulo-derecho{
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+.encabezado-articulo-derecho{
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+	gap: 10px;
+}
+
+.img-encabezado-articulo-2{
 	width: 100%;
 	max-width: 500px;
+	border-bottom: solid 1px grey;
+}
+
+.parrafo-2{
+	background: url('../images/dungeon.jpeg');
+	background-size: cover;
+	background-position-x: 50%;
+	display: flex;
+	flex-direction: column;
+	font-family: 'GoudyBookletter1911';
+	color: #ffffff;
+	padding: 25px;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+     overflow-y: scroll;
+     align-items: center;
+     height: 100%;
+     max-height: 500px;
+     gap: 10px;
 }
 
 .img-1-1-2{
@@ -351,17 +402,23 @@ body{
 	max-width: 200px;
 }
 
-.section-article{
-	display: flex;
-	gap: 5px;
-	overflow-y: scroll;
-	overflow-x: hidden;
+.parrafo-2::-webkit-scrollbar {
+    width: 5px; /* Ancho del scroll vertical */
+    height: 5px; /* Altura del scroll horizontal */
 }
 
-.img-1-1-1{
-	width: 100%;
-	max-width: 200px;
+.parrafo-2::-webkit-scrollbar-track {
+    background: #000000;
 }
+
+.parrafo-2::-webkit-scrollbar-thumb {
+    background: #888; /* Color de la manija */
+}
+
+.parrafo-2::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Color al pasar el cursor */
+}
+
 
 /* Pie de pagina */
 
