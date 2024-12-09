@@ -25,14 +25,12 @@ body{
 
 .main-container .encabezado-principal,
 .main-container .navegator,
-.main-container .contenido-principal,
 .main-container .articulo-izquierdo,
 .main-container .encabezado-articulo,
 .main-container .contenedor-principal,
 .main-container .texto,
 .main-container .libros,
 .main-container .contenido-adicional-info,
-.main-container .contenido-multimedia,
 .main-container .encabezado-contenido-adicional,
 .main-container .pie-pagina{
 	border: solid 1px grey;
@@ -90,16 +88,14 @@ body{
 
 
 .contenido-principal{
-	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-row: 3 / 3;
 	grid-column: 1 / -1;
 	grid-template-columns: repeat(7, 1fr);
 	grid-gap: 5px;
-	padding: 5px;
 }
 
-.contenido-principal .articulo-izquierdo{
+.articulo-izquierdo{
 	background: url('../images/background47.jpg');
 	background-size: cover;
 	display: grid;
@@ -111,7 +107,6 @@ body{
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
-	height: 100%;
 }
 
 .informacion .encabezado-articulo{
@@ -136,7 +131,7 @@ body{
 	overflow: scroll;
 	overflow-x: hidden;
 	height: 100%;
-	max-height: 505px;
+	max-height: 550px;
 	padding: 5px;
 }
 
@@ -158,11 +153,10 @@ body{
 }
 
 .texto-parrafo{
-	padding: 10px;
+	padding: 5px;
 }
 
 .contenedor-principal{
-	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-column: 3 / -1;
 }
@@ -206,11 +200,11 @@ body{
 
 
 .informacion-collage{
-	background-color: #000000;
+	background: rgba(0, 0, 0, 0.6);
 	overflow: scroll;
 	overflow-x: hidden;
-	height: 100%;
-	max-height: 310px;
+	max-height: 1000px;
+	padding: 15px;
 }
 
 .informacion-collage::-webkit-scrollbar {
@@ -233,7 +227,6 @@ body{
 .parrafo{
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
-	padding: 5px;
 	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
@@ -267,9 +260,6 @@ body{
 	margin-bottom: 5px;
 	margin-right: 5px;
 }
-
-
-
 
 .contenido-adicional{
 	display: grid;
@@ -341,7 +331,6 @@ body{
 }
 
 .contenido-multimedia{
-	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-row: 4;
 	grid-column: 1 / -1;
@@ -382,9 +371,7 @@ body{
 }
 
 .img-encabezado-articulo-2{
-	background: url('../images/logo5.jpg');
-	background-size: cover;
-	background-position-y: 50%;
+	background-color: #000000;
 	width: 100%;
 	max-width: 500px;
 	border-bottom: solid 1px grey;
@@ -451,4 +438,8 @@ body{
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
+}
+
+@media (min-width: 1280px) and (max-width: 1920px) {
+
 }
