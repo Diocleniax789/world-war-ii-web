@@ -282,76 +282,7 @@ body{
 .texto-contenedor-principal::-webkit-scrollbar-thumb:hover {
     background: #555; 
 }
-		  			
-		  			
-		  			
-
-
-
-/*
-
-
-
-
-.informacion-collage-imagenes{
-	background: rgba(0, 0, 0, 0.6);
-	display: flex;
-	flex-direction: column;
-	overflow-y: scroll;
-	padding: 15px;
-	height: 100%;
-}
-
-
-
-
-
-.informacion-collage::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
-}
-
-.informacion-collage::-webkit-scrollbar-track {
-    background: #000000;
-}
-
-.informacion-collage::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-.informacion-collage::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
-
-
-
-#img-texto-1{
-	float: left;
-	width: 100%;
-	max-width: 100px;
-	margin-right: 5px;
-	margin-top: 5px;
-	margin-left: 5px;
-}
-
-#img-texto-2{
-	float: right;
-	width: 100%;
-	max-width: 100px;
-	margin-right: 5px;
-	margin-bottom: 5px;
-	margin-left: 5px;
-}
-
-#img-texto-3{
-	float: left;
-	width: 100%;
-	max-width: 100px;
-	margin-left: 5px;
-	margin-bottom: 5px;
-	margin-right: 5px;
-}
-*/
+		  				
 .contenido-adicional{
 	display: grid;
 	grid-row: 4;
@@ -425,78 +356,86 @@ body{
 	display: grid;
 	grid-row: 4;
 	grid-column: 1 / -1;
+	grid-template-rows: repeat(3,auto);
+ 	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 10px;
-	padding: 5px;
 }
 
 .contenido-multimedia-videos{
-	display: flex;
-	width: 100%;
-	max-width: 1000px;
-	gap: 5px;
+	display: grid;
+	grid-row: 1 / -1;
+	grid-column-start: 1;
+	grid-column-end: 3;
 }
-
 
 .video{
 	width: 100%;
-	max-width: 800px;
 }
 
 
 .articulo-derecho{
-	background-color: #000000;
+	display: grid;
+	grid-row: 1 / -1;
+	grid-column: 3;
+}
+
+.contenido-articulo-derecho{
+	background: url('../images/dungeon.jpeg');
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
+	padding: 5px;
 	gap: 5px;
-	border: solid 1px grey;
 	border-radius: 5px;
-	width: 100%;
-	max-width: 400px;
+	border: solid 1px grey;
 }
 
 .encabezado-articulo-derecho{
+	background: rgba(0, 0, 0, 0.6);
 	display: flex;
 	justify-content: center;
 	padding: 5px;
-	gap: 10px;
+	border-radius: 5px;
+	border: solid 1px grey;
 }
 
 .img-encabezado-articulo-2{
-	background-color: #000000;
 	width: 100%;
-	max-width: 500px;
-	border-bottom: solid 1px grey;
 }
 
+
 .parrafo-2{
-	background: url('../images/dungeon.jpeg');
-	background-size: cover;
-	background-position-x: 50%;
+	background: rgba(0, 0, 0, 0.6);
 	display: flex;
 	flex-direction: column;
+	padding: 10px;
+	overflow: scroll;
+	overflow-x: hidden;
+	height: 500px;
+	flex-grow: 1;
+	border-radius: 5px;
+	border: solid 1px grey;
+	gap: 10px;
+}
+
+.parrafo-2-texto{
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
-	padding: 25px;
 	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
-     overflow-y: scroll;
-     align-items: center;
-     height: 100%;
-     max-height: 500px;
-     gap: 10px;
+
 }
 
 .img-1-1-2{
 	width: 100%;
-	max-width: 200px;
 }
 
 .parrafo-2::-webkit-scrollbar {
-    width: 5px; /* Ancho del scroll vertical */
-    height: 5px; /* Altura del scroll horizontal */
+    width: 5px; 
+    height: 5px; 
 }
 
 .parrafo-2::-webkit-scrollbar-track {
@@ -504,15 +443,12 @@ body{
 }
 
 .parrafo-2::-webkit-scrollbar-thumb {
-    background: #888; /* Color de la manija */
+    background: #888; 
 }
 
 .parrafo-2::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color al pasar el cursor */
+    background: #555; 
 }
-
-
-/* Pie de pagina */
 
 .pie-pagina{
 	background-color: #000000;
