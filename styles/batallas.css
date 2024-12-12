@@ -131,7 +131,7 @@ a {
 	color: #ffff;
 }
 
-.main-container .container-cars {
+ .container-cars {
 	width: 100%;
 	height: 800px;
 	overflow-x: hidden;
@@ -139,7 +139,7 @@ a {
 }
 
 .container-cars::-webkit-scrollbar {
-    width: 12px; /* Ancho del scroll vertical */
+    width: 10px; /* Ancho del scroll vertical */
     height: 12px; /* Altura del scroll horizontal */
 }
 
@@ -161,6 +161,7 @@ a {
 	display: flex;
 	margin-top: 10px;
 	gap: 10px;
+	flex-grow: 1;
 }
 
 .card {
@@ -172,7 +173,7 @@ a {
 	width: 90%;
 	border: solid 1px grey;
 	border-radius: 10px;
-	height: 325px;
+	height: 200px;
 	padding: 10px;
 }
 
@@ -189,7 +190,7 @@ a {
 	color: white;
 	font-family: 'GoudyBookletter1911';
 	text-align: center;
-	font-size: 2rem;
+	font-size: 1rem;
 	padding-bottom: 2px;
 	border-bottom: solid 1px darkred;
 	text-shadow: 	
@@ -245,6 +246,7 @@ a {
 	height: 550px;
 	padding: 10px;
 	overflow-x: hidden;
+	flex-grow: 1;
 }
 
 .article::-webkit-scrollbar {

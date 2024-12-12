@@ -13,41 +13,57 @@ body {
 	background-size: cover;
 }
 
-.main {
-	display: grid;
-	grid-template-columns: repeat(1, 1fr);
-	grid-template-rows: repeat(3, auto);
-	max-width: 2000px;
+
+.main{
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	max-width: 1000px;
 	width: 90%;
 	border: solid 1px grey;
 	border-radius: 5px;
-	background: rgba(0, 0, 0, 0.6);
-	grid-gap: 5px;
 	padding: 10px;
-	margin: 90px;
-	border-radius: 5px;
+	margin: 90px auto;
+	gap: 5px;
 }
 
-.header {
+.header{
+	background: url('../images/fireChispa.jpg');
 	display: flex;
 	justify-content: center;
-	grid-column: 1;
-	grid-row: 1;
-	background: url('../images/fireChispa.jpg');
-	border: solid 1px grey;	
-	padding: 10px;
+	width: 100%;
+	border: solid 1px grey;
 }
-
 
 .img{
 	width: 100%;
-	max-width: 800px;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 .img:hover{
 	filter: brightness(1.5);
 }
+
+.contenedor{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border: solid 1px grey;
+	gap: 5px;
+	padding: 10px;
+}
+
+
+
+.boton{
+	background-color: #000000;
+	width: 300px;
+	height: 300px;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+/*
 
 .boton {
 	width: 80%;
@@ -139,7 +155,7 @@ a {
 
 
 
-
+*/
 
 
 
