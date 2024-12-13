@@ -53,7 +53,7 @@ body {
 	border: solid 1px grey;
 	gap: 5px;
 	padding: 10px;
-	flex-grow: 1;
+	box-sizing: border-box;
 }
 
 a{
@@ -144,11 +144,12 @@ a{
 	}
 
 	.boton{
-		width: 95%;
+		width: 100%;
+		padding: 0px;
 	}
 
 	.texto-boton{
-		font-size: 3rem;
+		margin: 5px;
 	}
 
 }
