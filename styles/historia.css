@@ -10,7 +10,7 @@
 }
 
 body {
-	background-image: url('../images/img13.jpg');
+	background-image: url('../images/19.jpg');
 	background-size: cover;
 }
 
@@ -28,7 +28,12 @@ body {
 }
 
 .main-container .contenedor-encabezado,
-.main-container .navegator{
+.main-container .navegator,
+.main-container .timeline,
+.main-container .informacion,
+.main-container .articulo,
+.main-container .banners,
+.main-container .pie-pagina{
 	border: solid 1px grey;
 	border-radius: 5px;
 }
@@ -62,14 +67,77 @@ body {
 	transition: background 1s linear;
 }
 
-
 .navegator a:hover{
 	background-color: #ffffff;
 	color: #000000;
 	border-radius: 5px;
 }
 
+.main-content{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	padding: 5px;
+}
 
+.timeline{
+	height: 100px;
+	display: flex;
+	overflow: auto;
+	overflow-x: scroll;
+	overflow-y: hidden;
+}
+
+.timeline-img{
+	width: 200px;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.timeline a:hover{
+	filter: brightness(1.5);
+}
+
+
+.timeline::-webkit-scrollbar {
+    width: 12px;
+    height: 5px;
+}
+
+.timeline::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.timeline::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.timeline::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.informacion{
+	display: flex;
+	gap: 5px;
+	padding: 5px;
+}
+
+.articulo{
+	width: 100%;
+	height: 500px;
+	overflow: auto;
+}
+
+.banners{
+
+	width: 50%;
+
+}
+
+
+.pie-pagina{
+	padding: 10px;
+	height: 50px;
+}
 
 
 
