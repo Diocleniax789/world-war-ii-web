@@ -15,14 +15,65 @@ body {
 }
 
 .main-container {
-	width: 90%;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	width: 50%;
 	max-width: 2000px;
 	margin: 50px auto;
-	display: grid;
-	grid-template-columns: repeat(4, 1fr);
-	grid-template-rows: repeat(5, auto);
-	grid-gap: 10px;
+	padding: 10px;
 }
+
+.main-container .contenedor-encabezado,
+.main-container .navegator{
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+.contenedor-encabezado{
+	background: url('../images/fireChispa.jpg');
+	background-size: cover;
+}
+
+.img-encabezado{
+	width: 100%;
+}
+
+.navegator{
+	background-color: #000000;
+	padding: 10px;
+}
+
+.navegator ul{
+	display: flex;
+	gap: 15px;
+	list-style: none;
+	justify-content: center;
+}
+
+.navegator a{
+	text-decoration: none;
+	color: #ffffff;
+	border-radius: 5px;
+	padding: 3px;
+	transition: background 1s linear;
+}
+
+
+.navegator a:hover{
+	background-color: #ffffff;
+	color: #000000;
+	border-radius: 5px;
+}
+
+
+
+
+
+/*
 
 .main-container .header,
 .main-container .nav,
@@ -129,8 +180,8 @@ body {
 
 
 .container-text::-webkit-scrollbar {
-    width: 12px; /* Ancho del scroll vertical */
-    height: 12px; /* Altura del scroll horizontal */
+    width: 12px; 
+    height: 12px; 
 }
 
 .container-text::-webkit-scrollbar-track {
@@ -139,12 +190,12 @@ body {
 }
 
 .container-text::-webkit-scrollbar-thumb {
-    background: #888; /* Color de la manija */
+    background: #888; 
     border-radius: 10px;
 }
 
 .container-text::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color al pasar el cursor */
+    background: #555;
 }
 
 
@@ -434,3 +485,4 @@ body {
 	}
 
 }
+*/
