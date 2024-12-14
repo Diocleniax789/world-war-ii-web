@@ -30,8 +30,6 @@ body {
 .main-container .contenedor-encabezado,
 .main-container .navegator,
 .main-container .timeline,
-.main-container .informacion,
-.main-container .articulo,
 .main-container .banners,
 .main-container .pie-pagina{
 	border: solid 1px grey;
@@ -97,14 +95,32 @@ body {
 .informacion{
 	display: flex;
 	gap: 5px;
-	padding: 5px;
 }
 
 .articulo{
+	display: flex;
+	flex-direction: column;
 	width: 100%;
 	height: 500px;
-	overflow: auto;
+	gap: 5px;
 }
+
+.encabezado-articulo{
+	background: url('../images/header1.jpg');
+	background-size: cover;
+	background-position-y: 50%;
+	height: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+#img-encabezado-articulo{
+	width: 100%;
+}
+
 
 .banners{
 
@@ -112,247 +128,85 @@ body {
 
 }
 
+.texto-contenido{
+	background: url('../images/background47.jpg');
+	background-size: cover;
+	height: 600px;
+	border: solid 1px grey;
+	border-radius: 5px;
+	overflow: auto;
+	padding: 10px;
+}
+
+
+.texto-contenido::-webkit-scrollbar {
+    width: 5px; /* Ancho del scroll vertical */
+    height: 5px; /* Altura del scroll horizontal */
+}
+
+.texto-contenido::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.texto-contenido::-webkit-scrollbar-thumb {
+    background: darkgray; /* Color de la manija */
+}
+
+.texto-contenido::-webkit-scrollbar-thumb:hover {
+    background: darkgray; /* Color al pasar el cursor */
+}
+
+p{
+	font-family: 'GoudyBookletter1911';
+	font-size: 1rem;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;	
+    color: #ffffff;
+}
+
+.img-texto{
+	border-radius: 5px;
+	border: solid 1px grey;
+}
+
+#img-texto-1{
+	float: left;
+	margin-right: 10px;
+	width: 200px;
+}
+
+#img-texto-2{
+	float: right;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 200px;
+}
+
+#img-texto-3{
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 200px;
+}
+
+
 
 .pie-pagina{
+	background-color: #000000;
 	padding: 10px;
 	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
 }
 
 
 
 /*
-
-.main-container .header,
-.main-container .nav,
-.main-container .article,
-.main-container .banner-vertical,
-.main-container .banner-horizontal,
-.main-container .footer {
-	padding: 10px;
-	border-radius: 10px;
-}
-
-.main-container .header {
-	display: flex;
-	justify-content: center;
-	background: url('../images/fireChispa.jpg');
-	grid-row: 1;
-	grid-column-start: 1;
-	grid-column-end: -1;
-	border: solid 1px grey;	
-}
-
-.img{
-	width: 100%;
-	max-width: 800px;
-	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.img:hover{
-	filter: brightness(1.5);
-}
-
-.main-container .nav {
-	background-color: #000000;
-	grid-row: 2;
-	grid-column-start: 1;
-	grid-column-end: -1;
-	border: solid 1px grey;
-}
-
-.main-container .nav ul {
-	display: flex;
-	justify-content: center;
-	list-style: none;
-	gap: 25px;
-}
-
-.main-container .nav a {
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 1rem;
-	text-decoration: none;
-	padding: 5px;
-	transition: background 1s linear;
-	border-radius: 3px;
-}
-
-.main-container .nav a:hover {
-	background-color: #ffffff;
-	color: black;
-	border-radius: 3px;
-}
-
-.main-container .article {
-	background: rgba(0, 0, 0, 0.6);
-	grid-row: 3;
-	grid-column-start: 1;
-	grid-column-end: 4;
-	height: 600px;	
-	display: flex;
-	flex-direction: column;
-	gap: 10px;
-	padding: 10px;
-	border: solid 1px grey;
-}
-
-.second-header { 
-	display: flex;
-	background: url('../images/header1.jpg');
-	background-size: cover;
-	background-position-y: 50%;
-	border-radius: 10px;
-	border: solid 1px grey;
-	justify-content: center;
-}
-
-
-.img2{
-	width: 100%;
-	max-width: 800px;
-}
-
-.container-text {
-	background-image: url('../images/background47.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	display: flex;
-	width: 100%;
-	overflow-y: scroll;
-	overflow-x: hidden;
-	gap: 10px;
-	border-radius: 10px;
-	border: solid 1px grey;
-}
-
-
-.container-text::-webkit-scrollbar {
-    width: 12px; 
-    height: 12px; 
-}
-
-.container-text::-webkit-scrollbar-track {
-    background: #000000;
-    border-radius: 10px;
-}
-
-.container-text::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 10px;
-}
-
-.container-text::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-
-
-.container-img {
-	display: flex;
-	flex-direction: column;
-	width: 250%;
-	padding: 15px;
-	gap: 7px;
-}
-
-.container-img .img-1 {
-	width: 100%;
-	border: solid 1px black;
-	border-radius: 5px;
-	border: solid 1px grey;
-}
-
-.container-img .description {
-	background-color: black;
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 1rem;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-    text-align: center;	
-    padding: 3px;
-    border: solid 1px grey;
-    border-radius: 3px;
-}
-
-.container-text .text {
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 1rem;
-	padding-top: 15px;
-	padding-bottom: 15px;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-
-}
-
-.main-container .banner-vertical {
-	background-image: url('../images/img31.jpg');
-	background-size: cover;
-	grid-column: 4;
-	grid-row: 3;
-	border: solid 1px grey;
-}
-
-.main-title-2 {
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	text-align: center;
-	margin-top: 50px;
-	font-size: 3rem;
-    text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-     border-bottom: solid 1px darkred;
-}
-
-.main-container .banner-horizontal {
-	background-image: url('../images/img34.jpg');
-	background-position-y: 50%;
-	grid-row: 4;
-	grid-column-start: 1;
-	grid-column-end: -1;
-	height: 200px;
-	display: flex;
-	justify-content: center;
-	border: solid 1px grey;
-}
-
-.second-title-3 {
-	font-family: 'GoudyBookletter1911';
-	color: #ffffff;
-	font-size: 5rem;
-	margin-top: auto;
-	margin-bottom: auto;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000; 
-     border-bottom: solid 1px darkred;
-}
-
-.main-container .footer {
-	background: rgba(0, 0, 0, 0.6);
-	grid-row: 5;
-	grid-column-start: 1;
-	grid-column-end: -1;
-	font-size: 1rem;
-	color: #ffffff;
-	font-family: 'GoudyBookletter1911';
-	text-align: center;
-	padding: 15px;
-	border: solid 1px grey;
-}
-
 
 @media (min-width: 580px) and (max-width:768px) {
 	.main-container .article {
