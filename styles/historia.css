@@ -84,36 +84,15 @@ body {
 	height: 100px;
 	display: flex;
 	overflow: auto;
-	overflow-x: scroll;
+	overflow-x: hidden;
 	overflow-y: hidden;
 }
 
 .timeline-img{
 	width: 200px;
-	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.timeline a:hover{
-	filter: brightness(1.5);
 }
 
 
-.timeline::-webkit-scrollbar {
-    width: 12px;
-    height: 5px;
-}
-
-.timeline::-webkit-scrollbar-track {
-    background: #000000;
-}
-
-.timeline::-webkit-scrollbar-thumb {
-    background: #888; 
-}
-
-.timeline::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-}
 
 .informacion{
 	display: flex;
