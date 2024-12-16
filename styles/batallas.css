@@ -9,7 +9,6 @@
 	padding: 0;
 }
 
-
 body {
 	
 	background-image: url('../images/background53.jpg');
@@ -31,8 +30,11 @@ body {
 }
 
 .main-container .encabezado-contenedor-informacion,
-.main-container .contenedor-tarjetas,
-.main-container .navegador{
+.main-container .contenedor-tarjetas-banners,
+.main-container .navegador,
+.main-container .banner,
+.main-container .tarjetas,
+.main-container .pie-pagina{
 	border-radius: 5px;
 	border: solid 1px grey;
 }
@@ -57,9 +59,11 @@ body {
 	filter: brightness(1.5);
 }
 
-
-.contenedor-tarjetas{
+.contenedor-tarjetas-banners{
+	display: flex;
 	height: 600px;
+	padding: 5px;
+	gap: 5px;
 }
 
 .navegador{
@@ -87,6 +91,24 @@ body {
 	background-color: #ffffff;
 	color: #000000;
 	border-radius: 5px;
+}
+
+.banner{
+	width: 300px;
+	height: 100%;
+}
+
+
+.tarjetas{
+	width: 600px;
+	height: 100%;
+}
+
+.pie-pagina {
+	font-family: 'GoudyBookletter1911';
+	text-align: center;
+	color: #ffffff;
+	padding: 10px;
 }
 
 
