@@ -34,7 +34,9 @@ body {
 .main-container .navegador,
 .main-container .banner,
 .main-container .tarjetas,
-.main-container .pie-pagina{
+.main-container .pie-pagina,
+.main-container .encabezado-tarjetas,
+.main-container .contenedor-tarjetas{
 	border-radius: 5px;
 	border: solid 1px grey;
 }
@@ -94,22 +96,58 @@ body {
 }
 
 .banner{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 	width: 300px;
 	height: 100%;
 }
 
+#banner-1{
+	background: url('../images/bannernuevo.jpg');
+	background-size: cover;
+	background-position-x: 70%;
+}
+
+#banner-2{
+	background: url('../images/banner5.jpg');
+	background-size: cover;
+	background-position-x: 80%;
+}
 
 .tarjetas{
+	background-color: #000000;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
 	width: 600px;
 	height: 100%;
 }
+
+.encabezado-tarjetas{
+	background: url('../images/batallas4.jpg');
+	background-size: cover;
+	background-position-y: 50%;
+	margin: 5px;
+}
+
+.contenedor-tarjetas{
+	background: url('../images/16.jpg');
+	background-size: cover;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px;
+	height: 100%;
+}
+
 
 .pie-pagina {
 	font-family: 'GoudyBookletter1911';
 	text-align: center;
 	color: #ffffff;
-	padding: 10px;
+	padding: 5px;
 }
+
 
 
 /*
