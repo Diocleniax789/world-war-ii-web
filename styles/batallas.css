@@ -36,8 +36,7 @@ body {
 .main-container .tarjetas,
 .main-container .pie-pagina,
 .main-container .encabezado-tarjetas,
-.main-container .contenedor-tarjetas,
-.main-container .card{
+.main-container .contenedor-tarjetas{
 	border-radius: 5px;
 	border: solid 1px grey;
 }
@@ -153,24 +152,55 @@ body {
 	background: url('../images/10.jpg');
 	background-size: cover;
 	width: 150px;
-	height: 200px;
+	height: 160px;
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
+	gap: 5px;
+	border: solid 1px #000000;
 }
 
 .img-card{
-	border: solid 1px grey;
+	border: solid 1px #000000;
 	border-radius: 5px;
 }
 
 
 #card-1{
-
+	width: 100%;
 }
 
+#card-2{
+	width: 100%;
+}
+
+.description{
+	display: flex;
+	justify-content: center;
+	background-color: #000000;
+	width: 100%;
+	color: #ffffff;
+	border-radius: 5px;	
+	font-family: 'GoudyBookletter1911';
+}
+
+.boton{
+	display: flex;
+	justify-content: center;
+	background-color: darkred;
+	width: 100%;
+	color: #ffffff;
+	border-radius: 5px;
+	transition: background 1s linear;
+}
+
+.boton:hover{
+	background-color: #ffffff;
+	color: darkred;
+}
 
 .pie-pagina {
+	background-color: #000000;
 	font-family: 'GoudyBookletter1911';
 	text-align: center;
 	color: #ffffff;
