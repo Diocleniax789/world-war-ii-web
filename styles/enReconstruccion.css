@@ -1,0 +1,33 @@
+@font-face {
+	font-family: 'GoudyBookletter1911';
+	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
+
+}
+
+*{
+	padding: 50px;
+	margin: 0;
+}
+
+
+body{
+	background: url('../images/img13.jpg');
+	background: cover;
+	margin: 50px auto;
+}
+
+.contenedor {
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 1px darkred;
+	display: flex;
+	justify-content: center;
+	font-size: 5rem;
+	text-align: center;
+	font-family: 'GoudyBookletter1911';
+	color: #ffffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+}
