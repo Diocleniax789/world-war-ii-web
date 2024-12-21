@@ -8,11 +8,11 @@
 	padding: 0;
 }
 
-body{
+body {
 	background-color: yellowgreen;
 }
 
-.main-container{
+.main-container {
 	background-color: rgba(0, 0, 0, 0.6);
 	display: flex;
 	flex-direction: column;
@@ -22,19 +22,21 @@ body{
 	max-width: 2000px;
 	margin: 50px auto;	
 	padding: 10px;
+	gap: 5px;
 }
 
-.main-header{
+.main-header,
+.main-nav {
 	border: solid 1px grey;
 	border-radius: 5px;
 }
 
-.main-header{
+.main-header {
 	background: url('../images/fireChispa.jpg');
 	background-size: cover;	
 }
 
-.main-header .img-header{
+.main-header .img-header {
 	width: 100%;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
@@ -42,3 +44,36 @@ body{
 .img-header:hover{
 	filter: brightness(1.5);
 }
+
+
+.main-container .main-nav {
+	background-color: #000000;
+	padding: 10px;
+}
+
+.main-container .main-nav ul{
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	list-style: none;
+	justify-content: center;
+}
+
+.main-container .main-nav ul a{
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'GoudyBookletter1911';
+	font-size: 1rem;
+	transition: background 1s linear;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.main-container .main-nav ul a:hover{
+	background-color: #ffffff;
+	color: #000000;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+
