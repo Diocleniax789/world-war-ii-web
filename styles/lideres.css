@@ -20,10 +20,10 @@ body {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(4, auto);
-	grid-gap: 25px;
-	width: 90%;
+	grid-gap: 5px;
+	width: 50%;
 	max-width: 2000px;
-	margin: 40px auto;
+	margin: 50px auto;
 }
 
 .header {
@@ -154,7 +154,7 @@ body {
 	border-radius: 5px;
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
-	font-size: 2em;
+	font-size: 2rem;
 	text-align: center;
 	padding: 5px;
 }
