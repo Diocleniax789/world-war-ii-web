@@ -10,14 +10,84 @@
 }
 
 body{
-
 	background: url('../images/img13.jpg');
 	background-size: cover;
-	background-repeat: no-repeat;
-	font-size: 16px;
 }
 
-p{
+.main-container {
+	background-color: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	border: solid 1px grey;
+	border-radius: 5px;
+	width: 50%;
+	max-width: 2000px;
+	margin: 50px auto;	
+	padding: 10px;
+	gap: 5px;
+}
+
+
+.main-header,
+.main-nav,
+.banner,
+.content-information,
+.main-footer,
+.section-information-header,
+.section-information,
+.card-information,
+.button-card {
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+
+.main-header {
+	background: url('../images/fireChispa.jpg');
+	background-size: cover;	
+}
+
+.main-header .img-header {
+	width: 100%;
+	transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.img-header:hover{
+	filter: brightness(1.5);
+}
+
+
+.main-container .main-nav {
+	background-color: #000000;
+	padding: 10px;
+}
+
+.main-container .main-nav ul { 
+	display: flex;
+	flex-direction: row;
+	gap: 15px;
+	list-style: none;
+	justify-content: center;
+}
+
+.main-container .main-nav ul a {
+	color: #ffffff;
+	text-decoration: none;
+	font-family: 'GoudyBookletter1911';
+	font-size: 1rem;
+	transition: background 1s linear;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+.main-container .main-nav ul a:hover {
+	background-color: #ffffff;
+	color: #000000;
+	padding: 5px;
+	border-radius: 5px;
+}
+
+
+/*p{
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	font-size: 2rem;
@@ -33,7 +103,6 @@ p{
 	text-decoration: underline;
 }
 
-/* esto conforma todo el contenido de la pagina */
 
 .main-container{
 	display: grid;
@@ -59,7 +128,6 @@ p{
 	padding: 10px;
 }
 
-/* aca se encuentra el encabezado */
 
 .header{
 	display: grid;
@@ -81,7 +149,6 @@ p{
 	filter: brightness(1.5);
 }
 
-/* aca se encuentra el navegaodr */
 
 .navegator {
 	background-color: #000000;
@@ -113,7 +180,6 @@ p{
 	border-radius: 5px;
 }
 
-/* aca se encuentra el contenido principal */
 
 .main-content{
 	display: grid;
@@ -124,7 +190,6 @@ p{
 	grid-template-rows: repeat(5, auto);
 }
 
-/* aca se encuentra la seccion de los banners*/
 
 .imagen{
 	width: 100%;
@@ -265,8 +330,6 @@ p{
 }
 
 
-/* aca se encuentra el pie de pagina */
-
 .footer{
 	display: flex;
 	justify-content: center;
@@ -278,3 +341,4 @@ p{
 	grid-column-end: -1;
 	background: rgba(0, 0, 0, 0.6);
 }
+*/
