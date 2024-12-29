@@ -43,7 +43,8 @@ body{
 .section-information,
 .card-information,
 .button-card,
-.main-footer {
+.main-footer,
+.img {
 	border: solid 1px grey;
 	border-radius: 5px;
 }
@@ -122,6 +123,7 @@ body{
 	gap: 5px;
 	padding: 10px;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .main-article {
@@ -174,4 +176,29 @@ p {
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
+}
+
+#img-0 {
+	width: 100%;
+}
+
+#img-1 {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 200px;
+}
+
+#img-2 {
+	float: right;	
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 150px;
+}
+
+#img-3 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 200px;
 }
