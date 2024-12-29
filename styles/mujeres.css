@@ -111,10 +111,18 @@ body{
 }
 
 .main-aside-header {
-	background-color: darkred;
+	background: url('../images/44.jpg');
+	background-size: cover;
+	background-position-y: 40%;
 	display: flex;
 	justify-content: center;
 	width: 100%;
+	color: #ffffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .main-aside-article {
