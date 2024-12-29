@@ -135,7 +135,9 @@ body{
 }
 
 .main-article-header {
-	background-color: yellow;
+	background: url('../images/women6.jpg');
+	background-size: cover;
+	background-position-y: 50%;
 	display: flex;
 	justify-content: center;
 }
