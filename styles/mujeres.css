@@ -135,6 +135,29 @@ body{
 	overflow-x: hidden;
 }
 
+.main-aside-article::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.main-aside-article::-webkit-scrollbar-track {
+    background: brown;
+}
+
+.main-aside-article::-webkit-scrollbar-thumb {
+    background: grey; 
+}
+
+.main-aside-article::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
+}
+
+.section{
+	display: flex;
+	gap: 5px;
+	flex-direction: row;
+}
+
 .main-article {
 	background: url('../images/background48.jpg');
 	background-size: cover;
@@ -157,6 +180,23 @@ body{
 	background: rgba(0, 0, 0, 0.6);
 	padding: 10px;
 	overflow-y: scroll;
+}
+
+.main-article-content::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.main-article-content::-webkit-scrollbar-track {
+    background: brown;
+}
+
+.main-article-content::-webkit-scrollbar-thumb {
+    background: grey; 
+}
+
+.main-article-content::-webkit-scrollbar-thumb:hover {
+    background: #000000; 
 }
 
 .main-footer {
