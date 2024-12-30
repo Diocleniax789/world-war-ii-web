@@ -253,3 +253,21 @@ p {
 	margin-right: 10px;
 	width: 200px;
 }
+
+#main-container-information-1 {
+	background: url('../images/fondo1.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+#main-aside-header-1 {
+	background: url('../images/women5.jpg');
+	background-size: cover;
+	background-position-y: 20%;
+}
+
+#main-article-1 {
+	background: url('../images/fireChispa2.jpg');
+	background-size: cover;
+}
