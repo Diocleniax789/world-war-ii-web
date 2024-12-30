@@ -94,6 +94,8 @@ body{
 }
 
 .main-container-information {
+	background: url('../images/10.jpg');
+	background-size: cover;
 	display: flex;
 	flex-direction: row;
 	gap: 5px;
