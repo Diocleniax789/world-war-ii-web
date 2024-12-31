@@ -99,12 +99,30 @@ body {
 	padding:10px;
 }
 
+.container::-webkit-scrollbar {
+    width: 5px; /* Ancho del scroll vertical */
+    height: 5px; /* Altura del scroll horizontal */
+}
+
+.container::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.container::-webkit-scrollbar-thumb {
+    background: darkgray; /* Color de la manija */
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background: darkgray; /* Color al pasar el cursor */
+}
+
 .card {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 	width: 100%;
 }
+
 
 .main-title-card {
 	font-family: 'GoudyBookletter1911';
