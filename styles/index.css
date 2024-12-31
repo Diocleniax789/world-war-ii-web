@@ -1,8 +1,10 @@
 @font-face {
-	font-family: 'GoudyBookletter1911';
-	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
+	font-family: 'PeachyKeenSerif-DEMO';
+	src: url('../fonts/PeachyKeenSerif-DEMO.otf') format(OpenType);
 
 }
+
+
 * {
 	margin: 0;
 	padding: 0;
@@ -13,6 +15,18 @@ body {
 	background-size: cover;
 }
 
+
+h1 {
+	font-family: 'PeachyKeenSerif-DEMO';
+	padding: 25px;
+	font-size: 3rem;
+	color: #ffffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
 
 .main{
 	background: rgba(0, 0, 0, 0.6);
@@ -29,21 +43,13 @@ body {
 }
 
 .header{
-	background: url('../images/fireChispa.jpg');
+	background: url('../images/17.jpg');
+	background-size: cover;
+	background-position-y: 80%;
 	display: flex;
 	justify-content: center;
 	width: 100%;
 	border: solid 1px grey;
-}
-
-.img{
-	width: 100%;
-	transition: transform 0.3s ease, filter 0.3s ease;
-	margin: 5px auto;
-}
-
-.img:hover{
-	filter: brightness(1.5);
 }
 
 .contenedor{
