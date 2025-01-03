@@ -40,19 +40,24 @@ body {
 }
 
 .main-header {
-	background: url('../images/fireChispa.jpg');
-	background-size: cover;	
+	background: url('../images/17.jpg');
+	background-size: cover;
+	background-position-y: 80%;
+	display: flex;
+	justify-content: center;
 }
 
-.main-header .img-header {
-	width: 100%;
-	transition: transform 0.3s ease, filter 0.3s ease;
+h1 {
+	font-family: 'PeachyKeenSerif-DEMO';
+	padding: 25px;
+	font-size: 3rem;
+	color: #ffffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
-
-.img-header:hover{
-	filter: brightness(1.5);
-}
-
 
 .main-container .main-nav {
 	background-color: #000000;

@@ -27,7 +27,9 @@ body {
 }
 
 .header {
-	background: url('../images/fireChispa.jpg');
+	background: url('../images/17.jpg');
+	background-size: cover;
+	background-position-y: 80%;
 	grid-column-start: 1;
 	grid-column-end: -1;
 	grid-row: 1;
@@ -39,10 +41,16 @@ body {
 	padding: 10px;
 }
 
-.header .main-title {
-	font-family: 'GoudyBookletter1911';
+h1 {
+	font-family: 'PeachyKeenSerif-DEMO';
+	padding: 25px;
+	font-size: 3rem;
 	color: #ffffff;
-	font-size: 2rem;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .nav {
@@ -126,10 +134,15 @@ body {
 
 .main-title-card {
 	font-family: 'GoudyBookletter1911';
-	color: #000000;
+	color: #ffffff;
 	font-size: 2rem;
 	margin: 5px;
 	border-bottom: solid 1px black;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .gallery {
@@ -154,12 +167,18 @@ body {
 
 .texto {
 	font-family: 'GoudyBookletter1911';
-	color: #000000;	
+	color: #ffffff;	
 	margin: 10px;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 #card-1,#card-2,#card-3,#card-4,#card-5,#card-6,#card-7{
-	background-image: url('../images/old-paper.jpg');
+	background-image: url('../images/16.jpg');
+	background-size: cover;
 	border: solid 1px grey;
 }
 
