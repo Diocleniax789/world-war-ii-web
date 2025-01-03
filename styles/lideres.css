@@ -38,7 +38,7 @@ body {
 	background-color: #000000;
 	border: solid 1px grey;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 5px;
 }
 
 h1 {
@@ -153,14 +153,14 @@ h1 {
 
 .img {
 	width: 25%;
-	border: solid 5px #000000;
+	border: solid 5px #ffffff;
 	border-radius: 5px;
 	margin: 10px;
 }
 
 .imgflag {
 	width: 50%;
-	border: solid 5px #000000;
+	border: solid 5px #ffffff;
 	border-radius: 5px;
 	margin: 10px;
 }
@@ -179,7 +179,7 @@ h1 {
 #card-1,#card-2,#card-3,#card-4,#card-5,#card-6,#card-7{
 	background-image: url('../images/16.jpg');
 	background-size: cover;
-	border: solid 1px grey;
+	border: solid 1px #ffffff;
 }
 
 .footer {
@@ -189,7 +189,7 @@ h1 {
 	background: rgba(0, 0, 0, 0.6);
 	border: solid 1px grey;
 	border-radius: 5px;
-	font-family: 'GoudyBookletter1911';
+	font-family: 'PeachyKeenSerif-DEMO';
 	color: #ffffff;
 	font-size: 2rem;
 	text-align: center;
