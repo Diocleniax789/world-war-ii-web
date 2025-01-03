@@ -50,6 +50,7 @@ h1 {
 	justify-content: center;
 	width: 100%;
 	border: solid 1px grey;
+	border-radius: 5px;
 }
 
 .contenedor{
