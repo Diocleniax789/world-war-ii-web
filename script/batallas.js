@@ -9,5 +9,14 @@ for(let boton of botones) {
 		} else {
 			boton.textContent = 'FINALIZADO!';
 		}
+	
+		if (acum > 10) {
+			setTimeout(() => {
+				acum = 0;
+				boton.textContent = 'Click Aqui!';
+				boton.style.color = 'gold';
+			},2000);
+		}
 	});
+
 }
