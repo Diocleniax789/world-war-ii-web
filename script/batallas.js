@@ -1,22 +1,18 @@
-const botones = document.querySelectorAll('.boton');
+const modal = document.getElementById('infoModal');
+const openModal = document.getElementById('openModal');
+const closeModal = document.getElementById('closeModal');
 
-for(let boton of botones) {
-	let acum = 0;
-	boton.addEventListener("click", sumarNumero = () => {
-		if(acum >= 0 && acum <= 10){
-			boton.textContent  = acum;
-			acum += 1;
-		} else {
-			boton.textContent = 'FINALIZADO!';
-		}
-	
-		if (acum > 10) {
-			setTimeout(() => {
-				acum = 0;
-				boton.textContent = 'Click Aqui!';
-				boton.style.color = 'gold';
-			},2000);
-		}
+	openModal.addEventListener('click', () => {
+      modal.style.display = 'flex';
 	});
 
-}
+	closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+	});
+
+	window.addEventListener('click', (event) => {
+    	if (event.target === modal) {
+        	modal.style.display = 'none';
+    	}
+	});
+
