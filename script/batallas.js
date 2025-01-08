@@ -1,18 +1,17 @@
-const modal = document.getElementById('infoModal');
-const openModal = document.getElementById('openModal');
-const closeModal = document.getElementById('closeModal');
+const botones = document.querySelectorAll(".boton");
 
-	openModal.addEventListener('click', () => {
-      modal.style.display = 'flex';
-	});
 
-	closeModal.addEventListener('click', () => {
-      modal.style.display = 'none';
-	});
-
-	window.addEventListener('click', (event) => {
-    	if (event.target === modal) {
-        	modal.style.display = 'none';
-    	}
-	});
+for(let boton of botones) {
+	boton.addEventListener('click', abrirPantalla = () => {
+		const targetId = boton.getAttribute("data-target");
+		const pantallaEmergente = document.getElementById(targetId);
+		const botonCerrar = document.querySelector('.boton-cerrar');
+		
+		pantallaEmergente.style.display = 'flex';
+		
+		botonCerrar.addEventListener('click', cerrarPantalla = () => {
+      		pantallaEmergente.style.display = 'none';
+  		});
+	}); 
+}
 
