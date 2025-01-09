@@ -2,6 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="description" content="Información sobre las batallas más importantes de la Segunda Guerra Mundial.">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"><link rel="stylesheet" type="text/css" href="styles/batallas.css">
 	<link rel="shortcut icon" href="favicon/favicon.ico" />
 	<title>BATALLAS</title>
@@ -26,7 +27,7 @@
 			</nav>
 
 			<div class="contenedor-tarjetas-banners">
-			
+
 				<div class="tarjetas">
 
 					<header class="encabezado-tarjetas">
@@ -40,9 +41,8 @@
 							<div class="card">								
 								<img src="images/ardenasCard.jpg" class="img-card" id="card-1">
 								<figcaption class="description">Las Ardenas</figcaption>
-								<button class="boton" data-target="pantalla-ardenas" onclick="abrirPantalla()">Click aqui!</button>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-ardenas">Click aqui!</button>
 							</div>
-
 							<div class="pantalla-emergente" id="pantalla-ardenas">
 								<div class="contenido-informacion">
 									<div class="texto-imagenes">
@@ -50,12 +50,12 @@
 											<div class="text">
 												<h2 id="titulo-card">Batalla de las Ardenas(1944-1945)</h2>
 												<img src="images/battle-bulge.jpg" class="img-information" id="img-4">
-        										<p class="texto">
-        										**La Batalla de las Ardenas**, también conocida como la **Ofensiva de las Ardenas** o la **Batalla del Bulge**, fue la última gran ofensiva alemana en el frente occidental durante la Segunda Guerra Mundial. Se desarrolló entre el 16 de diciembre de 1944 y el 25 de enero de 1945 en la región boscosa de las Ardenas, que abarca partes de Bélgica, Luxemburgo y Francia. Esta batalla marcó un esfuerzo desesperado de Adolf Hitler por dividir las fuerzas aliadas y capturar el estratégico puerto de Amberes, con la esperanza de forzar una negociación de paz en términos favorables para Alemania.
+												<p class="texto">
+													**La Batalla de las Ardenas**, también conocida como la **Ofensiva de las Ardenas** o la **Batalla del Bulge**, fue la última gran ofensiva alemana en el frente occidental durante la Segunda Guerra Mundial. Se desarrolló entre el 16 de diciembre de 1944 y el 25 de enero de 1945 en la región boscosa de las Ardenas, que abarca partes de Bélgica, Luxemburgo y Francia. Esta batalla marcó un esfuerzo desesperado de Adolf Hitler por dividir las fuerzas aliadas y capturar el estratégico puerto de Amberes, con la esperanza de forzar una negociación de paz en términos favorables para Alemania.
 
-												La ofensiva comenzó con un ataque sorpresa de las tropas alemanas contra las líneas aliadas, aprovechando el mal tiempo que impedía el apoyo aéreo aliado. El avance inicial de los alemanes creó un "saliente" en las líneas aliadas, lo que dio nombre a la batalla en inglés ("Battle of the Bulge"). Sin embargo, los aliados respondieron con determinación, a pesar de estar inicialmente mal preparados y sorprendidos. Un ejemplo destacado de resistencia fue el asedio a Bastogne, donde tropas estadounidenses, lideradas por el general Anthony McAuliffe, rechazaron los ataques alemanes a pesar de estar rodeadas y con pocos suministros.
+													La ofensiva comenzó con un ataque sorpresa de las tropas alemanas contra las líneas aliadas, aprovechando el mal tiempo que impedía el apoyo aéreo aliado. El avance inicial de los alemanes creó un "saliente" en las líneas aliadas, lo que dio nombre a la batalla en inglés ("Battle of the Bulge"). Sin embargo, los aliados respondieron con determinación, a pesar de estar inicialmente mal preparados y sorprendidos. Un ejemplo destacado de resistencia fue el asedio a Bastogne, donde tropas estadounidenses, lideradas por el general Anthony McAuliffe, rechazaron los ataques alemanes a pesar de estar rodeadas y con pocos suministros.
 
-												La mejora del clima permitió el regreso de la superioridad aérea aliada, que desempeñó un papel crucial en frenar el avance alemán. Además, el agotamiento de los recursos del Eje, la resistencia aliada y los contraataques liderados por el general George S. Patton finalmente revirtieron la ofensiva. Los alemanes sufrieron enormes pérdidas en hombres y material, debilitando irreversiblemente su capacidad de defensa en el frente occidental.
+													La mejora del clima permitió el regreso de la superioridad aérea aliada, que desempeñó un papel crucial en frenar el avance alemán. Además, el agotamiento de los recursos del Eje, la resistencia aliada y los contraataques liderados por el general George S. Patton finalmente revirtieron la ofensiva. Los alemanes sufrieron enormes pérdidas en hombres y material, debilitando irreversiblemente su capacidad de defensa en el frente occidental.
 
 												La Batalla de las Ardenas fue una de las más grandes y costosas para los Estados Unidos, con más de 80,000 bajas entre muertos, heridos y desaparecidos. Sin embargo, su victoria aseguró el avance aliado hacia Alemania, acelerando el final de la guerra en Europa y marcando el colapso definitivo del Tercer Reich.</p>				
 												<iframe class="video" src="https://www.youtube.com/embed/FGRqwm32dB4?si=7sDIh-EmzYlo3t22" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -65,23 +65,24 @@
 									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
 								</div>
 							</div>
+
 							<div class="card">
-							<img src="images/gardenCard.jpg" class="img-card" id="card-1">
-							<figcaption class="description">Market Garden</figcaption>
-							<button class="boton" data-target="pantalla-market" onclick="abrirPantalla()" >Click aqui!</button>
+								<img src="images/gardenCard.jpg" class="img-card" id="card-1">
+								<figcaption class="description">Market Garden</figcaption>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-garden" >Click aqui!</button>
 							</div>
 
-							<div class="pantalla-emergente" id="pantalla-market">
+							<div class="pantalla-emergente" id="pantalla-garden">
 								<div class="contenido-informacion">
 									<div class="texto-imagenes">
 										<article>
 											<div class="text">
 												<h2 id="titulo-card">Market Garden(1944)</h2>
-        										<img src="images/Market-Garden2.jpg" id="img-4">
-        										<p class="texto">
-												**Market Garden** fue una operación militar aliada llevada a cabo durante la Segunda Guerra Mundial, entre el 17 y el 25 de septiembre de 1944. Su objetivo principal era asegurar una serie de puentes clave en los Países Bajos, permitiendo a las fuerzas aliadas atravesar rápidamente el río Rin y penetrar en el corazón industrial de Alemania, acelerando el fin de la guerra. Fue una de las operaciones aerotransportadas más ambiciosas de la contienda, combinando tropas terrestres y paracaidistas en un intento por capturar y mantener posiciones estratégicas.
+												<img src="images/Market-Garden2.jpg" id="img-4">
+												<p class="texto">
+													**Market Garden** fue una operación militar aliada llevada a cabo durante la Segunda Guerra Mundial, entre el 17 y el 25 de septiembre de 1944. Su objetivo principal era asegurar una serie de puentes clave en los Países Bajos, permitiendo a las fuerzas aliadas atravesar rápidamente el río Rin y penetrar en el corazón industrial de Alemania, acelerando el fin de la guerra. Fue una de las operaciones aerotransportadas más ambiciosas de la contienda, combinando tropas terrestres y paracaidistas en un intento por capturar y mantener posiciones estratégicas.
 
-												La operación constaba de dos partes principales: "Market" y "Garden". "Market" implicaba el despliegue de tres divisiones aerotransportadas para capturar puentes vitales en Eindhoven, Nimega y Arnhem, asegurando el paso para las fuerzas terrestres. Por su parte, "Garden" consistía en un avance terrestre liderado por el XXX Cuerpo británico, que debía conectar con las tropas aerotransportadas y asegurar una ruta continua hacia Alemania. Sin embargo, la operación se encontró con fuertes dificultades, incluyendo una planificación apresurada, resistencia alemana inesperada y problemas de comunicación, lo que resultó en un costoso fracaso para los Aliados, especialmente en Arnhem, donde las fuerzas no pudieron mantener el puente.
+													La operación constaba de dos partes principales: "Market" y "Garden". "Market" implicaba el despliegue de tres divisiones aerotransportadas para capturar puentes vitales en Eindhoven, Nimega y Arnhem, asegurando el paso para las fuerzas terrestres. Por su parte, "Garden" consistía en un avance terrestre liderado por el XXX Cuerpo británico, que debía conectar con las tropas aerotransportadas y asegurar una ruta continua hacia Alemania. Sin embargo, la operación se encontró con fuertes dificultades, incluyendo una planificación apresurada, resistencia alemana inesperada y problemas de comunicación, lo que resultó en un costoso fracaso para los Aliados, especialmente en Arnhem, donde las fuerzas no pudieron mantener el puente.
 
 												A pesar de sus ambiciones, Market Garden terminó siendo una operación polémica debido a sus elevados costos humanos y materiales, además de no cumplir sus objetivos estratégicos. Sin embargo, demostró el valor y la resistencia de las tropas aliadas en condiciones adversas y marcó un intento audaz de cambiar el curso de la guerra en Europa.</p>				
 											</div>
@@ -94,7 +95,7 @@
 							<div class="card">
 								<img src="images/stlingradCard.jpg" class="img-card" id="card-1">
 								<figcaption class="description">Stalingrado</figcaption>
-								<button class="boton" data-target="pantalla-stalingrado" onclick="abrirPantalla()">Click aqui!</button>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-stalingrado">Click aqui!</button>
 							</div>
 							<div class="pantalla-emergente" id="pantalla-stalingrado">
 								<div class="contenido-informacion">
@@ -102,13 +103,13 @@
 										<article>
 											<div class="text">
 												<h2 id="titulo-card">Batalla de Stalingrado(1942-1943)</h2>
-        										<img src="images/stalingradCard.jpg" id="card-1">
-        										<p class="texto">
-												**La Batalla de Stalingrado** fue uno de los enfrentamientos más importantes y sangrientos de la Segunda Guerra Mundial, librado entre las fuerzas del Eje, lideradas por Alemania, y el Ejército Rojo soviético. La batalla tuvo lugar desde el 23 de agosto de 1942 hasta el 2 de febrero de 1943 en la ciudad de Stalingrado (hoy Volgogrado, Rusia), marcando un punto de inflexión crucial en el conflicto.
+												<img src="images/batalla-stalingrado.jpg" id="card-1">
+												<p class="texto">
+													**La Batalla de Stalingrado** fue uno de los enfrentamientos más importantes y sangrientos de la Segunda Guerra Mundial, librado entre las fuerzas del Eje, lideradas por Alemania, y el Ejército Rojo soviético. La batalla tuvo lugar desde el 23 de agosto de 1942 hasta el 2 de febrero de 1943 en la ciudad de Stalingrado (hoy Volgogrado, Rusia), marcando un punto de inflexión crucial en el conflicto.
 
-												El objetivo principal de la Alemania nazi era capturar Stalingrado para asegurar el control de las rutas fluviales del Volga y los campos petrolíferos del Cáucaso, esenciales para sostener su esfuerzo bélico. Sin embargo, la defensa férrea de los soviéticos, liderada por el general Vasili Chuikov, convirtió la ciudad en un escenario de combates cuerpo a cuerpo y una brutal guerra urbana. Las fuerzas alemanas, bajo el mando de Friedrich Paulus, enfrentaron un entorno hostil y un enemigo determinado, pero inicialmente lograron avanzar, ocupando gran parte de la ciudad.
+													El objetivo principal de la Alemania nazi era capturar Stalingrado para asegurar el control de las rutas fluviales del Volga y los campos petrolíferos del Cáucaso, esenciales para sostener su esfuerzo bélico. Sin embargo, la defensa férrea de los soviéticos, liderada por el general Vasili Chuikov, convirtió la ciudad en un escenario de combates cuerpo a cuerpo y una brutal guerra urbana. Las fuerzas alemanas, bajo el mando de Friedrich Paulus, enfrentaron un entorno hostil y un enemigo determinado, pero inicialmente lograron avanzar, ocupando gran parte de la ciudad.
 
-												El punto decisivo llegó en noviembre de 1942, cuando el Ejército Rojo lanzó la Operación Urano, una maniobra de doble envolvimiento que cercó al 6.º Ejército alemán y a las fuerzas aliadas en Stalingrado. A pesar de los intentos del Eje por romper el cerco, los soviéticos lograron mantenerlo, debilitando progresivamente a las tropas atrapadas. En enero de 1943, el 6.º Ejército, enfrentando el hambre, el frío extremo y la falta de suministros, se rindió. Fue la primera gran derrota alemana en la guerra, con más de 700,000 bajas combinadas entre ambos bandos.
+													El punto decisivo llegó en noviembre de 1942, cuando el Ejército Rojo lanzó la Operación Urano, una maniobra de doble envolvimiento que cercó al 6.º Ejército alemán y a las fuerzas aliadas en Stalingrado. A pesar de los intentos del Eje por romper el cerco, los soviéticos lograron mantenerlo, debilitando progresivamente a las tropas atrapadas. En enero de 1943, el 6.º Ejército, enfrentando el hambre, el frío extremo y la falta de suministros, se rindió. Fue la primera gran derrota alemana en la guerra, con más de 700,000 bajas combinadas entre ambos bandos.
 
 												La Batalla de Stalingrado simbolizó el inicio del declive del poder militar nazi y el ascenso del Ejército Rojo en el Frente Oriental. También destacó por su ferocidad y el costo humano, dejando una huella imborrable en la memoria histórica de la guerra.</p>				
 											</div>
@@ -121,7 +122,7 @@
 							<div class="card">
 								<img src="images/img10.jpg" class="img-card" id="card-1">
 								<figcaption class="description">Pearl Harbor</figcaption>
-								<button class="boton"  data-target="pantalla-pearl-harbor" onclick="abrirPantalla()">Click aqui!</button>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-pearl-harbor">Click aqui!</button>
 							</div>
 							<div class="pantalla-emergente" id="pantalla-pearl-harbor">
 								<div class="contenido-informacion">
@@ -129,13 +130,13 @@
 										<article>
 											<div class="text">
 												<h2 id="titulo-card">Ataque a Pearl Harbor(1941)</h2>
-        										<img src="images/pearl-harbor.jpg" id="img-4">
-        										<p class="texto">
-												**El ataque a Pearl Harbor** fue un asalto militar sorpresa llevado a cabo por la Armada Imperial Japonesa contra la base naval estadounidense de Pearl Harbor, en Hawái, el 7 de diciembre de 1941. Este evento marcó un punto de inflexión en la Segunda Guerra Mundial, ya que provocó la entrada oficial de los Estados Unidos en el conflicto global.
+												<img src="images/pearl-harbor.jpg" id="img-4">
+												<p class="texto">
+													**El ataque a Pearl Harbor** fue un asalto militar sorpresa llevado a cabo por la Armada Imperial Japonesa contra la base naval estadounidense de Pearl Harbor, en Hawái, el 7 de diciembre de 1941. Este evento marcó un punto de inflexión en la Segunda Guerra Mundial, ya que provocó la entrada oficial de los Estados Unidos en el conflicto global.
 
-												El objetivo principal del ataque era incapacitar la flota del Pacífico de los Estados Unidos para garantizar la supremacía japonesa en la región durante la expansión de su imperio en Asia y el Pacífico. A las 7:55 a.m., aviones japoneses comenzaron a bombardear la base, causando una devastación masiva. En el transcurso de poco más de una hora, se hundieron o dañaron severamente ocho acorazados, entre ellos el **USS Arizona**, que se convirtió en un símbolo de la tragedia. También se perdieron 188 aviones estadounidenses y murieron más de 2,400 personas, entre militares y civiles.
+													El objetivo principal del ataque era incapacitar la flota del Pacífico de los Estados Unidos para garantizar la supremacía japonesa en la región durante la expansión de su imperio en Asia y el Pacífico. A las 7:55 a.m., aviones japoneses comenzaron a bombardear la base, causando una devastación masiva. En el transcurso de poco más de una hora, se hundieron o dañaron severamente ocho acorazados, entre ellos el **USS Arizona**, que se convirtió en un símbolo de la tragedia. También se perdieron 188 aviones estadounidenses y murieron más de 2,400 personas, entre militares y civiles.
 
-												El ataque, aunque exitoso tácticamente, no logró su objetivo estratégico de destruir por completo la flota estadounidense, ya que los portaaviones, que eran las embarcaciones más importantes, no estaban en el puerto ese día. Además, la incursión galvanizó a la población estadounidense, transformando su aislamiento previo en una determinación colectiva de derrotar a Japón y sus aliados.
+													El ataque, aunque exitoso tácticamente, no logró su objetivo estratégico de destruir por completo la flota estadounidense, ya que los portaaviones, que eran las embarcaciones más importantes, no estaban en el puerto ese día. Además, la incursión galvanizó a la población estadounidense, transformando su aislamiento previo en una determinación colectiva de derrotar a Japón y sus aliados.
 
 												Al día siguiente, el 8 de diciembre de 1941, el presidente Franklin D. Roosevelt declaró la guerra a Japón, describiendo el ataque como "una fecha que vivirá en la infamia". Este evento no solo llevó a la participación activa de Estados Unidos en la Segunda Guerra Mundial, sino que también marcó el inicio de un cambio en el equilibrio global de poder hacia las potencias aliadas. Pearl Harbor sigue siendo un recordatorio de las consecuencias de la guerra y la importancia de la preparación militar.</p>				
 											</div>
@@ -148,32 +149,199 @@
 							<div class="card">
 								<img src="images/norCard.jpg" class="img-card" id="card-1">
 								<figcaption class="description">Noruega</figcaption>
-								<button class="boton">Click aqui!</button>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-noruega">Click aqui!</button>
 							</div>
+
+							<div class="pantalla-emergente" id="pantalla-noruega">
+								<div class="contenido-informacion">
+									<div class="texto-imagenes">
+										<article>
+											<div class="text">
+												<h2 id="titulo-card">Invasion de Noruega(1940)</h2>
+												<img src="images/noruega.jpg" class="img-information" id="img-4">
+												<p class="texto">
+													**La invasión de Noruega**, conocida como la **Operación Weserübung**, fue una campaña militar llevada a cabo por Alemania durante la Segunda Guerra Mundial, entre abril y junio de 1940. Su objetivo principal era asegurar el control de Noruega y Dinamarca para garantizar el acceso a los recursos estratégicos de la región, particularmente el mineral de hierro sueco que se transportaba a través del puerto noruego de Narvik, y para proteger las rutas marítimas del Atlántico Norte.
+
+													El 9 de abril de 1940, las fuerzas alemanas lanzaron un ataque sorpresa contra Noruega y Dinamarca, violando su neutralidad. Dinamarca capituló rápidamente debido a su limitada capacidad militar, mientras que en Noruega la resistencia fue más prolongada y compleja. A pesar de la superioridad militar alemana, las fuerzas noruegas, apoyadas por tropas británicas, francesas y polacas, ofrecieron una defensa significativa en varios puntos estratégicos, incluidos Narvik y Oslo.
+
+													El control del país era crucial tanto para los alemanes como para los Aliados. Alemania buscaba establecer bases navales y aéreas en Noruega para desafiar el bloqueo marítimo británico y expandir su influencia en el Atlántico. Los Aliados, por otro lado, intentaron evitar que los nazis consolidaran su posición, pero sus esfuerzos de contraataque fueron insuficientes debido a una combinación de malas decisiones estratégicas, falta de coordinación y la rápida movilización alemana.
+
+													Finalmente, en junio de 1940, las fuerzas aliadas se retiraron de Noruega, dejando al país bajo ocupación alemana hasta el final de la guerra. Aunque la invasión fue un éxito táctico para Alemania, también expuso debilidades en su maquinaria militar y llevó al hundimiento del crucero pesado **Blücher** y otras pérdidas importantes. Además, el fracaso aliado en Noruega contribuyó a la dimisión del primer ministro británico Neville Chamberlain, siendo reemplazado por Winston Churchill, quien lideraría al Reino Unido en los años más duros de la guerra.
+
+												La ocupación alemana de Noruega tuvo un impacto significativo en la región y convirtió al país en un bastión estratégico en el norte de Europa durante la guerra. Sin embargo, también fue un recordatorio de las consecuencias del expansionismo nazi en Europa y la fragilidad de la neutralidad en tiempos de conflicto global.</p>																
+											</div>
+										</article>
+									</div>
+									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
+								</div>
+							</div>
+
+						</div>
+
+						<div class="section">
+							
+							<div class="card">								
+								<img src="images/berlinCard.jpg" class="img-card" id="card-1">
+								<figcaption class="description">Batalla de Berlin</figcaption>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-berlin">Click aqui!</button>
+							</div>
+							<div class="pantalla-emergente" id="pantalla-berlin">
+								<div class="contenido-informacion">
+									<div class="texto-imagenes">
+										<article>
+											<div class="text">
+												<h2 id="titulo-card">Batalla de Berlin(1945)</h2>
+												<img src="images/battle-of-berlin.jpg" class="img-information" id="img-4">
+												<p class="texto">
+													**La Batalla de Berlín** fue el enfrentamiento final entre las fuerzas aliadas, principalmente el Ejército Rojo soviético, y las tropas alemanas durante la Segunda Guerra Mundial, que culminó con la caída de Berlín, la capital del Tercer Reich, y el fin de la guerra en Europa. La batalla tuvo lugar entre el 16 de abril y el 2 de mayo de 1945, y fue uno de los combates más intensos y destructivos del conflicto.
+
+													El contexto de la batalla se dio en un momento en que la derrota de Alemania era prácticamente inevitable. Las fuerzas soviéticas, comandadas por el mariscal Georgi Zhúkov, habían avanzado desde el este, alcanzando las puertas de Berlín. Mientras tanto, los aliados occidentales, tras el desembarco en Normandía y la liberación de gran parte de Europa, se acercaban a Alemania desde el oeste, aunque su avance se vio frenado por la necesidad de coordinar esfuerzos con los soviéticos en la ofensiva final.
+
+													El asalto a Berlín comenzó con un intenso bombardeo aéreo y artillero soviético que destruyó gran parte de la ciudad. A pesar de los esfuerzos alemanes por defenderla, la ciudad estaba desorganizada, y el ejército alemán, dirigido por Adolf Hitler, estaba compuesto principalmente por tropas desmoralizadas, soldados novatos y civiles armados, lo que dificultó la resistencia. Los defensores alemanes, bajo el mando de Hitler, ofrecieron una resistencia feroz, pero la superioridad numérica y tecnológica de los soviéticos fue abrumadora.
+
+													Dentro de la ciudad, los combates fueron extremadamente violentos, especialmente en áreas como el Reichstag (el parlamento alemán), donde las tropas soviéticas lucharon para capturarlo y finalmente izaron la bandera de la Unión Soviética en su techo como símbolo de la victoria. Durante la batalla, Hitler, quien se encontraba en su búnker subterráneo, decidió suicidarse el 30 de abril, lo que marcó la virtual desaparición del liderazgo nazi.
+
+													El 2 de mayo de 1945, después de días de intensos combates y la rendición de las fuerzas alemanas restantes, Berlín cayó oficialmente en manos del Ejército Rojo. La batalla resultó en la muerte de miles de soldados y civiles, además de la destrucción casi total de la ciudad. La caída de Berlín selló el destino de la Alemania nazi y marcó el fin de la guerra en Europa, ya que pocos días después, el 7 de mayo de 1945, Alemania firmó su rendición incondicional ante los aliados.
+
+													La Batalla de Berlín fue un episodio de gran significado simbólico y estratégico, ya que marcó el fin de un régimen brutal y autoritario, pero también dejó un legado de devastación y sufrimiento humano, especialmente para la población civil de la ciudad.</p>				
+											</div>
+										</article>
+									</div>
+									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<img src="images/overlordCard2.jpg" class="img-card" id="card-1">
+								<figcaption class="description">Overlord</figcaption>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-overlord" >Click aqui!</button>
+							</div>
+
+							<div class="pantalla-emergente" id="pantalla-overlord">
+								<div class="contenido-informacion">
+									<div class="texto-imagenes">
+										<article>
+											<div class="text">
+												<h2 id="titulo-card">Operacion Overlord(1944)</h2>
+												<img src="images/historical6.jpg" id="img-4">
+												<p class="texto">
+													**Operación Overlord** fue la codificación del plan de invasión aliado para liberar Europa del control nazi durante la Segunda Guerra Mundial. Fue la operación militar más ambiciosa de la guerra y resultó en el desembarco en Normandía el 6 de junio de 1944, conocido como el **Día D**. Esta operación marcó el inicio de la liberación de la Europa occidental ocupada por la Alemania nazi.
+
+													El objetivo de **Overlord** era abrir un segundo frente en Europa para aliviar la presión sobre el Ejército Rojo en el este y, eventualmente, forzar la rendición de Alemania. Para ello, los aliados decidieron invadir la costa de Normandía, en el noroeste de Francia, con el fin de establecer una cabeza de puente desde la que pudieran avanzar hacia el interior de Francia y más allá. El plan fue diseñado y coordinado principalmente por Estados Unidos, el Reino Unido y Canadá, bajo el mando del general estadounidense Dwight D. Eisenhower.
+
+													El **Día D**, el 6 de junio de 1944, involucró un asalto masivo compuesto por un desembarco anfibio, apoyado por paracaidistas que fueron lanzados detrás de las líneas alemanas. Miles de barcos, aviones y tropas aliadas desembarcaron en cinco playas de Normandía: Utah, Omaha, Gold, Juno y Sword. El desembarco fue precedido por intensos bombardeos aéreos y marítimos para debilitar las defensas alemanas.
+
+													A pesar de los esfuerzos de los aliados, el desembarco no fue fácil. Las fuerzas alemanas, aunque debilitadas, resistieron ferozmente, especialmente en playas como Omaha, donde las fuerzas estadounidenses enfrentaron una fuerte oposición que resultó en altas bajas. No obstante, la invasión fue exitosa en el largo plazo, ya que permitió a los aliados establecer una cabeza de puente sólida en Normandía y comenzar la liberación de Francia.
+
+													Tras el éxito inicial de la invasión, los aliados comenzaron una serie de ofensivas para liberar las ciudades y regiones del norte de Francia, lo que finalmente llevó a la liberación de París en agosto de 1944. La operación también aceleró el colapso del régimen nazi, ya que las fuerzas alemanas fueron forzadas a combatir en varios frentes a medida que los aliados avanzaban desde el oeste, mientras que el Ejército Rojo hacía lo propio desde el este.
+		
+													**Operación Overlord** fue un éxito decisivo que marcó un giro crucial en la guerra, estableciendo las bases para la derrota final de la Alemania nazi y la rendición alemana en mayo de 1945. Además, fue una de las operaciones militares más grandes de la historia, con la participación de más de 156,000 soldados aliados, y es considerada una de las victorias más significativas de la Segunda Guerra Mundial.</p>				
+											</div>
+										</article>
+									</div>
+									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<img src="images/stlingradCard.jpg" class="img-card" id="card-1">
+								<figcaption class="description">Stalingrado</figcaption>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-stalingrado">Click aqui!</button>
+							</div>
+							<div class="pantalla-emergente" id="pantalla-stalingrado">
+								<div class="contenido-informacion">
+									<div class="texto-imagenes">
+										<article>
+											<div class="text">
+												<h2 id="titulo-card">Batalla de Stalingrado(1942-1943)</h2>
+												<img src="images/batalla-stalingrado.jpg" id="card-1">
+												<p class="texto">
+													**La Batalla de Stalingrado** fue uno de los enfrentamientos más importantes y sangrientos de la Segunda Guerra Mundial, librado entre las fuerzas del Eje, lideradas por Alemania, y el Ejército Rojo soviético. La batalla tuvo lugar desde el 23 de agosto de 1942 hasta el 2 de febrero de 1943 en la ciudad de Stalingrado (hoy Volgogrado, Rusia), marcando un punto de inflexión crucial en el conflicto.
+
+													El objetivo principal de la Alemania nazi era capturar Stalingrado para asegurar el control de las rutas fluviales del Volga y los campos petrolíferos del Cáucaso, esenciales para sostener su esfuerzo bélico. Sin embargo, la defensa férrea de los soviéticos, liderada por el general Vasili Chuikov, convirtió la ciudad en un escenario de combates cuerpo a cuerpo y una brutal guerra urbana. Las fuerzas alemanas, bajo el mando de Friedrich Paulus, enfrentaron un entorno hostil y un enemigo determinado, pero inicialmente lograron avanzar, ocupando gran parte de la ciudad.
+
+													El punto decisivo llegó en noviembre de 1942, cuando el Ejército Rojo lanzó la Operación Urano, una maniobra de doble envolvimiento que cercó al 6.º Ejército alemán y a las fuerzas aliadas en Stalingrado. A pesar de los intentos del Eje por romper el cerco, los soviéticos lograron mantenerlo, debilitando progresivamente a las tropas atrapadas. En enero de 1943, el 6.º Ejército, enfrentando el hambre, el frío extremo y la falta de suministros, se rindió. Fue la primera gran derrota alemana en la guerra, con más de 700,000 bajas combinadas entre ambos bandos.
+
+												La Batalla de Stalingrado simbolizó el inicio del declive del poder militar nazi y el ascenso del Ejército Rojo en el Frente Oriental. También destacó por su ferocidad y el costo humano, dejando una huella imborrable en la memoria histórica de la guerra.</p>				
+											</div>
+										</article>
+									</div>
+									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<img src="images/img10.jpg" class="img-card" id="card-1">
+								<figcaption class="description">Pearl Harbor</figcaption>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-pearl-harbor">Click aqui!</button>
+							</div>
+							<div class="pantalla-emergente" id="pantalla-pearl-harbor">
+								<div class="contenido-informacion">
+									<div class="texto-imagenes">
+										<article>
+											<div class="text">
+												<h2 id="titulo-card">Ataque a Pearl Harbor(1941)</h2>
+												<img src="images/pearl-harbor.jpg" id="img-4">
+												<p class="texto">
+													**El ataque a Pearl Harbor** fue un asalto militar sorpresa llevado a cabo por la Armada Imperial Japonesa contra la base naval estadounidense de Pearl Harbor, en Hawái, el 7 de diciembre de 1941. Este evento marcó un punto de inflexión en la Segunda Guerra Mundial, ya que provocó la entrada oficial de los Estados Unidos en el conflicto global.
+
+													El objetivo principal del ataque era incapacitar la flota del Pacífico de los Estados Unidos para garantizar la supremacía japonesa en la región durante la expansión de su imperio en Asia y el Pacífico. A las 7:55 a.m., aviones japoneses comenzaron a bombardear la base, causando una devastación masiva. En el transcurso de poco más de una hora, se hundieron o dañaron severamente ocho acorazados, entre ellos el **USS Arizona**, que se convirtió en un símbolo de la tragedia. También se perdieron 188 aviones estadounidenses y murieron más de 2,400 personas, entre militares y civiles.
+
+													El ataque, aunque exitoso tácticamente, no logró su objetivo estratégico de destruir por completo la flota estadounidense, ya que los portaaviones, que eran las embarcaciones más importantes, no estaban en el puerto ese día. Además, la incursión galvanizó a la población estadounidense, transformando su aislamiento previo en una determinación colectiva de derrotar a Japón y sus aliados.
+
+												Al día siguiente, el 8 de diciembre de 1941, el presidente Franklin D. Roosevelt declaró la guerra a Japón, describiendo el ataque como "una fecha que vivirá en la infamia". Este evento no solo llevó a la participación activa de Estados Unidos en la Segunda Guerra Mundial, sino que también marcó el inicio de un cambio en el equilibrio global de poder hacia las potencias aliadas. Pearl Harbor sigue siendo un recordatorio de las consecuencias de la guerra y la importancia de la preparación militar.</p>				
+											</div>
+										</article>
+									</div>
+									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
+								</div>
+							</div>
+
+							<div class="card">
+								<img src="images/norCard.jpg" class="img-card" id="card-1">
+								<figcaption class="description">Noruega</figcaption>
+								<button class="boton" onclick="abrirPantalla()" data-target = "pantalla-noruega">Click aqui!</button>
+							</div>
+
+							<div class="pantalla-emergente" id="pantalla-noruega">
+								<div class="contenido-informacion">
+									<div class="texto-imagenes">
+										<article>
+											<div class="text">
+												<h2 id="titulo-card">Invasion de Noruega(1940)</h2>
+												<img src="images/noruega.jpg" class="img-information" id="img-4">
+												<p class="texto">
+													**La invasión de Noruega**, conocida como la **Operación Weserübung**, fue una campaña militar llevada a cabo por Alemania durante la Segunda Guerra Mundial, entre abril y junio de 1940. Su objetivo principal era asegurar el control de Noruega y Dinamarca para garantizar el acceso a los recursos estratégicos de la región, particularmente el mineral de hierro sueco que se transportaba a través del puerto noruego de Narvik, y para proteger las rutas marítimas del Atlántico Norte.
+
+													El 9 de abril de 1940, las fuerzas alemanas lanzaron un ataque sorpresa contra Noruega y Dinamarca, violando su neutralidad. Dinamarca capituló rápidamente debido a su limitada capacidad militar, mientras que en Noruega la resistencia fue más prolongada y compleja. A pesar de la superioridad militar alemana, las fuerzas noruegas, apoyadas por tropas británicas, francesas y polacas, ofrecieron una defensa significativa en varios puntos estratégicos, incluidos Narvik y Oslo.
+
+													El control del país era crucial tanto para los alemanes como para los Aliados. Alemania buscaba establecer bases navales y aéreas en Noruega para desafiar el bloqueo marítimo británico y expandir su influencia en el Atlántico. Los Aliados, por otro lado, intentaron evitar que los nazis consolidaran su posición, pero sus esfuerzos de contraataque fueron insuficientes debido a una combinación de malas decisiones estratégicas, falta de coordinación y la rápida movilización alemana.
+
+													Finalmente, en junio de 1940, las fuerzas aliadas se retiraron de Noruega, dejando al país bajo ocupación alemana hasta el final de la guerra. Aunque la invasión fue un éxito táctico para Alemania, también expuso debilidades en su maquinaria militar y llevó al hundimiento del crucero pesado **Blücher** y otras pérdidas importantes. Además, el fracaso aliado en Noruega contribuyó a la dimisión del primer ministro británico Neville Chamberlain, siendo reemplazado por Winston Churchill, quien lideraría al Reino Unido en los años más duros de la guerra.
+
+												La ocupación alemana de Noruega tuvo un impacto significativo en la región y convirtió al país en un bastión estratégico en el norte de Europa durante la guerra. Sin embargo, también fue un recordatorio de las consecuencias del expansionismo nazi en Europa y la fragilidad de la neutralidad en tiempos de conflicto global.</p>																
+											</div>
+										</article>
+									</div>
+									<button class="boton-cerrar" onclick="cerrarPantalla()">Cerrar</button>
+								</div>
+							</div>
+
 						</div>
 
 					</div>
-
 				</div>
-
 			</div>
-
 		</content>
-
-		
 		<div class="banner">
 			<a href="index.html">
 				<img src="images/bannerMedicina.jpg" class="img-banner">
 			</a>
 		</div>
-
 		<footer class="pie-pagina">
 			© Derechos reservados. Julio Cesar Martel
 		</footer>
-
 	</div>	
-
 	<script src="script/batallas.js" defer></script>
-
 </body>
 </html>
