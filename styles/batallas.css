@@ -1,6 +1,11 @@
 @font-face {
 	font-family: 'GoudyBookletter1911';
 	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
+}
+
+@font-face {
+	font-family: 'European War';
+	src: url('../fonts/European War.otf') format(OpenType);
 
 }
 
@@ -11,7 +16,7 @@
 
 body {
 	
-	background-image: url('../images/background53.jpg');
+	background: url('../images/fireChispa.jpg');
 	background-size: cover;
 }
 
@@ -19,10 +24,9 @@ body {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
-	width: 50%;
+	width: 90%;
 	max-width: 2000px;
-	margin: 50px auto;
-	padding: 5px;
+	margin: 10px auto;
 	flex-grow: 0;
 }
 
@@ -51,7 +55,7 @@ body {
 }
 
 h1 {
-	font-family: 'PeachyKeenSerif-DEMO';
+	font-family: 'European War';
 	padding: 5px;
 	font-size: 3rem;
 	color: #ffffff;
@@ -106,9 +110,9 @@ h1 {
 }
 
 .encabezado-tarjetas{
-	background: url('../images/batallas4.jpg');
+	background: url('../images/banner12.jpg');
 	background-size: cover;
-	background-position-y: 50%;
+	background-position-y: 70%;
 	margin: 5px;
 	display: flex;
 	justify-content: center;
@@ -133,7 +137,7 @@ h1 {
 }
 
 .contenedor-tarjetas::-webkit-scrollbar-track {
-    background: brown;
+    background: url('../images/fondo2.jpg');
 }
 
 .contenedor-tarjetas::-webkit-scrollbar-thumb {
@@ -155,10 +159,10 @@ h1 {
 	background: url('../images/background47.jpg');
 	background-size: cover;
 	width: 200px;
-	height: 170px;
+	height: 200px;
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	padding: 5px;
 	gap: 5px;
 	border: solid 1px #000000;
 	border-radius: 5px;
@@ -174,31 +178,34 @@ h1 {
 }
 
 .description{
+	background: url('../images/fireChispa.jpg');
+	background-size: cover;
 	display: flex;
 	justify-content: center;
-	background-color: #000000;
 	width: 100%;
 	color: #ffffff;
 	border: solid 1px grey;
 	border-radius: 5px;	
-	font-family: 'GoudyBookletter1911';
+	font-family: 'European War';
 }
 
 .boton{
+	background: url('../images/fondo2.jpg');
+	background-size: cover;
 	display: flex;
 	justify-content: center;
-	background-color: grey;
 	width: 100%;
 	color: #ffffff;
 	border: solid 1px grey;
 	border-radius: 5px;
-	transition: background 1s linear;
+	font-family: 'European War';
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
-.boton:hover{
-	background-color: #ffffff;
-	color: #000000;
-}
 
 .contenedor-banner {
 	width: 100%;
