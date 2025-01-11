@@ -1,9 +1,12 @@
 @font-face {
 	font-family: 'PeachyKeenSerif-DEMO';
 	src: url('../fonts/PeachyKeenSerif-DEMO.otf') format(OpenType);
-
 }
 
+@font-face {
+	font-family: 'European War';
+	src: url('../fonts/European War.otf') format(OpenType);
+}
 
 * {
 	margin: 0;
@@ -17,7 +20,7 @@ body {
 
 
 h1 {
-	font-family: 'PeachyKeenSerif-DEMO';
+	font-family: 'European War';
 	padding: 25px;
 	font-size: 3rem;
 	color: #ffffff;
@@ -64,7 +67,7 @@ h1 {
 }
 
 a{
-	font-family: 'GoudyBookletter1911';
+	font-family: 'European War';
 	text-decoration: none;
 	color: #ffffff;
 	text-shadow: 	
@@ -93,7 +96,7 @@ a{
 
 
 .texto-boton{
-	font-family: 'GoudyBookletter1911';
+	font-family: 'European War';
 	text-align: center;
 	border-bottom: solid 1px darkred;
 	font-size: 3rem;
