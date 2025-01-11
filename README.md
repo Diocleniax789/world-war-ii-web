@@ -1,1 +1,1 @@
-<div><h1>Segunda Guerra Mundial</h1></div>
+<h1  align="center">Segunda Guerra Mundial</h1>
