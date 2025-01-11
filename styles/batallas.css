@@ -35,7 +35,6 @@ body {
 }
 
 .main-container .encabezado-contenedor-informacion,
-.main-container .contenedor-tarjetas-banners,
 .main-container .navegador,
 .main-container .pie-pagina,
 .main-container .encabezado-tarjetas,
@@ -105,21 +104,19 @@ h1 {
 }
 
 .tarjetas{
-	background-color: #000000;
 	display: flex;
 	flex-direction: column;
 	width:100%;
 	height: 100%;
-	border-radius: 5px;
 }
 
 .encabezado-tarjetas{
 	background: url('../images/banner12.jpg');
 	background-size: cover;
 	background-position-y: 70%;
-	margin: 5px;
 	display: flex;
 	justify-content: center;
+	margin-bottom: 5px;
 }
 
 .contenedor-tarjetas{
@@ -127,7 +124,6 @@ h1 {
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
-	margin: 5px;
 	height: 100%;
 	overflow-y: scroll;
 	padding: 5px;
@@ -145,7 +141,7 @@ h1 {
 }
 
 .contenedor-tarjetas::-webkit-scrollbar-thumb {
-    background: goldenrod; 
+    background: grey; 
 }
 
 .contenedor-tarjetas::-webkit-scrollbar-thumb:hover {
@@ -162,8 +158,8 @@ h1 {
 .card {
 	background: url('../images/background47.jpg');
 	background-size: cover;
-	width: 200px;
-	height: 200px;
+	width: 250px;
+	height: 220px;
 	display: flex;
 	flex-direction: column;
 	padding: 5px;
@@ -364,4 +360,28 @@ h1 {
 
 .banner:hover {
 	filter: brightness(1.5);
+}
+
+.img-description {
+	border: solid 1px grey;
+	border-radius: 5px;
+}
+#img-description-1 {
+	float: left;
+	margin-right: 10px;
+	width: 300px;
+}
+
+#img-description-2 {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 300px;
+}
+
+#img-description-3 {
+	float: right;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 150px;
 }
