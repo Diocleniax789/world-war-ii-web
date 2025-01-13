@@ -1,5 +1,11 @@
 let imagenes = document.querySelectorAll('.img-texto');
 let botonesCerrar = document.querySelectorAll('.boton-cerrar');
+let sonidoBotonAbrir = new Audio('audio/button3.mp3');
+let sonidoBotonCerrar = new Audio('audio/button4.mp3');
+
+sonidoBotonAbrir.load();
+sonidoBotonCerrar.load();
+
 for(let imagen of imagenes) {
 	let dataImg = imagen.getAttribute('data-img');	
 	let modalImg = document.getElementById(dataImg);
@@ -7,6 +13,7 @@ for(let imagen of imagenes) {
 
 	imagen.addEventListener('mouseover', () => {
 		imagen.style.opacity = '0.5';
+		imagen.style.transition = '0.3s';
 	});
 
 	imagen.addEventListener('mouseout', () => {
@@ -14,12 +21,14 @@ for(let imagen of imagenes) {
 	});
 
 	imagen.addEventListener('click', () => {
+		sonidoBotonAbrir.play();
 		modalImg.style.display = 'flex';
-	});
 
+	});
 
 	for(let botonCerrar of botonesCerrar) {
 		botonCerrar.addEventListener('click',() => {
+			sonidoBotonCerrar.play();
 			modalImg.style.display = 'none';
 		});
 	}
