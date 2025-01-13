@@ -1,14 +1,22 @@
 let imagenes = document.querySelectorAll('.img-texto');
 let botonesCerrar = document.querySelectorAll('.boton-cerrar');
-
 for(let imagen of imagenes) {
 	let dataImg = imagen.getAttribute('data-img');	
 	let modalImg = document.getElementById(dataImg);
 	let botonCerrar  = modalImg.getAttribute('class');
 
+	imagen.addEventListener('mouseover', () => {
+		imagen.style.opacity = '0.5';
+	});
+
+	imagen.addEventListener('mouseout', () => {
+		imagen.style.opacity = '1';
+	});
+
 	imagen.addEventListener('click', () => {
 		modalImg.style.display = 'flex';
 	});
+
 
 	for(let botonCerrar of botonesCerrar) {
 		botonCerrar.addEventListener('click',() => {
