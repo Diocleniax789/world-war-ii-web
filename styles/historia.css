@@ -100,7 +100,6 @@ h1 {
 .timeline{
 	height: 100px;
 	display: flex;
-	overflow: auto;
 	overflow-x: hidden;
 	overflow-y: hidden;
 }
@@ -258,4 +257,26 @@ p{
 	justify-content: center;
 	align-items: center;
 	color: #ffffff;
+}
+
+.modal-img {
+	background: rgba(0, 0, 0, 0.5);	
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.img-description {
+	background-color: #ffffff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	width: 800px;
+	padding: 5px;
+
 }
