@@ -15,6 +15,11 @@
 	src: url('../fonts/Maquina de Escribir.ttf') format(TrueType);
 }
 
+@font-face {
+	font-family: 'European War';
+	src: url('../fonts/European War.otf') format(TrueType);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -37,7 +42,6 @@ body {
 	margin: 50px auto;
 	padding: 10px;
 	flex-grow: 0;
-
 }
 
 .main-container .contenedor-encabezado,
@@ -57,7 +61,7 @@ body {
 }
 
 h1 {
-	font-family: 'PeachyKeenSerif-DEMO';
+	font-family: 'European War';
 	padding: 25px;
 	font-size: 3rem;
 	color: #ffffff;
@@ -177,7 +181,7 @@ h1 {
     color: #ffffff;	
 }
 
-a{
+a {
 	text-decoration: none;
 }
 
@@ -217,7 +221,7 @@ a{
     background: darkgray; /* Color al pasar el cursor */
 }
 
-p{
+p {
 	font-family: 'GoudyBookletter1911';
 	font-size: 1rem;
 	text-shadow: 	
@@ -226,11 +230,12 @@ p{
     -1px  1px 0 #000,
      1px  1px 0 #000;	
     color: #ffffff;
+    text-align: justify;
 }
 
 .img-texto{
 	border-radius: 5px;
-	border: solid 5px silver;
+	border: solid 3px silver;
 }
 
 #img-texto-1{
@@ -290,14 +295,17 @@ p{
 
 #img-modal-texto-1 {
 	width: 100%;
+	border-radius: 5px
 }
 
 #img-modal-texto-2 {
 	width: 100%;
+	border-radius: 5px
 }
 
 #img-modal-texto-3 {
 	width: 100%;
+	border-radius: 5px
 }
 
 .description {
@@ -313,6 +321,7 @@ p{
 .boton-cerrar {
 	background: url('../images/fondo2.jpg');
 	background-size: cover;
+	font-family: 'Maquina de Escribir';
 	color: #ffffff;	
 	width: 100px;
 	padding: 10px;
