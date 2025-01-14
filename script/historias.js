@@ -23,7 +23,6 @@ for(let imagen of imagenes) {
 	imagen.addEventListener('click', () => {
 		sonidoBotonAbrir.play();
 		modalImg.style.display = 'flex';
-
 	});
 
 	for(let botonCerrar of botonesCerrar) {
@@ -33,3 +32,30 @@ for(let imagen of imagenes) {
 		});
 	}
 }
+
+let galeria = document.querySelector('.galeria');
+let presionando = false;
+let startX;
+let scrollLeftStart;
+
+galeria.addEventListener('mousedown', (e) => {
+  presionando = true;
+  startX = e.pageX - galeria.offsetLeft;
+  scrollLeftStart = galeria.scrollLeft;
+});
+
+galeria.addEventListener('mousemove', (e) => {
+  if (!presionando) return;
+  e.preventDefault();
+  const x = e.pageX - galeria.offsetLeft;
+  const walk = (x - startX) * 2; // Velocidad de desplazamiento
+  galeria.scrollLeft = scrollLeftStart - walk;
+});
+
+galeria.addEventListener('mouseup', () => {
+  presionando = false;
+});
+
+galeria.addEventListener('mouseleave', () => {
+  presionando = false;
+});
