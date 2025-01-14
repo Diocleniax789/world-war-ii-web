@@ -59,6 +59,12 @@ body {
 	display: flex;
 	justify-content: center;
 }
+/*
+@keyframes colorChange {
+    0% { color: #ff7e5f; }
+    50% { color: #feb47b; }
+    100% { color: #ff7e5f; }
+}*/
 
 h1 {
 	font-family: 'European War';
@@ -69,7 +75,9 @@ h1 {
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
-     1px  1px 0 #000;
+     1px  1px 0 #000;    
+     /*
+     animation: colorChange 3s infinite;*/
 }
 
 .navegator{
@@ -195,13 +203,16 @@ a {
 }
 
 .texto-contenido{
-	background: url('../images/background47.jpg');
+	background: url('../images/fireChispa.jpg');
 	background-size: cover;
-	height: 600px;
+	height: 500px;
 	border: solid 1px grey;
 	border-radius: 5px;
 	overflow: auto;
 	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 
@@ -240,22 +251,15 @@ p {
 }
 
 #img-texto-1{
-	float: left;
-	margin-right: 10px;
 	width: 250px;
 }
 
 #img-texto-2{
-	float: right;
-	margin-top: 5px;
-	margin-left: 10px;
+
 	width: 250px;
 }
 
 #img-texto-3{
-	float: left;
-	margin-top: 5px;
-	margin-right: 10px;
 	width: 250px;
 }
 
@@ -334,4 +338,11 @@ p {
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
+}
+
+.galeria {
+	background-color: #000000;
+	display: flex;
+	gap: 10px;
+	padding: 10px;
 }
