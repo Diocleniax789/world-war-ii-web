@@ -37,7 +37,7 @@ body {
 	gap: 5px;
 	border: solid 1px grey;
 	border-radius: 5px;
-	width: 50%;
+	width: 90%;
 	max-width: 2000px;
 	margin: 50px auto;
 	padding: 10px;
@@ -248,7 +248,7 @@ p {
 #img-texto-2{
 	float: right;
 	margin-top: 5px;
-	margin-left: 5px;
+	margin-left: 10px;
 	width: 250px;
 }
 
@@ -270,7 +270,7 @@ p {
 }
 
 .modal-img {
-	background: rgba(0, 0, 0, 0.5);	
+	background: rgba(0, 0, 0, 0.4);	
 	display: none;
 	position: fixed;
 	top: 0;
