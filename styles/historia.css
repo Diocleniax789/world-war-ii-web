@@ -149,66 +149,24 @@ h1 {
 	background: url('../images/header1.jpg');
 	background-size: cover;
 	background-position-y: 50%;
-	height: 100px;
+	width: 100%;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
 	border: solid 1px grey;
 	border-radius: 5px;
 }
 
-#img-encabezado-articulo{
-	width: 100%;
-}
-/*
-.banners{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	width: 50%;
-	gap: 5px;
-}
-
-.banner{
-	border: solid 1px grey;
-	border-radius: 5px;
-	width: 100%;
-	height: 100%;
-	transition: transform 0.3s ease, filter 0.3s ease;
-}
-
-.banner-grande{
-	background: url('../images/img31.jpg');
-	background-size: cover;
-	display: flex;
-	justify-content: center;
-	height: 100%;
-}
-
-.banner-titulo{
-	text-align: center;
-	font-family: 'GoudyBookletter1911';
-	font-size: 3rem;
+.titulo-encabezado {
+	font-family: 'Maquina de Escribir';
+	color: #ffffff;
 	text-shadow: 	
     -1px -1px 0 #000,  
      1px -1px 0 #000,
     -1px  1px 0 #000,
-     1px  1px 0 #000;	
-    color: #ffffff;	
+     1px  1px 0 #000; 
 }
 
-a {
-	text-decoration: none;
-}
 
-.banner:hover{
-	filter: brightness(1.6);
-}
-
-.banner-grande{
-	height: 100%;
-}
-*/
 .texto-contenido{
 	background: url('../images/fireChispa.jpg');
 	background-size: cover;
