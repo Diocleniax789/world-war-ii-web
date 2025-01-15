@@ -361,6 +361,13 @@ p {
 	width: 50px;
 	color: #ffffff;
 	border: solid 1px grey;
+	transition: background 1s linear;
+}
+
+.boton:hover {
+	background-color: #ffffff;
+	color: #000000;
+	cursor: pointer;
 }
 
 .galeria {
