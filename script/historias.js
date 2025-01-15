@@ -34,28 +34,25 @@ for(let imagen of imagenes) {
 }
 
 let galeria = document.querySelector('.galeria');
-let presionando = false;
-let startX;
-let scrollLeftStart;
+const botonAtras = document.getElementById('boton-atras');
+const botonAdelante = document.getElementById('boton-adelante');
 
-galeria.addEventListener('mousedown', (e) => {
-  presionando = true;
-  startX = e.pageX - galeria.offsetLeft;
-  scrollLeftStart = galeria.scrollLeft;
+botonAtras.addEventListener('click', () => {
+	galeria.scrollLeft -= 200;
 });
 
-galeria.addEventListener('mousemove', (e) => {
-  if (!presionando) return;
-  e.preventDefault();
-  const x = e.pageX - galeria.offsetLeft;
-  const walk = (x - startX) * 2; // Velocidad de desplazamiento
-  galeria.scrollLeft = scrollLeftStart - walk;
+botonAdelante.addEventListener('click', () => {
+	galeria.scrollLeft += 200;
 });
 
-galeria.addEventListener('mouseup', () => {
-  presionando = false;
+let timeline = document.querySelector('.timeline-imgs');
+const botonAtras1 = document.getElementById('boton-atras-1');
+const botonAdelante1 = document.getElementById('boton-adelante-1');
+
+botonAtras1.addEventListener('click', () => {
+	timeline.scrollLeft -= 200;
 });
 
-galeria.addEventListener('mouseleave', () => {
-  presionando = false;
+botonAdelante1.addEventListener('click', () => {
+	timeline.scrollLeft += 200;
 });
