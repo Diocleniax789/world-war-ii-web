@@ -38,11 +38,11 @@ const botonAtras = document.getElementById('boton-atras');
 const botonAdelante = document.getElementById('boton-adelante');
 
 botonAtras.addEventListener('click', () => {
-	galeria.scrollLeft -= 200;
+	galeria.scrollLeft -= 300;
 });
 
 botonAdelante.addEventListener('click', () => {
-	galeria.scrollLeft += 200;
+	galeria.scrollLeft += 300;
 });
 
 let timeline = document.querySelector('.timeline-imgs');
@@ -50,9 +50,10 @@ const botonAtras1 = document.getElementById('boton-atras-1');
 const botonAdelante1 = document.getElementById('boton-adelante-1');
 
 botonAtras1.addEventListener('click', () => {
-	timeline.scrollLeft -= 200;
+	timeline.scrollLeft -= 300;
 });
 
 botonAdelante1.addEventListener('click', () => {
-	timeline.scrollLeft += 200;
+	timeline.scrollLeft += 300;
 });
+
