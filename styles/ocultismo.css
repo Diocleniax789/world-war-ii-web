@@ -3,6 +3,11 @@
 	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
 }
 
+@font-face {
+	font-family: 'Maquina de Escribir';
+	src: url('../fonts/Maquina de Escribir.ttf') format(TrueType);
+}
+
 *{
 	padding: 0;
 	margin: 0;
@@ -18,7 +23,7 @@ body{
 	grid-gap: 5px;
 	grid-template-rows: repeat(5, auto);
 	grid-template-columns: repeat(5, 1fr);
-	width: 50%;
+	width: 90%;
 	max-width: 2000px;
 	margin: 50px auto;
 }
@@ -33,7 +38,6 @@ body{
 .main-container .encabezado-contenido-adicional,
 .main-container .pie-pagina{
 	border: solid 1px grey;
-	border-radius: 5px;
 }
 
 
@@ -74,6 +78,7 @@ body{
 .navegator ul a{
 	text-decoration: none;
 	color: #ffffff;
+	font-family: 'Maquina de Escribir';
 	border-radius: 5px;
 	padding: 5px;
 	transition: background 1s linear;
@@ -112,6 +117,10 @@ body{
 	gap: 5px;
 }
 
+.img-texto-0 {
+	width: 100%;
+	border: solid 3px #000000;
+}
 .encabezado-articulo{
 	background: url('../images/vril3.jpg');
 	background-size: cover;
@@ -121,13 +130,17 @@ body{
 	width: 100%;
 }
 
-.texto{
-	background-color: #000000;
-	overflow: scroll;
-	padding: 5px;
+.texto {
+	background: url('../images/castle.jpg');
+	background-size: cover;	
+	overflow-y: scroll;
+	overflow-x: hidden;
+	padding: 20px;
 	display: flex;
 	flex-grow: 1;
 	height: 500px;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .texto::-webkit-scrollbar {
@@ -148,9 +161,16 @@ body{
 }
 
 .texto-parrafo{
+	background: rgba(0, 0, 0, 0.6);
+	border: solid 1px #000000;
 	color: #ffffff;
 	text-align: center;
 	padding: 10px;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;	
 }
 
 .contenedor-principal{
@@ -216,6 +236,7 @@ body{
     -1px  1px 0 #000,
      1px  1px 0 #000;
      padding: 10px;
+     text-align: justify;
 }
 
 #img-texto-1{
