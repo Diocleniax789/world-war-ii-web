@@ -8,6 +8,11 @@
 	src: url('../fonts/European War.otf') format(OpenType);
 }
 
+@font-face {
+	font-family: 'Maquina de Escribir';
+	src: url('../fonts/Maquina de Escribir.ttf') format(TrueType);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -96,7 +101,7 @@ a{
 
 
 .texto-boton{
-	font-family: 'European War';
+	font-family: 'Maquina de Escribir';
 	text-align: center;
 	border-bottom: solid 1px darkred;
 	font-size: 3rem;
