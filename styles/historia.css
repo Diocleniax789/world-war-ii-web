@@ -26,7 +26,7 @@
 }
 
 body {
-	background-image: url('../images/19.jpg');
+	background-image: url('../images/fireChispa2.jpg');
 	background-size: cover;
 }
 
@@ -36,7 +36,6 @@ body {
 	flex-direction: column;
 	gap: 5px;
 	border: solid 1px grey;
-	border-radius: 5px;
 	width: 90%;
 	max-width: 2000px;
 	margin: 30px auto;
@@ -48,7 +47,6 @@ body {
 .main-container .navegator,
 .main-container .pie-pagina {
 	border: solid 1px grey;
-	border-radius: 5px;
 }
 
 .contenedor-encabezado{
@@ -116,7 +114,7 @@ h1 {
 .timeline{
 	display: flex;
 	gap: 5px;
-	height: 100px;
+	height: 150px;
 }
 
 .timeline-imgs {
@@ -128,7 +126,7 @@ h1 {
 }
 
 .timeline-img{
-	width: 200px;
+	width: 250px;
 	border: solid 1px grey;
 }
 
@@ -153,7 +151,6 @@ h1 {
 	display: flex;
 	justify-content: center;
 	border: solid 1px grey;
-	border-radius: 5px;
 }
 
 .titulo-encabezado {
@@ -172,7 +169,6 @@ h1 {
 	background-size: cover;
 	height: auto;
 	border: solid 1px grey;
-	border-radius: 5px;
 	overflow: auto;
 	padding: 10px;
 	display: flex;
@@ -213,7 +209,9 @@ p {
 
 .img-texto{
 	border: solid 1px silver;
+	cursor: pointer;
 }
+
 
 #img-texto-1{
 	width: 250px;
@@ -258,24 +256,20 @@ p {
 	justify-content: center;
 	width: 800px;
 	padding: 15px;
-	border-radius: 5px;
 	gap: 10px;
 	align-items: center;
 }
 
 #img-modal-texto-1 {
 	width: 100%;
-	border-radius: 5px
 }
 
 #img-modal-texto-2 {
 	width: 100%;
-	border-radius: 5px
 }
 
 #img-modal-texto-3 {
 	width: 100%;
-	border-radius: 5px
 }
 
 #img-modal-texto-4 {

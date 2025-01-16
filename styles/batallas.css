@@ -39,7 +39,6 @@ body {
 .main-container .pie-pagina,
 .main-container .encabezado-tarjetas,
 .main-container .contenedor-tarjetas{
-	border-radius: 5px;
 	border: solid 1px grey;
 }
 
@@ -392,8 +391,8 @@ h1 {
 
 
 #img-description-4 {
-	float: left;
+	float: righ;
 	margin-right: 10px;
 	margin-top: 5px;
-	width: 300px;
+	width: 150px;
 }
