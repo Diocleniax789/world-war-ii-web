@@ -17,4 +17,21 @@ botonCerrar.addEventListener('click', () => {
 	ventanaModal.style.display = 'none';
 });
 
+let libreria = document.querySelector('.lib');
+let libros = document.querySelectorAll('.img-texto');
+let botonAtras = document.getElementById('boton-atras');
+let botonAdelante = document.getElementById('boton-adelante');
 
+
+for(let libro of libros) {
+	let dataLibro = libro.getAttribute('data-libro');
+	let libroImagen = document.getElementById(dataLibro);
+}
+
+botonAtras.addEventListener('click', () => {
+	libreria.scrollLeft -= 300;
+});
+
+botonAdelante.addEventListener('click', () => {
+	libreria.scrollLeft += 300;
+});
