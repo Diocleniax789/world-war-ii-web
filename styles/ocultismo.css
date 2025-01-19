@@ -333,6 +333,7 @@ body{
 	background-size: cover;
 	background-position-y: 60%;
 	display: flex;
+	flex-direction: column;
 	gap: 10px;
 	align-items: center;
 	padding:10px;
@@ -340,7 +341,18 @@ body{
 
 .img-1-1{
 	width: 100%;
-	max-width: 100px;
+	max-width: 300px;
+	transform: translateX(-100%); /* Inicialmente fuera de pantalla */
+    animation: slideIn 2s ease-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+       transform: translateX(-100%);
+    }
+    to {
+       transform: translateX(0);
+    }
 }
 
 
@@ -504,6 +516,7 @@ body{
 	left: 0;
 	justify-content: center;
 	align-items: center;
+	z-index: 1000;
 }
 
 .ventana {
@@ -565,6 +578,7 @@ body{
 
 .img {
 	border: solid 1px grey;
+	cursor: pointer;
 }
 
 #img1 {
@@ -572,6 +586,7 @@ body{
 	float: left;
 	width: 150px;
 	margin-right: 10px;
+	padding: 5px;
 }
 
 #img2 {
