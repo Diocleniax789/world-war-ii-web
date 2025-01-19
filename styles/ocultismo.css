@@ -121,7 +121,13 @@ body{
 	width: 100%;
 	border: solid 3px #000000;
 	cursor: pointer;
+	transition: transform 0.3s ease, filter 0.3s ease;
 }
+
+.img-texto-0:hover {
+	filter: brightness(1.5);
+}
+
 .encabezado-articulo{
 	background: url('../images/vril3.jpg');
 	background-size: cover;
@@ -371,6 +377,7 @@ body{
 	width: 100%;
 	max-width: 100px;
 	border: solid 1px grey;
+	cursor: pointer;
 }
 
 .contenido-multimedia{
@@ -500,7 +507,7 @@ body{
 }
 
 .ventana {
-	background: url('../images/fondo6papel.jpg');
+	background: url('../images/fireChispa.jpg');
 	background-size: cover;
 	display: flex;
 	flex-direction: column;
@@ -509,7 +516,7 @@ body{
 	align-items: center;
 	padding: 10px;
 	gap: 5px;
-	border: solid 5px #000000;
+	border: solid 5px darkgrey;
 }
 
 .galeria {
@@ -526,6 +533,13 @@ body{
 	border: solid 1px #000000;
 	padding: 10px;
 	cursor: pointer;
+	font-family: 'Maquina de Escribir';
+	color: #ffffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
 }
 
 .imagenes {
@@ -547,4 +561,40 @@ body{
 
 .img-modal {
 	border: solid 1px #000000;
+}
+
+.img {
+	border: solid 1px grey;
+}
+
+#img1 {
+	background-color: darkred;
+	float: left;
+	width: 150px;
+	margin-right: 10px;
+}
+
+#img2 {
+	background-color: purple;
+	float: right;
+	width: 125px;
+	margin-left: 10px;
+}
+
+#img3 {
+	float: left;
+	width: 300px;
+	margin-right: 10px;
+}
+
+#img4 {
+	float: right;
+	width: 300px;
+	margin-left: 10px;
+}
+
+#img5 {
+	float: left;
+	width: 200px;
+	margin-right: 10px;
 }
