@@ -14,7 +14,7 @@
 }
 
 body{
-	background: url('../images/naziEsoteric.jpg');
+	background: url('../images/fireChispa.jpg');
 	background-size: cover;
 }
 
@@ -357,14 +357,25 @@ body{
 
 
 .libros{
-	background: url('../images/background51.jpg');
-	background-size: cover;
+	background-color: darkseagreen;
+	display: flex;
+	padding: 10px;
+}
+
+.lib {
 	display: flex;
 	gap: 10px;
-	padding: 10px;
-	border-top: solid 1px grey;
-	overflow-x: scroll;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
+
+
+.boton-nuevo {
+	width: 150px;
+	cursor: pointer;
+}
+
+
 
 
 .libros::-webkit-scrollbar {
@@ -398,7 +409,7 @@ body{
 	grid-column: 1 / -1;
 	grid-template-rows: repeat(3,auto);
  	grid-template-columns: repeat(3, 1fr);
-	grid-gap: 10px;
+	grid-gap: 15px;
 }
 
 .contenido-multimedia-videos{
@@ -408,10 +419,58 @@ body{
 	grid-column-end: 3;
 }
 
-.video{
+.videos{
+	background: url('../images/naziEsoteric.jpg');
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	border: solid 1px grey;
+	height: 800px;
+	overflow-y: scroll;
+	gap: 5px;
+	padding: 5px;
+}
+
+.videos::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.videos::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.videos::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+.videos::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+	
+
+.img-video {
 	width: 100%;
 }
 
+.encabezado-historia {
+	background: darkblue;
+	text-align: center;
+	color: #ffffff;
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000;
+}
+
+.texto-content {
+	background-color: #000000;
+	color: #ffffff;
+	padding: 10px;
+	text-align: justify;
+}
 
 .articulo-derecho{
 	display: grid;
