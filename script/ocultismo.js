@@ -22,40 +22,39 @@ let libros = document.querySelectorAll('.img-texto');
 let botonAtras = document.getElementById('boton-atras');
 let botonAdelante = document.getElementById('boton-adelante');
 
-for(let libro of libros) {
-	let dataLibro = libro.getAttribute('data-libro');
-	let libroImagen = document.getElementById(dataLibro);
+for (let libro of libros) {
+  let dataLibro = libro.getAttribute('data-libro');
+  let libroImagen = document.getElementById(dataLibro);
 }
 
-
-let incrementar = 0;
-
 botonAtras.addEventListener('click', () => {
-	libreria.scrollLeft -= 300;
-	incrementar -= 1;
-	if (incrementar <= 0) {
-		incrementar = 0;
-		botonAtras.style.opacity = "0.5";
-		botonAtras.style.cursor = "default";
-	} else {
-		botonAdelante.style.opacity = "1"
-		botonAdelante.style.cursor = "pointer";
-	}
-
-	console.log(incrementar);
+  libreria.scrollLeft -= 300;
 });
 
 botonAdelante.addEventListener('click', () => {
-	libreria.scrollLeft += 300;
-	incrementar += 1;
-	if (incrementar <= 3) {
-		botonAtras.style.opacity = "1";
-		botonAtras.style.cursor = "pointer";
-	} else {
-		incrementar = 3;
-		botonAdelante.style.opacity = "0.5"
-		botonAdelante.style.cursor = "default";
-	}
-	console.log(incrementar);
+  libreria.scrollLeft += 300;
 });
 
+function actualizarBoton() {
+	if (libreria.scrollLeft === 0) {
+		botonAtras.style.opacity = "0.5";
+		botonAtras.style.cursor = "default";
+	} else {
+		botonAtras.style.opacity = "1";
+		botonAtras.style.cursor = "pointer";		
+	}
+
+	if (libreria.scrollLeft >= libreria.scrollWidth - libreria.clientWidth) {
+		botonAdelante.style.opacity = "0.5";
+		botonAdelante.style.cursor = "default";			
+	} else {
+		botonAdelante.style.opacity = "1";
+		botonAdelante.style.cursor = "pointer";		
+	}
+}
+
+libreria.addEventListener('scroll', actualizarBoton);
+
+actualizarBoton();
+
+console.log(libreria.scrollLeft);
