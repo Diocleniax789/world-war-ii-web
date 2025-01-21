@@ -151,20 +151,20 @@ body{
 }
 
 .texto::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 .texto::-webkit-scrollbar-track {
-    background: #000000;
+	background: #000000;
 }
 
 .texto::-webkit-scrollbar-thumb {
-    background: #888; 
+	background: #888; 
 }
 
 .texto::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+	background: #555; 
 }
 
 .texto-parrafo{
@@ -174,10 +174,10 @@ body{
 	text-align: center;
 	padding: 10px;
 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;	
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;	
 }
 
 .contenedor-principal{
@@ -192,12 +192,12 @@ body{
 
 
 .contenido-principal-central {
-  background: rgba(0, 0, 0, 0.6);
-  display: flex;
-  flex-direction: column;
-  padding: 5px;
-  border-radius: 5px;
-  gap: 5px;
+	background: rgba(0, 0, 0, 0.6);
+	display: flex;
+	flex-direction: column;
+	padding: 5px;
+	border-radius: 5px;
+	gap: 5px;
 }
 
 .encabezado-contenedor-principal{
@@ -238,12 +238,12 @@ body{
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
-     padding: 10px;
-     text-align: justify;
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;
+	padding: 10px;
+	text-align: justify;
 }
 
 #img-texto-1{
@@ -294,22 +294,22 @@ body{
 }
 
 .texto-contenedor-principal::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 .texto-contenedor-principal::-webkit-scrollbar-track {
-    background: #000000;
+	background: #000000;
 }
 
 .texto-contenedor-principal::-webkit-scrollbar-thumb {
-    background: #888; 
+	background: #888; 
 }
 
 .texto-contenedor-principal::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+	background: #555; 
 }
-		  				
+
 .contenido-adicional{
 	display: grid;
 	grid-row: 4;
@@ -343,16 +343,16 @@ body{
 	width: 100%;
 	max-width: 300px;
 	transform: translateX(-100%); /* Inicialmente fuera de pantalla */
-    animation: slideIn 2s ease-out forwards;
+	animation: slideIn 2s ease-out forwards;
 }
 
 @keyframes slideIn {
-  from {
-       transform: translateX(-100%);
-    }
-    to {
-       transform: translateX(0);
-    }
+	from {
+		transform: translateX(-100%);
+	}
+	to {
+		transform: translateX(0);
+	}
 }
 
 
@@ -375,24 +375,21 @@ body{
 	cursor: pointer;
 }
 
-
-
-
 .libros::-webkit-scrollbar {
-    width: 5px; /* Ancho del scroll vertical */
-    height: 5px; /* Altura del scroll horizontal */
+	width: 5px; /* Ancho del scroll vertical */
+	height: 5px; /* Altura del scroll horizontal */
 }
 
 .libros::-webkit-scrollbar-track {
-    background: #000000;
+	background: #000000;
 }
 
 .libros::-webkit-scrollbar-thumb {
-    background: darkred; /* Color de la manija */
+	background: darkred; /* Color de la manija */
 }
 
 .libros::-webkit-scrollbar-thumb:hover {
-    background: red; /* Color al pasar el cursor */
+	background: red; /* Color al pasar el cursor */
 }
 
 
@@ -408,7 +405,7 @@ body{
 	grid-row: 4;
 	grid-column: 1 / -1;
 	grid-template-rows: repeat(3,auto);
- 	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, 1fr);
 	grid-gap: 15px;
 }
 
@@ -433,22 +430,22 @@ body{
 }
 
 .videos::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+	width: 12px;
+	height: 12px;
 }
 
 .videos::-webkit-scrollbar-track {
-    background: #000000;
+	background: #000000;
 }
 
 .videos::-webkit-scrollbar-thumb {
-    background: #888; 
+	background: #888; 
 }
 
 .videos::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+	background: #555; 
 }
-	
+
 
 .img-video {
 	width: 100%;
@@ -459,10 +456,10 @@ body{
 	text-align: center;
 	color: #ffffff;
 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;
 }
 
 .texto-content {
@@ -521,10 +518,10 @@ body{
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;
 
 }
 
@@ -533,20 +530,20 @@ body{
 }
 
 .parrafo-2::-webkit-scrollbar {
-    width: 5px; 
-    height: 5px; 
+	width: 5px; 
+	height: 5px; 
 }
 
 .parrafo-2::-webkit-scrollbar-track {
-    background: #000000;
+	background: #000000;
 }
 
 .parrafo-2::-webkit-scrollbar-thumb {
-    background: #888; 
+	background: #888; 
 }
 
 .parrafo-2::-webkit-scrollbar-thumb:hover {
-    background: #555; 
+	background: #555; 
 }
 
 .pie-pagina{
@@ -559,10 +556,10 @@ body{
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;
 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;
 }
 
 .ventana-modal {
@@ -608,10 +605,10 @@ body{
 	font-family: 'Maquina de Escribir';
 	color: #ffffff;
 	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;
 }
 
 .imagenes {
