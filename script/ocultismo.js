@@ -22,15 +22,29 @@ let libreria = document.querySelector('.lib');
 let libros = document.querySelectorAll('.img-texto');
 let botonAtras = document.getElementById('boton-atras');
 let botonAdelante = document.getElementById('boton-adelante');
-let libroImgs = document.querySelectorAll('.ventana-img-modal');
+
+
+
+
+const busquedaImg = (dataLibro) => {
+	let libroImgs = document.querySelectorAll('.ventana-img-modal');
+	for(let libroImg of libroImgs){
+		console.log(libroImg);
+	}
+}
+
+/* acaa quede*/
 
 for (let libro of libros) {
 	let dataLibro = libro.getAttribute('data-libro');
 	let libroImagen = document.getElementById(dataLibro);
+	let libroEncontrado = busquedaImg(dataLibro);
+	console.log(libroEncontrado);
 
+	libroImagen.addEventListener('click', () => {
+		libroImagen.style.display = "flex";
+	});
 }
-
-
 
 botonAtras.addEventListener('click', () => {
 	libreria.scrollLeft -= 300;
