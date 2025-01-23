@@ -17,14 +17,11 @@ botonCerrar.addEventListener('click', () => {
 	ventanaModal.style.display = 'none';
 });
 
-
 let libreria = document.querySelector('.lib');
 let libros = document.querySelectorAll('.img-texto');
 let botonAtras = document.getElementById('boton-atras');
 let botonAdelante = document.getElementById('boton-adelante');
-
-let libImg = document.querySelector('.ventana-modal-libro');
-
+let botonesCerrarLibros = document.querySelectorAll('.boton-cerrar-libros');
 
 for (let libro of libros) {
 	let dataLibro = libro.getAttribute('data-libro');
@@ -35,19 +32,22 @@ for (let libro of libros) {
 		libroImagen.style.display = "flex";
 	});
 
-	botonCerrar.addEventListener('click', () => {
-		sonidoBotonCerrar.play();
-		libroImagen.style.display = 'none';
-	});
-
+	for(let botonCerrarLibro of botonesCerrarLibros) {
+		botonCerrarLibro.addEventListener('click', () => {
+			sonidoBotonCerrar.play();
+			libroImagen.style.display = "none";
+		});
+	}
 }
 
 botonAtras.addEventListener('click', () => {
 	libreria.scrollLeft -= 300;
+	console.log(libreria.scrollLeft);
 });
 
 botonAdelante.addEventListener('click', () => {
 	libreria.scrollLeft += 300;
+	console.log(libreria.scrollLeft);
 });
 
 function actualizarBoton() {
@@ -55,7 +55,7 @@ function actualizarBoton() {
 		botonAtras.style.opacity = "0.5";
 		botonAtras.style.cursor = "default";
 	} else {
-		botonAtras.style.odpacity = "1";
+		botonAtras.style.opacity = "1";
 		botonAtras.style.cursor = "pointer";		
 	}
 
