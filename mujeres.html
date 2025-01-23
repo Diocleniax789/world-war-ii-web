@@ -10,7 +10,7 @@
 <body>
 
 	<main class="main-container">
-		
+
 		<header class="main-header">
 			<a href="index.html"><img src="images/logo.png" class="img-header"></a>	
 		</header>
@@ -26,7 +26,7 @@
 		</nav>
 
 		<content class="main-container-information">
-			
+
 			<aside class="main-aside">
 				<header class="main-aside-header">
 					<h2>Brujas de la noche</h2>
@@ -37,7 +37,15 @@
 						Las **"Brujas de la Noche"** era el apodo dado por los alemanes al **588.º Regimiento de Bombardeo Nocturno de la Unión Soviética** durante la Segunda Guerra Mundial, un grupo compuesto bvexclusivamente por mujeres que realizaban misiones de bombardeo nocturno contra las fuerzas nazis. Utilizaban biplanos Polikarpov Po-2, lentos y rudimentarios, pero maniobrables y difíciles de detectar por los radares enemigos. Su táctica consistía en apagar los motores al acercarse al objetivo para planear silenciosamente, lo que les valió el nombre de "brujas" por su sigilo. Este regimiento llevó a cabo más de 23,000 misiones y lanzó más de 3,000 toneladas de bombas, siendo reconocido como una de las unidades más destacadas de la guerra. Sus integrantes, muchas de ellas jóvenes de poco más de 20 años, demostraron un extraordinario valor y habilidad, recibiendo varias de ellas el título de **Héroe de la Unión Soviética**, consolidando su lugar en la historia.
 
 					</p>
-					<img src="images/4.jpg" class="img" id="img-0">
+					<img src="images/4.jpg" class="img" id="img-0" data-modal = "img0">
+
+					<div class="ventana-modal" id="img0">
+						<div class="modal-informacion">
+							<img src="images/4.jpg" id="img-0">
+							<button class="boton-cerrar">Cerrar</button>
+						</div>
+					</div>
+
 				</article>
 
 			</aside>
@@ -48,12 +56,21 @@
 				</header>
 
 				<div class="main-article-content">
+
+					<img src="images/women2.jpg" class="img" id="img-1" data-modal = "img1">
+
+					<div class="ventana-modal" id="img1">
+						<div class="modal-informacion">
+							<img src="images/women2.jpg" id="imgModal1">
+							<button class="boton-cerrar">Cerrar</button>
+						</div>
+					</div>					
+					
 					<p>
-						<img src="images/women2.jpg" class="img" id="img-1">
 						Las mujeres jugaron un papel crucial durante la Segunda Guerra Mundial, tanto en el frente doméstico como en el militar. A medida que los hombres eran enviados a combatir, millones de mujeres asumieron roles tradicionalmente ocupados por ellos, manteniendo las economías en funcionamiento. Trabajaron en fábricas, produciendo armas, mguniciones y vehículos necesarios para el esfuerzo bélico. Este fenómeno fue especialmente visible en países como Estados Unidos, donde figuras icónicas como "Rosie the Riveter" simbolizaban el empoderamiento femenino en el ámbito laboral.
-						<img src="images/poster2.jpg" class="img" id="img-2">
+						<img src="images/poster2.jpg" class="img" id="img-2" data-modal = "img2">
 						En el ámbito militar, muchas mujeres se alistaron como enfermeras, operadoras de radio, mecánicas y pilotos. Por ejemplo, en la Unión Soviética, miles de mujeres sirvieron en el ejército, destacándose como francotiradoras, pilotos de combate y operadores de tanques. Entre ellas sobresale Liudmila Pavlichenko, conocida como una de las francotiradoras 
-						
+
 						más letales de la guerra. En otros países, como el Reino Unido, se unieron a unidades auxiliares como el Servicio Territorial Auxiliar (ATS) y participaron en tareas vitales para la defensa, como el manejo de baterías antiaéreas.
 						<img src="images/soviet.png" class="img" id="img-3">
 						En la resistencia, las mujeres desempeñaron roles fundamentales en redes de espionaje y sabotaje. Agentes como Nancy Wake y Violette Szabo realizaron operaciones arriesgadas detrás de las líneas enemigas, enfrentándose al peligro de captura y tortura. 
@@ -68,7 +85,7 @@
 
 
 		<content class="main-container-information" id="main-container-information-1">
-			
+
 			<aside class="main-aside">
 				<header class="main-aside-header" id="main-aside-header-1">
 					<h2>Dama de la Muerte</h2>
@@ -85,7 +102,7 @@
 			</aside>
 
 			<article class="main-article" id="main-article-1">
-				
+
 				<header class="main-article-header">
 					<img src="images/encabezadoNuevo.jpg" class="img-header-1">
 				</header>
@@ -112,6 +129,8 @@
 		</footer>
 
 	</main>
+
+	<script src="script/mujeres.js" defer></script>
 
 </body>
 </html>

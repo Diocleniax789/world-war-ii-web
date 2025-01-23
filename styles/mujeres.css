@@ -43,16 +43,18 @@ body{
 .main-footer,
 .img {
 	border: solid 1px grey;
-	border-radius: 5px;
 }
 
 .main-header {
+	display: flex;
+	justify-content: center;
 	background: url('../images/fireChispa.jpg');
 	background-size: cover;	
 }
 
 .main-header .img-header {
 	width: 100%;
+	max-width: 600px;
 	transition: transform 0.3s ease, filter 0.3s ease;
 }
 
@@ -209,6 +211,7 @@ body{
 
 .img-header-1 {
 	width: 100%;
+
 }
 
 h2 {
@@ -225,6 +228,10 @@ p {
     -1px  1px 0 #000,
      1px  1px 0 #000;
      text-align: justify;
+}
+
+.img {
+	cursor: pointer;
 }
 
 #img-0 {
@@ -268,4 +275,35 @@ p {
 #main-article-1 {
 	background: url('../images/fireChispa2.jpg');
 	background-size: cover;
+}
+
+.ventana-modal {
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	position: fixed;
+}
+
+.modal-informacion {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.boton-cerrar {
+	width: 100px;
+	cursor: pointer;
+}
+
+#imgModal1 {
+	width: 800px;
+	border: solid 1px grey;
 }
