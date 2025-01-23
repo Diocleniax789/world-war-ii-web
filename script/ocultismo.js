@@ -31,8 +31,15 @@ for (let libro of libros) {
 	let libroImagen = document.getElementById(dataLibro);
 	
 	libro.addEventListener('click', () => {
+		sonidoBotonAbrir.play();
 		libroImagen.style.display = "flex";
 	});
+
+	botonCerrar.addEventListener('click', () => {
+		sonidoBotonCerrar.play();
+		libroImagen.style.display = 'none';
+	});
+
 }
 
 botonAtras.addEventListener('click', () => {
