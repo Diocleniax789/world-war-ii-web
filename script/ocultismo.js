@@ -23,25 +23,14 @@ let libros = document.querySelectorAll('.img-texto');
 let botonAtras = document.getElementById('boton-atras');
 let botonAdelante = document.getElementById('boton-adelante');
 
+let libImg = document.querySelector('.ventana-modal-libro');
 
-
-
-const busquedaImg = (dataLibro) => {
-	let libroImgs = document.querySelectorAll('.ventana-img-modal');
-	for(let libroImg of libroImgs){
-		console.log(libroImg);
-	}
-}
-
-/* acaa quede*/
 
 for (let libro of libros) {
 	let dataLibro = libro.getAttribute('data-libro');
 	let libroImagen = document.getElementById(dataLibro);
-	let libroEncontrado = busquedaImg(dataLibro);
-	console.log(libroEncontrado);
-
-	libroImagen.addEventListener('click', () => {
+	
+	libro.addEventListener('click', () => {
 		libroImagen.style.display = "flex";
 	});
 }
@@ -59,7 +48,7 @@ function actualizarBoton() {
 		botonAtras.style.opacity = "0.5";
 		botonAtras.style.cursor = "default";
 	} else {
-		botonAtras.style.opacity = "1";
+		botonAtras.style.odpacity = "1";
 		botonAtras.style.cursor = "pointer";		
 	}
 
