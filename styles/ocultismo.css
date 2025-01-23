@@ -369,7 +369,6 @@ body{
 	scroll-behavior: smooth;
 }
 
-
 .boton-nuevo {
 	width: 150px;
 	cursor: pointer;
@@ -685,6 +684,8 @@ body{
 
 .ventana-img-modal {
 	display: flex;
+	flex-direction: column;
+	gap: 5px;
 	justify-content: center;
 	align-items: center;
 	width: 500px;
@@ -692,4 +693,20 @@ body{
 
 .img-modal-ventana {
 	width: 500px;
+}
+
+.boton-cerrar-libros {
+	background: url('../images/fondo2.jpg');
+	background-size: cover;	
+	width: 350px;
+	border: solid 1px #000000;
+	padding: 10px;
+	cursor: pointer;
+	font-family: 'Maquina de Escribir';
+	color: #ffffff;
+	text-shadow: 	
+	-1px -1px 0 #000,  
+	1px -1px 0 #000,
+	-1px  1px 0 #000,
+	1px  1px 0 #000;
 }

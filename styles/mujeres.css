@@ -17,7 +17,7 @@ body{
 .main-container {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 90%;
 	max-width: 2000px;
 	margin: 50px auto;	
 	padding: 10px;
@@ -224,6 +224,7 @@ p {
      1px -1px 0 #000,
     -1px  1px 0 #000,
      1px  1px 0 #000;
+     text-align: justify;
 }
 
 #img-0 {
