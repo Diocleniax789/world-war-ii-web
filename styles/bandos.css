@@ -3,6 +3,11 @@
 	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
 }
 
+@font-face {
+	font-family: 'Maquina de Escribir';
+	src: url('../fonts/Maquina de Escribir.ttf') format(TrueType);
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -254,7 +259,6 @@ h2 {
 	justify-content: center;
 	flex-direction: column;
 	display: flex;
-	height: auto;
 	padding: 10px;
 	gap: 10px;
 	border: solid 3px grey;
@@ -281,11 +285,67 @@ h2 {
 	text-align: justify;
 }
 
+.parrafo::-webkit-scrollbar {
+    width: 5px; /* Ancho del scroll vertical */
+    height: 5px; /* Altura del scroll horizontal */
+}
+
+.parrafo::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+.parrafo::-webkit-scrollbar-thumb {
+    background: darkgray; /* Color de la manija */
+}
+
+.parrafo::-webkit-scrollbar-thumb:hover {
+    background: darkgray; /* Color al pasar el cursor */
+}
+
 .encabezado {
 	border: solid 1px grey;
 	text-align: center;
 }
 
 .boton-cerrar {
-	height: 25px;
+	background: url('../images/background48.jpg');
+	background-size: cover;
+	height: 30px;
+	color: #ffffff;
+	cursor: pointer;
+	font-family: 'Maquina de Escribir';
+	text-shadow: 	
+    -1px -1px 0 #000,  
+     1px -1px 0 #000,
+    -1px  1px 0 #000,
+     1px  1px 0 #000; 
+     transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.boton-cerrar:hover {
+	filter: brightness(1.5);
+}
+
+.img {
+	border: solid 1px grey;
+}
+
+#img1 {
+	float: left;
+	margin-right: 10px;
+	width: 300px;
+}
+
+#img2 {
+	float: right;
+	margin-top: 10px;
+	margin-left: 10px;
+	width: 300px;
+}
+
+#img3 {
+	float: left;
+	margin-top: 10px;
+	margin-right: 10px;
+	width: 300px;
 }
