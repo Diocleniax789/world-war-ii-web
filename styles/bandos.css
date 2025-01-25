@@ -183,6 +183,7 @@ h1 {
 #card-3 {
 	background: url('../images/england1.jpg');
 	background-size: cover;
+	background-position-y: 50%;
 }
 
 #card-4 {
@@ -314,6 +315,12 @@ h2 {
 	background-position-y: 30%;
 }
 
+#encabezado-2 {
+	background: url('../images/banner8.jpg');
+	background-size: cover;
+	background-position-y: 35%;
+}
+
 .boton-cerrar {
 	background: url('../images/background48.jpg');
 	background-size: cover;
@@ -355,4 +362,39 @@ h2 {
 	margin-top: 10px;
 	margin-right: 10px;
 	width: 300px;
+}
+
+#img4 {
+	float: left;
+	margin-right: 10px;
+	margin-top: 5px;
+	width: 300px;	
+}
+
+#img5 {
+	float: right;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 300px;	
+}
+
+#img6 {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 300px;	
+}
+
+#img7 {
+	float: right;
+	margin-top: 5px;
+	margin-left: 10px;
+	width: 400px;		
+}
+
+#img8 {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 300px;	
 }
