@@ -80,7 +80,7 @@ h1 {
 .main-container .main-nav ul a {
 	color: #ffffff;
 	text-decoration: none;
-	font-family: 'GoudyBookletter1911';
+	font-family: 'Maquina de Escribir';
 	font-size: 1rem;
 	transition: background 1s linear;
 	padding: 5px;
@@ -172,6 +172,7 @@ h1 {
 #card-1 {
 	background: url('../images/overlord.jpg');
 	background-size: cover;
+	background-position-y: 35%;
 }
 
 #card-2 {
@@ -207,7 +208,7 @@ h1 {
 }
 
 .button-card {
-	font-family: 'GoudyBookletter1911';
+	font-family: 'Maquina de Escribir';
 	background-color: #000000;
 	padding: 5px;
 	color: #ffffff;
@@ -305,6 +306,12 @@ h2 {
 .encabezado {
 	border: solid 1px grey;
 	text-align: center;
+}
+
+#encabezado-1 {
+	background: url('../images/img32.jpg');
+	background-size: cover;
+	background-position-y: 30%;
 }
 
 .boton-cerrar {
