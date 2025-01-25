@@ -109,7 +109,6 @@ h1 {
 }
 
 .main-content .banner{
-	background-color: olive;
 	height: auto;
 }
 
@@ -188,7 +187,8 @@ h1 {
 
 #card-4 {
 	background: url('../images/german.jpg');
-	background-size: cover;	
+	background-size: cover;
+	background-position-y: 50%;	
 }
 
 #card-5 {
@@ -321,6 +321,19 @@ h2 {
 	background-position-y: 35%;
 }
 
+#encabezado-3 {
+	background: url('../images/65.jpg');
+	background-size: cover;
+	background-position-y: 20%;
+}
+
+#encabezado-4 {
+	background: url('../images/63.jpg');
+	background-size: cover;
+	background-position-y: 50%;
+}
+
+
 .boton-cerrar {
 	background: url('../images/background48.jpg');
 	background-size: cover;
@@ -334,6 +347,7 @@ h2 {
     -1px  1px 0 #000,
      1px  1px 0 #000; 
      transition: transform 0.3s ease, filter 0.3s ease;
+     border: solid 1px grey;
 }
 
 .boton-cerrar:hover {
@@ -397,4 +411,11 @@ h2 {
 	margin-top: 5px;
 	margin-right: 10px;
 	width: 300px;	
+}
+
+#img9 {
+	float: left;
+	margin-top: 5px;
+	margin-right: 10px;
+	width: 350px;	
 }
