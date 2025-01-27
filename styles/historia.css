@@ -111,23 +111,33 @@ h1 {
 	flex-grow: 0;
 }
 
-.timeline{
-	display: flex;
-	gap: 5px;
-	height: 150px;
+.timeline {
+  display: flex;
+  width: auto;
+  height: 150px;
+  overflow: hidden; /* Solo se ve el contenido dentro del contenedor */
+  position: relative;
 }
 
 .timeline-imgs {
-	display: flex;
-	gap: 5px;
-	overflow-x: hidden;
-	overflow-y: hidden;
-	scroll-behavior: smooth;
+  display: flex; /* Las imágenes están alineadas horizontalmente */
+  width: max-content; /* El ancho se ajusta automáticamente */
+  animation: mover 10s linear infinite; /* Animación fluida */
 }
 
-.timeline-img{
-	width: 250px;
-	border: solid 1px grey;
+.timeline-imgs img {
+  flex-shrink: 0; /* Evita que las imágenes se compriman */
+  width: auto;
+  height: 100%;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateX(0); /* Comienza en la posición inicial */
+  }
+  100% {
+    transform: translateX(-50%); /* Mueve la mitad del contenido duplicado */
+  }
 }
 
 .informacion{
