@@ -1,9 +1,12 @@
 @font-face {
 	font-family: 'GoudyBookletter1911';
 	src: url('../fonts/GoudyBookletter1911.otf') format(OpenType);
-
 }
 
+@font-face {
+	font-family: 'Maquina de Escribir';
+	src: url('../fonts/Maquina de Escribir.ttf') format(TrueType);
+}
 
 * {
 	margin: 0;
@@ -11,19 +14,22 @@
 }
 
 body {
-	background-image: url('../images/poland.jpg');
+	background-image: url('../images/fireChispa.jpg');
 	background-size: cover;
 	background-position-y: 10%;
 }
 
 .main-content {
+	background: rgba(0, 0, 0, 0.6);
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	grid-template-rows: repeat(4, auto);
 	grid-gap: 5px;
-	width: 50%;
+	width: 90%;
 	max-width: 2000px;
-	margin: 50px auto;
+	margin: 30px auto;
+	border: solid 1px grey;
+	padding: 10px;
 }
 
 .header {
@@ -37,7 +43,6 @@ body {
 	justify-content: center;
 	background-color: #000000;
 	border: solid 1px grey;
-	border-radius: 5px;
 	padding: 5px;
 }
 
@@ -59,7 +64,6 @@ h1 {
 	grid-row: 2;
 	background-color: #000000;
 	border: solid 1px grey;
-	border-radius: 5px;
 	padding: 10px;
 }
 
@@ -72,7 +76,7 @@ h1 {
 
 .nav a {
 	text-decoration: none;
-	font-family: 'CFWorldatWarPERSO-Regular';
+	font-family: 'Maquina de Escribir';
 	color: #ffffff;
 	padding: 5px;
 	border-radius: 5px;
