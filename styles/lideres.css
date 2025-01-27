@@ -137,16 +137,14 @@ h1 {
 
 
 .main-title-card {
-	font-family: 'GoudyBookletter1911';
+	background-color: #000000;
+	padding: 5px;
+	text-align: center;
+	font-family: 'Maquina de Escribir';
 	color: #ffffff;
 	font-size: 2rem;
 	margin: 5px;
-	border-bottom: solid 1px black;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	border: solid 1px grey;
 }
 
 .gallery {
@@ -170,14 +168,13 @@ h1 {
 }
 
 .texto {
+	background: #000000;
+	padding: 6px;
 	font-family: 'GoudyBookletter1911';
 	color: #ffffff;	
 	margin: 10px;
-	text-shadow: 	
-    -1px -1px 0 #000,  
-     1px -1px 0 #000,
-    -1px  1px 0 #000,
-     1px  1px 0 #000;
+	border: solid 1px grey;
+	text-align: justify;
 }
 
 #card-1,#card-2,#card-3,#card-4,#card-5,#card-6,#card-7{
@@ -193,9 +190,8 @@ h1 {
 	background: rgba(0, 0, 0, 0.6);
 	border: solid 1px grey;
 	border-radius: 5px;
-	font-family: 'PeachyKeenSerif-DEMO';
+	font-family: 'New Times Roman';
 	color: #ffffff;
-	font-size: 2rem;
 	text-align: center;
 	padding: 5px;
 }

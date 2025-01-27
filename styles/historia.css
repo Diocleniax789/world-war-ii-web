@@ -136,7 +136,7 @@ h1 {
     transform: translateX(0); /* Comienza en la posición inicial */
   }
   100% {
-    transform: translateX(-50%); /* Mueve la mitad del contenido duplicado */
+    transform: translateX(-100%); /* Mueve la mitad del contenido duplicado */
   }
 }
 
