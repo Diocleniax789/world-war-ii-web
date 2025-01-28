@@ -57,3 +57,9 @@ botonAdelante1.addEventListener('click', () => {
 	timeline.scrollLeft += 300;
 });
 
+let menuWrap = document.getElementById('desplegar');
+let menu = document.getElementById('navegador');
+
+menuWrap.addEventListener('click', () => {
+	menu.style.display = "flex";
+});
