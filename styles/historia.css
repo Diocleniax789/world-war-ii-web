@@ -348,3 +348,46 @@ p {
 .banner {
 	width: 100%;
 }
+
+.nav-wrap {
+	background: #000000;
+	color: #ffffff;
+	display: none;
+	justify-content: center;
+	border: solid 1px grey;
+}
+
+.img-ico {
+	width: 50px;
+}
+
+@media (min-width: 489px) and (max-width: 769px){
+
+		body {
+			 background-attachment: fixed;
+		}
+
+		h1 {
+			font-size: 2em;
+		}
+
+		.nav-wrap {
+			display: flex;
+		}
+
+		.navegator {
+			display: none;
+			justify-content: center;
+		}
+
+ 		.navegator ul {
+ 			display: flex;
+ 			flex-direction: column;
+ 		}
+
+ 		.navegator ul li {
+ 			text-align: center;
+ 			border-bottom:  solid 1px grey;
+ 		}
+ 			
+}
