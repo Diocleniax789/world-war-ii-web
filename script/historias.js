@@ -33,33 +33,18 @@ for(let imagen of imagenes) {
 	}
 }
 
-let galeria = document.querySelector('.galeria');
-const botonAtras = document.getElementById('boton-atras');
-const botonAdelante = document.getElementById('boton-adelante');
-
-botonAtras.addEventListener('click', () => {
-	galeria.scrollLeft -= 300;
-});
-
-botonAdelante.addEventListener('click', () => {
-	galeria.scrollLeft += 300;
-});
-
-let timeline = document.querySelector('.timeline-imgs');
-const botonAtras1 = document.getElementById('boton-atras-1');
-const botonAdelante1 = document.getElementById('boton-adelante-1');
-
-botonAtras1.addEventListener('click', () => {
-	timeline.scrollLeft -= 300;
-});
-
-botonAdelante1.addEventListener('click', () => {
-	timeline.scrollLeft += 300;
-});
-
-let menuWrap = document.getElementById('desplegar');
 let menu = document.getElementById('navegador');
+let menuWrap = document.getElementById('wrap-menu');
+let activo = false;
 
 menuWrap.addEventListener('click', () => {
-	menu.style.display = "flex";
+	if(activo === false){
+		menu.style.display = "flex";
+		activo = true;
+	} else {
+		menu.style.display = "none";
+		activo = false;
+	}
 });
+
+
