@@ -33,6 +33,18 @@ for(let imagen of imagenes) {
 	}
 }
 
+let galeria = document.querySelector('.galeria');
+const botonAtras = document.getElementById('boton-atras');
+const botonAdelante = document.getElementById('boton-adelante');
+
+botonAtras.addEventListener('click', () => {
+	galeria.scrollLeft -= 300;
+});
+
+botonAdelante.addEventListener('click', () => {
+	galeria.scrollLeft += 300;
+});
+
 let menu = document.getElementById('navegador');
 let menuWrap = document.getElementById('wrap-menu');
 let activo = false;
@@ -46,5 +58,3 @@ menuWrap.addEventListener('click', () => {
 		activo = false;
 	}
 });
-
-

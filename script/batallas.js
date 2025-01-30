@@ -19,5 +19,3 @@ for (let boton of botones) {
     });
   });
 }
-
-
